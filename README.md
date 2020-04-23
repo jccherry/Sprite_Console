@@ -48,7 +48,7 @@ Additional plans
 Resources I've used
 -
 - [Great video explaining NES Architecture by Michael Chiaramonte (No relation)](https://www.youtube.com/watch?v=XwGj1ciSAtw)
-- [Basys 3 Manual by Digilent]([https://reference.digilentinc.com/_media/basys3:basys3_rm.pdf](https://reference.digilentinc.com/_media/basys3:basys3_rm.pdf))
+- [Basys 3 Manual by Digilent](https://reference.digilentinc.com/_media/basys3:basys3_rm.pdf)
 - [VGA Reference by Digilent](https://learn.digilentinc.com/Documents/269)
-- [Awesome intro FPGA/Verilog Blog by Will Green]([https://timetoexplore.net/](https://timetoexplore.net/))
+- [Awesome intro FPGA/Verilog Blog by Will Green](https://timetoexplore.net/)
 - [NES Documentation by Patrick Diskin](http://nesdev.com/NESDoc.pdf)
