@@ -27,8 +27,10 @@ module ppu(
     input [10:0] overlay_x_offset,
     input [9:0] sprite_x,
     input [8:0] sprite_y,
+    input sprite1_enabled,
     output hsync,
     output vsync,
+    output vblank,
     output [3:0] R,
     output [3:0] G,
     output [3:0] B
@@ -86,11 +88,14 @@ module ppu(
     wire [5:0] screen_x_tile;
     wire [4:0] screen_x_pixel;
     
-    
     wire [10:0] screen_x_pixel_coord;
     wire [9:0] screen_y_pixel_coord;
     
+    //output of sprite1 memory
     wire [11:0] sprite1_rgb;
+    
+    //output of sprite memory muxes
+    wire [11:0] sprite_rgb;
     
     clock_divider div(
     sys_clk,
@@ -108,6 +113,11 @@ module ppu(
     vcounter,
     hsyncdelay1,
     vsyncdelay1
+    );
+    
+    vblank vb(
+    vcounter,
+    vblank
     );
     
     DFF hsyncflop1(clk, hsyncdelay1, hsyncdelay2);
@@ -177,6 +187,15 @@ module ppu(
     sprite1_rgb
     //sprite1_active
     );
+    
+    display_mux sprite_enabled_mux(
+    12'h0f0,
+    sprite1_rgb,
+    sprite1_enabled,
+    sprite_rgb
+    );
+    
+    
     
     
     /*
@@ -295,7 +314,7 @@ module ppu(
     background_rgb_out,
     foreground_rgb_out,
     overlay_rgb_out,
-    sprite1_rgb,
+    sprite_rgb,
     final_rgb_out
     );
     

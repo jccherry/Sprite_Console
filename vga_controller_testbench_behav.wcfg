@@ -11,108 +11,39 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3516451610fs"></ZoomStartTime>
-      <ZoomEndTime time="3516506968fs"></ZoomEndTime>
-      <Cursor1Time time="3516464964fs"></Cursor1Time>
+      <ZoomStartTime time="8000000fs"></ZoomStartTime>
+      <ZoomEndTime time="17490001fs"></ZoomEndTime>
+      <Cursor1Time time="10001000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="238"></NameColumnWidth>
+      <NameColumnWidth column_width="230"></NameColumnWidth>
       <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
-   <wvobject fp_name="/vga_controller_testbench/VGAController/sys_clk" type="logic">
-      <obj_property name="ElementShortName">sys_clk</obj_property>
-      <obj_property name="ObjectShortName">sys_clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/hcounter" type="array">
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/vga_controller_testbench/atop/ppu/hcounter" type="array">
       <obj_property name="ElementShortName">hcounter[9:0]</obj_property>
       <obj_property name="ObjectShortName">hcounter[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/vcounter" type="array">
+   <wvobject fp_name="/vga_controller_testbench/atop/ppu/vcounter" type="array">
       <obj_property name="ElementShortName">vcounter[9:0]</obj_property>
       <obj_property name="ObjectShortName">vcounter[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/hsync" type="logic">
+   <wvobject fp_name="/vga_controller_testbench/atop/ppu/hsync" type="logic">
       <obj_property name="ElementShortName">hsync</obj_property>
       <obj_property name="ObjectShortName">hsync</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/vsync" type="logic">
+   <wvobject fp_name="/vga_controller_testbench/atop/ppu/vsync" type="logic">
       <obj_property name="ElementShortName">vsync</obj_property>
       <obj_property name="ObjectShortName">vsync</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/tile_x" type="array">
-      <obj_property name="ElementShortName">tile_x[5:0]</obj_property>
-      <obj_property name="ObjectShortName">tile_x[5:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/vga_controller_testbench/atop/ppu/vblank" type="logic">
+      <obj_property name="ElementShortName">vblank</obj_property>
+      <obj_property name="ObjectShortName">vblank</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/tile_y" type="array">
-      <obj_property name="ElementShortName">tile_y[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tile_y[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/disp_addr_convert/disp_addr" type="array">
-      <obj_property name="ElementShortName">disp_addr[10:0]</obj_property>
-      <obj_property name="ObjectShortName">disp_addr[10:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/within_bounds_delay2" type="logic">
-      <obj_property name="ElementShortName">within_bounds_delay2</obj_property>
-      <obj_property name="ObjectShortName">within_bounds_delay2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/tileset_addr" type="array">
-      <obj_property name="ElementShortName">tileset_addr[6:0]</obj_property>
-      <obj_property name="ObjectShortName">tileset_addr[6:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/tileset_mem/data_index" type="array">
-      <obj_property name="ElementShortName">data_index[14:0]</obj_property>
-      <obj_property name="ObjectShortName">data_index[14:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/tileset_mem/pixel_address" type="array">
-      <obj_property name="ElementShortName">pixel_address[7:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_address[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/pixel_addr_convert/pixel_x" type="array">
-      <obj_property name="ElementShortName">pixel_x[3:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_x[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/pixel_addr_convert/pixel_y" type="array">
-      <obj_property name="ElementShortName">pixel_y[3:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_y[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/pixel_addr_convert/pixel_addr" type="array">
-      <obj_property name="ElementShortName">pixel_addr[7:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_addr[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/RGB" type="array">
+   <wvobject fp_name="/vga_controller_testbench/atop/ppu/RGB" type="array">
       <obj_property name="ElementShortName">RGB[11:0]</obj_property>
       <obj_property name="ObjectShortName">RGB[11:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/R" type="array">
-      <obj_property name="ElementShortName">R[3:0]</obj_property>
-      <obj_property name="ObjectShortName">R[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/G" type="array">
-      <obj_property name="ElementShortName">G[3:0]</obj_property>
-      <obj_property name="ObjectShortName">G[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/VGAController/B" type="array">
-      <obj_property name="ElementShortName">B[3:0]</obj_property>
-      <obj_property name="ObjectShortName">B[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>

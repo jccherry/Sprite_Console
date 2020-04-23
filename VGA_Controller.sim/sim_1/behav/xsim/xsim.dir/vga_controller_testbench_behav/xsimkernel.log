@@ -1,7 +1,4 @@
-Running: xsim.dir/vga_controller_testbench_behav/xsimk.exe -simmode gui -wdb vga_controller_testbench_behav.wdb -simrunnum 0 -socket 61180
+Running: xsim.dir/vga_controller_testbench_behav/xsimk.exe -simmode gui -wdb vga_controller_testbench_behav.wdb -simrunnum 0 -socket 60994
 Design successfully loaded
-Design Loading Memory Usage: 6472 KB (Peak: 6472 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 17264 KB (Peak: 17264 KB)
-Simulation CPU Usage: 3375 ms
+Design Loading Memory Usage: 5636 KB (Peak: 5636 KB)
+Design Loading CPU Usage: 77 ms
