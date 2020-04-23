@@ -86,6 +86,12 @@ module top(
     wire [4:0] screen_x_pixel;
     wire [15:0] seven_segment_input;
     
+    wire [10:0] screen_x_pixel_coord;
+    wire [9:0] screen_y_pixel_coord;
+    
+    wire [11:0] sprite1_rgb;
+    //wire sprite1_active;
+    
     assign seven_segment_input[7:0] = background_x_offset;
     assign seven_segment_input[15:8] = foreground_x_offset;
     
@@ -152,11 +158,37 @@ module top(
     hcounter,
     vcounter,
     within_bounds_wire,
-    0,
+    0, //offset is 0
     tile_x_overlay,
     tile_y_overlay,
     pixel_x_overlay,
     pixel_y_overlay
+    );
+    
+    
+    
+    //this block outputs what x pixel and y pixel is being drawn at any time
+    //while within_bounds_wire is HIGH, otherwise 0
+    counters_to_coords counter_convert_sprites(
+    hcounter,
+    vcounter,
+    within_bounds_wire,
+    screen_x_pixel_coord,
+    screen_y_pixel_coord
+    );
+    
+    sprite_memory  #("sprite1.mem") sprite1(
+    clk,
+    0, //wr_en is 0
+    screen_x_pixel_coord,
+    screen_y_pixel_coord,
+    20, //x position
+    30, //y position
+    0,  //loaded sprite
+    0,  //write address
+    0,  //write data
+    sprite1_rgb
+    //sprite1_active
     );
     
     
@@ -276,6 +308,7 @@ module top(
     background_rgb_out,
     foreground_rgb_out,
     overlay_rgb_out,
+    sprite1_rgb,
     final_rgb_out
     );
     
