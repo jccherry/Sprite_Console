@@ -1,0 +1,23 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v,1586914564,verilog,,C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v,,counter_16bit,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/coords_to_addr_testbench.v,1587317073,verilog,,,,coords_to_addr_testbench,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/dff_testbench.v,1587406143,verilog,,,,dff_testbench,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/hvcounter_testbench.v,1587338693,verilog,,,,hvcounter_testbench,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/mux_testbench.v,1587343047,verilog,,,,mux_testbench,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v,1587407864,verilog,,,,vga_controller_testbench,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v,1587405885,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v,,DFF,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v,1587334589,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v,,clock_divider;tff,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v,1587321773,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v,,counter_to_tables;within_bounds,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v,1587437189,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v,,display_memory,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v,1587342223,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v,,display_mux,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v,1587339759,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v,,hvcounter,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v,1587341329,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v,,hvsync,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v,1587316980,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v,,pixel_coords_to_addr,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v,1587407587,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v,,rgb_slicer,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v,1587330590,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v,,tile_coords_to_addr,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v,1587433822,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v,,tileset_memory,,,,,,,,
+C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v,1587407775,verilog,,C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v,,top,,,,,,,,

@@ -1,0 +1,7 @@
+Running: xsim.dir/hvcounter_testbench_behav/xsimk.exe -simmode gui -wdb hvcounter_testbench_behav.wdb -simrunnum 0 -socket 54826
+Design successfully loaded
+Design Loading Memory Usage: 5308 KB (Peak: 5308 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 13956 KB (Peak: 13956 KB)
+Simulation CPU Usage: 3687 ms

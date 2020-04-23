@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Apr 22 14:07:29 2020
+# Process ID: 4480
+# Current directory: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14652 C:\Users\jc170\Documents\Vivado Projects\VGA_Controller\VGA_Controller.xpr
+# Log file: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vivado.log
+# Journal file: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 805.387 ; gain = 169.898
+update_compile_order -fileset sources_1
+close [ open {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v} w ]
+add_files {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1371.902 ; gain = 241.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_scanner' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'segment_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+	Parameter DIVISOR bound to: 28'b0000000001100001101010000000 
+INFO: [Synth 8-6155] done synthesizing module 'segment_clock_divider' (1#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_counter' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_counter' (2#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_decoder' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_decoder' (3#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scanner' (4#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (5#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (6#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (7#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (8#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (9#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (10#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (11#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'background_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'background_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (16#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+ERROR: [Synth 8-349] instance 'tileset_mem' of module 'tileset_memory' passed 7 connections, but takes just 6 [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:189]
+INFO: [Synth 8-6157] synthesizing module 'foreground_tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'foreground_tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1470.238 ; gain = 339.340
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+35 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1470.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_scanner' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'segment_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+	Parameter DIVISOR bound to: 28'b0000000001100001101010000000 
+INFO: [Synth 8-6155] done synthesizing module 'segment_clock_divider' (1#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_counter' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_counter' (2#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_decoder' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_decoder' (3#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scanner' (4#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (5#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (6#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (7#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (8#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (9#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (10#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (11#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'background_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'background_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (16#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_tileset_memory' (17#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (18#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (19#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (20#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1493.668 ; gain = 23.430
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1509.449 ; gain = 39.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1509.449 ; gain = 39.211
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1509.449 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1611.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 1611.547 ; gain = 141.309
+45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 1611.547 ; gain = 141.309
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Apr 22 14:17:34 2020] Launched synth_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1611.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 509 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1629.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 450 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 300 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 150 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1690.410 ; gain = 78.863
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Apr 22 14:28:20 2020] Launched synth_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.runs/synth_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2287.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 521 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2615.359 ; gain = 348.230
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2798.973 ; gain = 72.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_scanner' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'segment_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+	Parameter DIVISOR bound to: 28'b0000000001100001101010000000 
+INFO: [Synth 8-6155] done synthesizing module 'segment_clock_divider' (1#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_counter' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_counter' (2#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_decoder' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_decoder' (3#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scanner' (4#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (5#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (6#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (7#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (8#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (9#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (10#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (11#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'background_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'background_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (16#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_tileset_memory' (17#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (18#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (19#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (20#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2893.117 ; gain = 167.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2915.520 ; gain = 189.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2915.520 ; gain = 189.438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2915.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 2915.520 ; gain = 189.438
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_scanner' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'segment_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+	Parameter DIVISOR bound to: 28'b0000000001100001101010000000 
+INFO: [Synth 8-6155] done synthesizing module 'segment_clock_divider' (1#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_counter' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_counter' (2#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_decoder' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_decoder' (3#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scanner' (4#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (5#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (6#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (7#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (8#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (9#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (10#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (11#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'background_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'background_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (16#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_tileset_memory' (17#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (18#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (19#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (20#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2915.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2915.520 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_scanner' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'segment_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+	Parameter DIVISOR bound to: 28'b0000000001100001101010000000 
+INFO: [Synth 8-6155] done synthesizing module 'segment_clock_divider' (1#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_counter' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_counter' (2#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_decoder' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_decoder' (3#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scanner' (4#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (5#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (6#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (7#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (8#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (9#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (10#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (11#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'background_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'background_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (16#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'foreground_tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'foreground_tileset_memory' (17#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/foreground_tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (18#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (19#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (20#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2915.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2915.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 3034.605 ; gain = 119.086
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 15:05:35 2020...

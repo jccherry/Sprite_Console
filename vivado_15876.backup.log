@@ -1,0 +1,1327 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Apr 19 17:42:05 2020
+# Process ID: 15876
+# Current directory: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15140 C:\Users\jc170\Documents\Vivado Projects\VGA_Controller\VGA_Controller.xpr
+# Log file: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vivado.log
+# Journal file: C:/Users/jc170/Documents/Vivado Projects/VGA_Controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 819.984 ; gain = 152.395
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:66]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:68]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:78]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+WARNING: Simulation object /coords_to_addr_testbench/tile_x was not found in the design.
+WARNING: Simulation object /coords_to_addr_testbench/tile_y was not found in the design.
+WARNING: Simulation object /coords_to_addr_testbench/disp_addr was not found in the design.
+WARNING: Simulation object /coords_to_addr_testbench/pixel_x was not found in the design.
+WARNING: Simulation object /coords_to_addr_testbench/pixel_y was not found in the design.
+WARNING: Simulation object /coords_to_addr_testbench/pixel_addr was not found in the design.
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 836.680 ; gain = 2.242
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 836.680 ; gain = 2.242
+current_wave_config {vga_controller_testbench_behav.wcfg}
+vga_controller_testbench_behav.wcfg
+add_wave {{/vga_controller_testbench}} 
+current_wave_config {vga_controller_testbench_behav.wcfg}
+vga_controller_testbench_behav.wcfg
+add_wave {{/vga_controller_testbench/atop}} 
+save_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:66]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:67]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:68]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:78]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 852.832 ; gain = 0.000
+close [ open {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v} w ]
+add_files {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module t_flipflop
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v:47]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module t_flipflop
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:68]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:69]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:70]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.t_flipflop
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1012.238 ; gain = 0.000
+current_wave_config {vga_controller_testbench_behav.wcfg}
+vga_controller_testbench_behav.wcfg
+add_wave {{/vga_controller_testbench/sys_clk}} 
+save_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module t_flipflop
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:68]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:69]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:70]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.t_flipflop
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1012.238 ; gain = 0.000
+current_wave_config {vga_controller_testbench_behav.wcfg}
+vga_controller_testbench_behav.wcfg
+add_wave {{/vga_controller_testbench/atop/div/flop_1_out}} 
+save_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module t_flipflop
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:68]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:69]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:70]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.t_flipflop
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1012.238 ; gain = 0.000
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v}}
+file delete -force {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v}
+remove_files  {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v}}
+WARNING: [Vivado 12-818] No files matched 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_divider.v'
+add_files -norecurse {{C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v}}
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module even_clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'scale_factor' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'load_val' [C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_16bit
+Compiling module xil_defaultlib.even_clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+WARNING: Simulation object /vga_controller_testbench/atop/div/flop_1_out was not found in the design.
+WARNING: Simulation object /vga_controller_testbench/atop/div/clk was not found in the design.
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1012.238 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_wave_config {vga_controller_testbench_behav.wcfg}
+vga_controller_testbench_behav.wcfg
+add_wave {{/vga_controller_testbench/atop/div/counter_output}} 
+current_wave_config {vga_controller_testbench_behav.wcfg}
+vga_controller_testbench_behav.wcfg
+add_wave {{/vga_controller_testbench/atop/div/clk_output}} 
+save_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'scale_factor' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'load_val' [C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1012.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module even_clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'scale_factor' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'load_val' [C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_16bit
+Compiling module xil_defaultlib.even_clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1012.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module even_clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'scale_factor' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'load_val' [C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_16bit
+Compiling module xil_defaultlib.even_clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1012.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module even_clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'scale_factor' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'load_val' [C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_16bit
+Compiling module xil_defaultlib.even_clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1012.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module even_clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'scale_factor' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'load_val' [C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_16bit
+Compiling module xil_defaultlib.even_clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1012.238 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tff
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tff
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1012.488 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+WARNING: Simulation object /vga_controller_testbench/atop/div/counter_output was not found in the design.
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.285 ; gain = 0.797
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 1013.285 ; gain = 0.797
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tff
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tff
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1013.285 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+WARNING: Simulation object /vga_controller_testbench/atop/div/counter_output was not found in the design.
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.285 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1013.285 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files {{C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v}}
+remove_files  {{C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v}}
+WARNING: [Vivado 12-818] No files matched 'C:/Users/jc170/Documents/Vivado Projects/16bit_counter/16bit_counter.srcs/sources_1/new/16bit_counter.v'
+close [ open {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v} w ]
+add_files {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v}}
+remove_files  {{C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v}}
+WARNING: [Vivado 12-818] No files matched 'C:/Users/jc170/Documents/Vivado Projects/clock_divider/clock_divider.srcs/sources_1/new/clock_divider.v'
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_controller_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_controller_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tff
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module within_bounds
+INFO: [VRFC 10-311] analyzing module counter_to_tables
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tile_coords_to_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tileset_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tff
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.within_bounds
+Compiling module xil_defaultlib.counter_to_tables
+Compiling module xil_defaultlib.tile_coords_to_addr
+Compiling module xil_defaultlib.pixel_coords_to_addr
+Compiling module xil_defaultlib.display_memory
+Compiling module xil_defaultlib.tileset_memory
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_controller_testbench_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1029.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_controller_testbench_behav -key {Behavioral:sim_1:Functional:vga_controller_testbench} -tclbatch {vga_controller_testbench.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/vga_controller_testbench_behav.wcfg}
+WARNING: Simulation object /vga_controller_testbench/atop/div/counter_output was not found in the design.
+source vga_controller_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.980 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_controller_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1029.980 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1509.715 ; gain = 235.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (3#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (4#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (5#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (6#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory' (7#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:32811]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (8#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (9#1) [C:/Users/jc170/Documents/Vivado Projects/VGA_Controller/VGA_Controller.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1597.121 ; gain = 322.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1597.121 ; gain = 322.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1597.121 ; gain = 322.871
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1597.121 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1658.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1691.129 ; gain = 416.879
+22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 1691.129 ; gain = 661.148
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 18:19:00 2020...
