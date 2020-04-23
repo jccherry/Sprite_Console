@@ -18,9 +18,8 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/jc170/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1088-DESKTOP-6IO763U/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/jc170/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-2872-DESKTOP-6IO763U/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
@@ -52,6 +51,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v}
   {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v}
   {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v}
+  {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v}
   {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v}
   {C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v}
   {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v}

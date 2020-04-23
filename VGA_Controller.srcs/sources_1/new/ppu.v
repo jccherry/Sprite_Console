@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/19/2020 02:38:50 PM
+// Create Date: 04/23/2020 02:36:37 PM
 // Design Name: 
-// Module Name: top
+// Module Name: ppu
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,19 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module top(
+module ppu(
     input sys_clk,
-    input [7:0] background_x_offset,
-    input [7:0] foreground_x_offset,
-    output [7:0] cathode_data_out,
-    output [3:0] enabled_segment,
+    input [10:0] background_x_offset,
+    input [10:0] foreground_x_offset,
+    input [10:0] overlay_x_offset,
+    input [9:0] sprite_x,
+    input [8:0] sprite_y,
     output hsync,
     output vsync,
     output [3:0] R,
     output [3:0] G,
     output [3:0] B
     );
-    /*
+    
     wire clk;
     wire within_bounds_wire;
     
@@ -90,37 +91,7 @@ module top(
     wire [9:0] screen_y_pixel_coord;
     
     wire [11:0] sprite1_rgb;
-    //wire sprite1_active;
     
-    */
-    wire [15:0] seven_segment_input;
-    assign seven_segment_input[7:0] = background_x_offset;
-    assign seven_segment_input[15:8] = foreground_x_offset;
-    
-    seven_segment_scanner seg(
-    sys_clk,
-    seven_segment_input,
-    4'b0010,
-    cathode_data_out,
-    enabled_segment
-    );
-    
-    ppu ppu(
-    sys_clk,
-    background_x_offset,
-    foreground_x_offset,
-    0, // overlay_x_offset
-    20, //sprite x
-    30, // sprite y
-    hsync,
-    vsync,
-    R,
-    G,
-    B
-    );
-    
-    
-    /*
     clock_divider div(
     sys_clk,
     clk
@@ -176,14 +147,12 @@ module top(
     hcounter,
     vcounter,
     within_bounds_wire,
-    0, //offset is 0
+    overlay_x_offset, //offset is 0
     tile_x_overlay,
     tile_y_overlay,
     pixel_x_overlay,
     pixel_y_overlay
     );
-    
-    
     
     //this block outputs what x pixel and y pixel is being drawn at any time
     //while within_bounds_wire is HIGH, otherwise 0
@@ -200,8 +169,8 @@ module top(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    20, //x position
-    30, //y position
+    sprite_x, //x position
+    sprite_y, //y position
     0,  //loaded sprite
     0,  //write address
     0,  //write data
@@ -209,6 +178,15 @@ module top(
     //sprite1_active
     );
     
+    
+    /*
+    x_offset xoff(
+    screen_x_tile,
+    screen_x_pixel,
+    x_offset,
+    tile_x,
+    pixel_x
+    );*/
     
     tile_coords_to_addr disp_addr_convert(
     tile_x,
@@ -303,7 +281,16 @@ module top(
     0,
     foreground_rgb_out
     );
-   
+    /*
+    module tileset_memory(
+    input clk,
+    input wr_en,
+    input [6:0] tile_address,
+    input [7:0] pixel_address,
+    input [11:0] color_in,
+    output reg [11:0] rgb_out
+    );*/
+    
     transparency_detection transp(
     background_rgb_out,
     foreground_rgb_out,
@@ -324,6 +311,6 @@ module top(
     R,
     G,
     B
-    );*/
+    );
     
 endmodule
