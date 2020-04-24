@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Apr 23 17:02:52 2020
+| Date         : Thu Apr 23 20:33:14 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    10 |
-|    Minimum number of control sets                        |    10 |
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    62 |
+| Unused register locations in slices containing registers |    72 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,12 +39,12 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    10 |
+| Total control sets |    12 |
 | >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     2 |
-| >= 10 to < 12      |     3 |
+| >= 10 to < 12      |     5 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
 | >= 16              |     2 |
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              39 |           32 |
+| No           | No                    | No                     |              39 |           30 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              38 |           13 |
-| Yes          | No                    | No                     |              20 |            8 |
+| No           | Yes                   | No                     |              38 |           14 |
+| Yes          | No                    | No                     |              42 |           16 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               9 |            4 |
+| Yes          | Yes                   | No                     |               9 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,16 +73,18 @@ Table of Contents
 +--------------------+---------------------------------+---------------------------------+------------------+----------------+
 |    Clock Signal    |          Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
 +--------------------+---------------------------------+---------------------------------+------------------+----------------+
-|  ppu/div/tff1/Q    |                                 |                                 |                1 |              1 |
-|  clk_0             | ppu/hvcount/hcounter[9]_i_1_n_0 |                                 |                1 |              1 |
 |  sys_clk_IBUF_BUFG |                                 |                                 |                1 |              1 |
+|  vga_clk_BUFG      | ppu/hvcount/hcounter[9]_i_1_n_0 |                                 |                1 |              1 |
+|  ppu/div/tff1/Q    |                                 |                                 |                1 |              1 |
 |  clk_BUFG          | sprite_y[8]_i_1_n_0             |                                 |                3 |              9 |
-|  clk_0             | ppu/hvcount/hcounter[9]_i_1_n_0 | ppu/hvcount/vcounter[9]_i_1_n_0 |                4 |              9 |
-|  clk_BUFG          | sprite_x[9]_i_1_n_0             |                                 |                4 |             10 |
-|  clk_0             |                                 | ppu/hvcount/hcounter[9]_i_1_n_0 |                6 |             10 |
+|  vga_clk_BUFG      | ppu/hvcount/hcounter[9]_i_1_n_0 | ppu/hvcount/vcounter[9]_i_1_n_0 |                5 |              9 |
 |  seg/div/CLK       |                                 |                                 |                6 |             10 |
-|  sys_clk_IBUF_BUFG |                                 | seg/div/clear                   |                7 |             28 |
-|  clk_0             |                                 |                                 |              587 |           2277 |
+|  clk_BUFG          | sprite_x[9]_i_1_n_0             |                                 |                4 |             10 |
+|  vga_clk_BUFG      |                                 | ppu/hvcount/hcounter[9]_i_1_n_0 |                7 |             10 |
+|  clk_BUFG          | foreground_offset[10]_i_1_n_0   |                                 |                4 |             11 |
+|  clk_BUFG          | bg_offset[10]_i_1_n_0           |                                 |                4 |             11 |
+|  vga_clk_BUFG      |                                 | seg/div/clear                   |                7 |             28 |
+|  vga_clk_BUFG      |                                 |                                 |              585 |           2277 |
 +--------------------+---------------------------------+---------------------------------+------------------+----------------+
 
 

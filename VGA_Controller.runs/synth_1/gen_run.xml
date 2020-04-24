@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1587675634">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1587688303">
   <File Type="PA-TCL" Name="top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
@@ -145,42 +145,44 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/VGA Matlab Programs/foreground_display_map.mem">
+    <File Path="$PSRCDIR/sources_1/imports/bg_display_map.mem">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/VGA Matlab Programs/foreground_display_map.mem"/>
-        <Attr Name="ImportTime" Val="1587606607"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/VGA Matlab Programs/bg_display_map.mem">
+    <File Path="$PSRCDIR/sources_1/imports/foreground_display_map.mem">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/VGA Matlab Programs/bg_display_map.mem"/>
-        <Attr Name="ImportTime" Val="1587606589"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/VGA Matlab Programs/background_tileset.mem">
+    <File Path="$PSRCDIR/sources_1/imports/overlay_tileset.mem">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/VGA Matlab Programs/background_tileset.mem"/>
-        <Attr Name="ImportTime" Val="1587606475"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/VGA Matlab Programs/foreground_tileset.mem">
+    <File Path="$PSRCDIR/sources_1/imports/foreground_tileset.mem">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/VGA Matlab Programs/foreground_tileset.mem"/>
-        <Attr Name="ImportTime" Val="1587606423"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/VGA Matlab Programs/sprite1.mem">
+    <File Path="$PSRCDIR/sources_1/imports/sprite1.mem">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/VGA Matlab Programs/sprite1.mem"/>
-        <Attr Name="ImportTime" Val="1587662399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/background_tileset.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/overlay_display_map.mem">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

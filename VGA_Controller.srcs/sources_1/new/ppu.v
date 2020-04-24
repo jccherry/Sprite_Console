@@ -28,15 +28,17 @@ module ppu(
     input [9:0] sprite_x,
     input [8:0] sprite_y,
     input sprite1_enabled,
+    input [2:0] loaded_sprite,
     output hsync,
     output vsync,
     output vblank,
     output [3:0] R,
     output [3:0] G,
-    output [3:0] B
+    output [3:0] B,
+    output clk
     );
     
-    wire clk;
+    //wire clk;
     wire within_bounds_wire;
     
     wire [7:0] tile_x;
@@ -181,7 +183,7 @@ module ppu(
     screen_y_pixel_coord,
     sprite_x, //x position
     sprite_y, //y position
-    0,  //loaded sprite
+    loaded_sprite,  //loaded sprite
     0,  //write address
     0,  //write data
     sprite1_rgb
@@ -244,7 +246,7 @@ module ppu(
     );
     
     
-    display_memory #("foreground_display_map.mem") overlay_mem(
+    display_memory #("overlay_display_map.mem") overlay_mem(
     clk,
     0,
     0,
@@ -273,7 +275,7 @@ module ppu(
     foreground_tileset_addr
     );
     
-    tileset_memory #("background_tileset.mem") tileset_mem(
+    tileset_memory #("background_tileset.mem") bg_tileset_mem(
     clk,
     0,
     tileset_addr,
@@ -282,7 +284,7 @@ module ppu(
     background_rgb_out
     );
     
-    tileset_memory #("foreground_tileset.mem") tileset_mem_overlay(
+    tileset_memory #("overlay_tileset.mem") tileset_mem_overlay(
     clk,
     0,
     overlay_tileset_addr,

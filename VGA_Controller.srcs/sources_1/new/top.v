@@ -38,12 +38,17 @@ module top(
     
     reg [9:0] sprite_x;
     reg [8:0] sprite_y;
+    
+    reg [10:0] bg_offset;
+    reg [10:0] foreground_offset;
    
     wire vblank;
     
     initial begin
         sprite_x = 0;
         sprite_y = 0;
+        bg_offset = 0;
+        foreground_offset = 0;
     end
     
     always@(posedge vblank)
@@ -54,35 +59,65 @@ module top(
             sprite_y  = sprite_y + 1;
         
         if(btnR && ~btnL)
-            sprite_x = sprite_x + 1;
+        begin
+            if (sprite_x >= 515)
+            begin
+                foreground_offset = foreground_offset + 1;
+                //if fg_offset is even (lsb), add 1 to bg offset
+                if (foreground_offset[0] == 0)
+                    bg_offset = bg_offset + 1;
+            end
+            else
+                sprite_x = sprite_x + 1;
+        end
         else if (btnL)
-            sprite_x = sprite_x - 1;
+        begin
+            if (sprite_x <= 128)
+            begin
+                foreground_offset = foreground_offset - 1;
+                //if fg_offset is even (lsb), add 1 to bg offset
+                if (foreground_offset[0] == 0 && foreground_offset > 0)
+                    bg_offset = bg_offset - 1;
+            end
+            else
+                sprite_x = sprite_x - 1;
+        end
         
     end
     
+    wire [15:0] seven_seg_input;
+    //assign seven_seg_input[15:8] = bg_offset;
+    assign seven_seg_input[10:0] = foreground_offset;
+    assign seven_seg_input[11] = 0;
+    assign seven_seg_input[15:12] = sw[2:0];
     
-    seven_segment_scanner seg(
-    sys_clk,
-    sw,
-    4'b0010,
-    cathode_data_out,
-    enabled_segment
-    );
-    
+    wire vga_clk;
+
     ppu ppu(
     sys_clk,
-    sw[15:8],
-    sw[7:0],
+    bg_offset,
+    foreground_offset,
     0, // overlay_x_offset
     sprite_x, //sprite x
     sprite_y, // sprite y
     1,
+    sw[2:0],
+    //0,
     hsync,
     vsync,
     vblank,
     R,
     G,
-    B
+    B,
+    vga_clk
+    );
+    
+    seven_segment_scanner seg(
+    vga_clk,
+    seven_seg_input,
+    4'b0000,
+    cathode_data_out,
+    enabled_segment
     );
     
 endmodule
