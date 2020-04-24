@@ -50,8 +50,8 @@ module top(
     );
     
     initial begin
-        sprite_x = 0;
-        sprite_y = 0;
+        sprite_x = 320;
+        sprite_y = 240;
         bg_offset = 0;
         foreground_offset = 0;
     end
