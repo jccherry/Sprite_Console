@@ -44,6 +44,11 @@ module top(
    
     wire vblank;
     
+    clock_divider div(
+    sys_clk,
+    clk_25MHz
+    );
+    
     initial begin
         sprite_x = 0;
         sprite_y = 0;
@@ -94,7 +99,7 @@ module top(
     wire vga_clk;
 
     ppu ppu(
-    sys_clk,
+    clk_25MHz,
     bg_offset,
     foreground_offset,
     0, // overlay_x_offset
@@ -108,16 +113,15 @@ module top(
     vblank,
     R,
     G,
-    B,
-    vga_clk
+    B
     );
-    
+    /*
     seven_segment_scanner seg(
-    vga_clk,
+    vblank,
     seven_seg_input,
     4'b0000,
     cathode_data_out,
     enabled_segment
-    );
+    );*/
     
 endmodule

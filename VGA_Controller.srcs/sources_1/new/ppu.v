@@ -21,7 +21,7 @@
 
 
 module ppu(
-    input sys_clk,
+    input clk,
     input [10:0] background_x_offset,
     input [10:0] foreground_x_offset,
     input [10:0] overlay_x_offset,
@@ -34,11 +34,9 @@ module ppu(
     output vblank,
     output [3:0] R,
     output [3:0] G,
-    output [3:0] B,
-    output clk
+    output [3:0] B
     );
     
-    //wire clk;
     wire within_bounds_wire;
     
     wire [7:0] tile_x;
@@ -98,11 +96,6 @@ module ppu(
     
     //output of sprite memory muxes
     wire [11:0] sprite_rgb;
-    
-    clock_divider div(
-    sys_clk,
-    clk
-    );
     
     hvcounter hvcount(
     clk,
