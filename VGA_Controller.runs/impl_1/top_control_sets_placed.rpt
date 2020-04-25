@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Apr 23 22:10:00 2020
+| Date         : Sat Apr 25 16:08:51 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    10 |
-|    Minimum number of control sets                        |    10 |
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    62 |
+| Unused register locations in slices containing registers |   125 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    10 |
-| >= 0 to < 4        |     3 |
-| >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     0 |
+| Total control sets |    20 |
+| >= 0 to < 4        |    12 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     2 |
-| >= 10 to < 12      |     4 |
+| >= 10 to < 12      |     2 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     1 |
+| >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |           25 |
+| No           | No                    | No                     |              39 |           28 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              10 |            7 |
-| Yes          | No                    | No                     |              42 |           16 |
+| No           | Yes                   | No                     |              38 |           12 |
+| Yes          | No                    | No                     |              29 |           17 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               9 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -73,16 +73,26 @@ Table of Contents
 +--------------------+---------------------------------+---------------------------------+------------------+----------------+
 |    Clock Signal    |          Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
 +--------------------+---------------------------------+---------------------------------+------------------+----------------+
+|  div/tff1/Q        |                                 |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[3]_i_1_n_0            |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[2]_i_1_n_0            |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[1]_i_1_n_0            |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[11]_i_1_n_0           |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[9]_i_1_n_0            |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[8]_i_1_n_0            |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[0]_i_1_n_0            |                                 |                1 |              1 |
+| ~clkdiv/CLK        | snes_data[10]_i_1_n_0           |                                 |                1 |              1 |
+|  clkdiv/sw[15]     | snes_latch_i_1_n_0              |                                 |                1 |              1 |
 |  clk_25MHz_BUFG    | ppu/hvcount/hcounter[9]_i_1_n_0 |                                 |                1 |              1 |
 |  sys_clk_IBUF_BUFG |                                 |                                 |                1 |              1 |
-|  div/tff1/Q        |                                 |                                 |                1 |              1 |
+| ~clkdiv/CLK        |                                 |                                 |                2 |              4 |
+|  clkdiv/sw[15]     |                                 |                                 |                2 |              6 |
 |  clk_BUFG          | sprite_y[8]_i_1_n_0             |                                 |                3 |              9 |
 |  clk_25MHz_BUFG    | ppu/hvcount/hcounter[9]_i_1_n_0 | ppu/hvcount/vcounter[9]_i_1_n_0 |                5 |              9 |
 |  clk_BUFG          | sprite_x[9]_i_1_n_0             |                                 |                4 |             10 |
-|  clk_25MHz_BUFG    |                                 | ppu/hvcount/hcounter[9]_i_1_n_0 |                7 |             10 |
-|  clk_BUFG          | bg_offset[10]_i_1_n_0           |                                 |                4 |             11 |
-|  clk_BUFG          | foreground_offset[10]_i_1_n_0   |                                 |                4 |             11 |
-|  clk_25MHz_BUFG    |                                 |                                 |              586 |           2277 |
+|  clk_25MHz_BUFG    |                                 | ppu/hvcount/hcounter[9]_i_1_n_0 |                5 |             10 |
+|  sys_clk_IBUF_BUFG |                                 | clkdiv/clear                    |                7 |             28 |
+|  clk_25MHz_BUFG    |                                 |                                 |              585 |           2277 |
 +--------------------+---------------------------------+---------------------------------+------------------+----------------+
 
 
