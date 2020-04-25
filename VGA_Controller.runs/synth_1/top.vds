@@ -2,12 +2,12 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Apr 25 16:07:23 2020
-# Process ID: 10124
-# Current directory: C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.runs/synth_1
+# Start of session at: Sat Apr 25 17:28:35 2020
+# Process ID: 8580
+# Current directory: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.runs/synth_1/top.vds
-# Journal file: C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.runs/synth_1\vivado.jou
+# Log file: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/top.vds
+# Journal file: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xc7a35tcpg236-1
@@ -16,81 +16,81 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10272 
+INFO: Helper process launched with PID 9524 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 856.813 ; gain = 234.059
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 857.824 ; gain = 234.945
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
-INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
-INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/ppu.v:23]
-INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (3#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'hvsync' (4#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
-INFO: [Synth 8-6157] synthesizing module 'vblank' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/vblank.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'vblank' (5#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/vblank.v:23]
-INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/DFF.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'DFF' (6#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/DFF.v:23]
-INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (7#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
-INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (8#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
-INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (9#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
-WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/ppu.v:168]
-WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/ppu.v:169]
-INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vblank' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vblank' (5#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (6#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:168]
+WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:169]
+INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
 	Parameter data_file bound to: sprite1.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/sprite_memory.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (10#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/ppu.v:175]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/ppu.v:176]
-INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'display_mux' (11#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
-INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
-INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:175]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:176]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
 	Parameter data_file bound to: overlay_display_map.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'overlay_display_map.mem' is read successfully [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'display_memory' (14#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized0' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'overlay_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
 	Parameter data_file bound to: bg_display_map.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'bg_display_map.mem' is read successfully [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (14#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized1' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'bg_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
 	Parameter data_file bound to: foreground_display_map.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'foreground_display_map.mem' is read successfully [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (14#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'foreground_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 	Parameter data_file bound to: background_tileset.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'background_tileset.mem' is read successfully [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
-WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (15#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized0' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'background_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 	Parameter data_file bound to: overlay_tileset.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'overlay_tileset.mem' is read successfully [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
-WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (15#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized1' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'overlay_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 	Parameter data_file bound to: foreground_tileset.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'foreground_tileset.mem' is read successfully [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
-WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (15#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
-INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (16#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
-INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (17#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ppu' (18#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/ppu.v:23]
-INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/top.v:176]
+INFO: [Synth 8-3876] $readmem data file 'foreground_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
 	Parameter DIVISOR bound to: 28'b0000000000000000000110010000 
-INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (19#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/top.v:176]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/top.v:140]
-INFO: [Synth 8-6155] done synthesizing module 'top' (20#1) [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'top' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
 WARNING: [Synth 8-3331] design top has unconnected port sw[14]
 WARNING: [Synth 8-3331] design top has unconnected port sw[13]
@@ -104,8 +104,11 @@ WARNING: [Synth 8-3331] design top has unconnected port sw[6]
 WARNING: [Synth 8-3331] design top has unconnected port sw[5]
 WARNING: [Synth 8-3331] design top has unconnected port sw[4]
 WARNING: [Synth 8-3331] design top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 962.707 ; gain = 339.953
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 964.359 ; gain = 341.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -118,48 +121,48 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 962.707 ; gain = 339.953
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 964.359 ; gain = 341.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 962.707 ; gain = 339.953
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 964.359 ; gain = 341.480
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 962.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 964.359 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
-Finished Parsing XDC File [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1053.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1055.457 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1053.211 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1055.457 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.211 ; gain = 430.457
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.457 ; gain = 432.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.211 ; gain = 430.457
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.457 ; gain = 432.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.211 ; gain = 430.457
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.457 ; gain = 432.578
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/top.v:59]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.srcs/sources_1/new/top.v:64]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:70]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:75]
 INFO: [Synth 8-5546] ROM "snes_data" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1053.211 ; gain = 430.457
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1055.457 ; gain = 432.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -181,12 +184,14 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit       Adders := 1     
 	   3 Input      4 Bit       Adders := 3     
 	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 5     
 	               10 Bit    Registers := 3     
 	                9 Bit    Registers := 1     
 	                7 Bit    Registers := 3     
 	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 10    
 +---RAMs : 
 	             384K Bit         RAMs := 3     
@@ -217,11 +222,13 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
 	                9 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
@@ -349,9 +356,12 @@ WARNING: [Synth 8-3331] design top has unconnected port sw[6]
 WARNING: [Synth 8-3331] design top has unconnected port sw[5]
 WARNING: [Synth 8-3331] design top has unconnected port sw[4]
 WARNING: [Synth 8-3331] design top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design top has unconnected port sw[0]
 INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite1/sprite_data_reg to conserve power
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1053.211 ; gain = 430.457
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1055.457 ; gain = 432.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -392,13 +402,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1066.383 ; gain = 443.629
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1062.270 ; gain = 439.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1087.117 ; gain = 464.363
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1082.895 ; gain = 460.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -474,7 +484,7 @@ INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_re
 INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1090.027 ; gain = 467.273
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1085.699 ; gain = 462.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -494,25 +504,25 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6064] Net n_0_603 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_565 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_606 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_568 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[0] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[1] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[2] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_602 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_605 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[3] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_568 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_571 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -531,25 +541,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1092.730 ; gain = 469.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -568,11 +578,11 @@ Report Cell Usage:
 |1     |BUFG        |     3|
 |2     |CARRY4      |    39|
 |3     |LUT1        |    22|
-|4     |LUT2        |    88|
-|5     |LUT3        |    85|
-|6     |LUT4        |    73|
-|7     |LUT5        |   132|
-|8     |LUT6        |   621|
+|4     |LUT2        |    92|
+|5     |LUT3        |    86|
+|6     |LUT4        |    74|
+|7     |LUT5        |   130|
+|8     |LUT6        |   623|
 |9     |MUXF7       |    21|
 |10    |RAM64M      |   450|
 |11    |RAM64X1D    |   225|
@@ -601,8 +611,8 @@ Report Cell Usage:
 |34    |RAMB36E1_7  |     1|
 |35    |RAMB36E1_8  |     1|
 |36    |RAMB36E1_9  |     1|
-|37    |FDRE        |   115|
-|38    |IBUF        |     6|
+|37    |FDRE        |   118|
+|38    |IBUF        |     3|
 |39    |OBUF        |    28|
 +------+------------+------+
 
@@ -610,7 +620,7 @@ Report Instance Areas:
 +------+------------------------+-------------------------------+------+
 |      |Instance                |Module                         |Cells |
 +------+------------------------+-------------------------------+------+
-|1     |top                     |                               |  1933|
+|1     |top                     |                               |  1939|
 |2     |  clkdiv                |snes_clock_divider             |    47|
 |3     |  div                   |clock_divider                  |     4|
 |4     |    tff1                |tff                            |     2|
@@ -621,9 +631,9 @@ Report Instance Areas:
 |9     |    bg_tileset_mem      |tileset_memory                 |    12|
 |10    |    hsyncflop1          |DFF                            |     1|
 |11    |    hsyncflop2          |DFF_0                          |     1|
-|12    |    hvcount             |hvcounter                      |   385|
+|12    |    hvcount             |hvcounter                      |   386|
 |13    |    overlay_mem         |display_memory                 |   407|
-|14    |    sprite1             |sprite_memory                  |    58|
+|14    |    sprite1             |sprite_memory                  |    57|
 |15    |    tileset_mem_overlay |tileset_memory__parameterized0 |    66|
 |16    |    vsyncflop1          |DFF_1                          |     1|
 |17    |    vsyncflop2          |DFF_2                          |     1|
@@ -631,30 +641,30 @@ Report Instance Areas:
 |19    |    within_flop2        |DFF_4                          |     3|
 +------+------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1092.730 ; gain = 469.852
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1095.059 ; gain = 381.801
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1095.059 ; gain = 472.305
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1092.730 ; gain = 378.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1092.730 ; gain = 469.852
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1107.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1104.793 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 760 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1107.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1104.793 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 675 instances were transformed.
   RAM64M => RAM64M (RAMD64E(x4)): 450 instances
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 225 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-117 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+117 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1107.117 ; gain = 777.910
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1107.117 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1104.793 ; gain = 775.668
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1104.793 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/jc170/Desktop/Homebew_Console-master/VGA_Controller.runs/synth_1/top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 25 16:08:05 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 25 17:29:20 2020...

@@ -39,6 +39,11 @@ module top(
     
     reg [10:0] bg_offset;
     reg [10:0] foreground_offset;
+    
+    reg [2:0] displayed_sprite;
+    
+    reg left_bumper_held;
+    reg right_bumper_held;
    
     wire vblank;
     
@@ -52,8 +57,14 @@ module top(
         sprite_y = 240;
         bg_offset = 0;
         foreground_offset = 0;
+        displayed_sprite = 0;
+        left_bumper_held = 0;
+        right_bumper_held = 0;
     end
-    
+    /*
+    wire [11:0] snes_data_wire;
+    assign snes_data_wire = snes_data_out;
+    */
     always@(posedge vblank)
     begin
         if(snes_data_out[0] == 1'b1)
@@ -65,8 +76,36 @@ module top(
             sprite_x = sprite_x-1;
         else if(snes_data_out[3] == 1'b1)
             sprite_x = sprite_x+1;
+        /*  
+        if(snes_data_out[10] == 1'b1 && left_bumper_held == 1'b0)
+            begin
+                displayed_sprite = displayed_sprite-1;
+                left_bumper_held = 1'b1;
+            end
+        else
+            left_bumper_held = 1'b0;
+            
+            
+        if(snes_data_out[11] == 1'b1 && right_bumper_held == 1'b0)
+            begin
+                displayed_sprite = displayed_sprite+1;
+                right_bumper_held = 1'b1;
+            end
+        else
+            right_bumper_held = 1'b0;*/
     end
     
+    
+    wire bumper;
+    or (bumper, snes_data_out[10],snes_data_out[11]);
+    
+    always @(posedge bumper)
+    begin
+        if (snes_data_out[10])
+            displayed_sprite = displayed_sprite - 1;
+        else
+            displayed_sprite = displayed_sprite + 1;
+    end
 
     ppu ppu(
     clk_25MHz,
@@ -76,7 +115,7 @@ module top(
     sprite_x, //sprite x
     sprite_y, // sprite y
     1,
-    sw[2:0],
+    displayed_sprite,
     //0,
     hsync,
     vsync,
@@ -86,7 +125,7 @@ module top(
     B
     );
     
-        //SNES CONTROLLER HANDLER=========================================================
+    //SNES CONTROLLER HANDLER=========================================================
     wire slow_clk;
     reg [4:0] counter;
     wire snes_clk_started;
