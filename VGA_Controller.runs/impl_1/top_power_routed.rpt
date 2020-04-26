@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Apr 26 15:44:40 2020
+| Date             : Sun Apr 26 17:34:38 2020
 | Host             : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.132        |
+| Total On-Chip Power (W)  | 0.134        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.059        |
+| Dynamic (W)              | 0.060        |
 | Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.3         |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |     0.003 |     3719 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1167 |     20800 |            5.61 |
-|   CARRY4                 |    <0.001 |       38 |      8150 |            0.47 |
-|   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Register               |    <0.001 |      108 |     41600 |            0.26 |
-|   Others                 |     0.000 |       44 |       --- |             --- |
+| Slice Logic              |     0.003 |     3817 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     1215 |     20800 |            5.84 |
+|   CARRY4                 |    <0.001 |       49 |      8150 |            0.60 |
+|   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
+|   Register               |    <0.001 |      130 |     41600 |            0.31 |
+|   Others                 |     0.000 |       46 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |     2250 |      9600 |           23.44 |
 |   F7/F8 Muxes            |     0.000 |       42 |     32600 |            0.13 |
-| Signals                  |     0.006 |     2920 |       --- |             --- |
+| Signals                  |     0.006 |     2965 |       --- |             --- |
 | Block RAM                |     0.038 |       30 |        50 |           60.00 |
 | I/O                      |     0.012 |       31 |       106 |           29.25 |
 | Static Power             |     0.073 |          |           |                 |
-| Total                    |     0.132 |          |           |                 |
+| Total                    |     0.134 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.054 |       0.044 |      0.010 |
+| Vccint    |       1.000 |     0.055 |       0.045 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,8 +144,9 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| top                     |     0.059 |
-|   ppu                   |     0.044 |
+| top                     |     0.060 |
+|   ctrl                  |     0.001 |
+|   ppu                   |     0.045 |
 |     bg_tileset_mem      |     0.011 |
 |     hvcount             |     0.004 |
 |     sprite1             |     0.001 |

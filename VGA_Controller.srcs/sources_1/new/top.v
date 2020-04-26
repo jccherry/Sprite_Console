@@ -25,7 +25,7 @@ module top(
     input [15:0] sw,
     input snes_data_in,
     output snes_clk,
-    output reg snes_latch,
+    output snes_latch,
     output [11:0] snes_data_out,
     output hsync,
     output vsync,
@@ -97,17 +97,50 @@ module top(
     end
     */
     
+    //wire [11:0] ctrl_outputs;
+    wire [11:0] snes_data;
+    reg [11:0] snes_data_reg;
+    
+    snes_controller ctrl(
+    sys_clk,
+    sw[15],
+    snes_data_in,
+    snes_clk,
+    snes_latch,
+    snes_data
+    );
+    
+    //reg [3:0] dir;
+    
+    assign snes_data_out = snes_data_reg;
+    
+    always@(posedge vblank)
+    begin
+        snes_data_reg = snes_data;
+        //dir = snes_data[3:0];
+        if (snes_data_reg[0] == 1'b1)
+            sprite_y = sprite_y-1;
+        else if (snes_data_reg[1] == 1'b1)
+            sprite_y = sprite_y+1;
+            
+        if (snes_data_reg[2] == 1'b1)
+            sprite_x = sprite_x-1;
+        else if (snes_data_reg[3] == 1'b1)
+            sprite_x = sprite_x+1;
+   end
+    
+
     wire bumper;
-    or (bumper, snes_data_out[10],snes_data_out[11]);
+    or (bumper, snes_data_reg[10],snes_data_reg[11]);
     
     always @(posedge bumper)
     begin
-        if (snes_data_out[10])
+        if (snes_data_reg[10])
             displayed_sprite = displayed_sprite - 1;
         else
             displayed_sprite = displayed_sprite + 1;
     end
-    
+    /*
     wire [3:0] dir;
     assign dir = snes_data_out[3:0];
     
@@ -117,7 +150,7 @@ module top(
             sprite_y = sprite_y-1;
         else if (dir[1] == 1'b1)
             sprite_y = sprite_y+1;
-    end
+    end*/
     /*
     always @(posedge vblank)
     begin
@@ -143,6 +176,11 @@ module top(
     B
     );
     
+
+    
+    
+    
+    /*
     //SNES CONTROLLER HANDLER=========================================================
     wire slow_clk;
     reg [4:0] counter;
@@ -229,7 +267,7 @@ module top(
     assign snes_data_out[10] = snes_data[10]; //L
     assign snes_data_out[11] = snes_data[11]; //R
     
-    //SNES CONTROLLER HANDLER=========================================================
+    //SNES CONTROLLER HANDLER=========================================================*/
 
 endmodule
 

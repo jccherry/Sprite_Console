@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Apr 26 15:42:39 2020
+| Date         : Sun Apr 26 17:33:08 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 3436 |     0 |     20800 | 16.52 |
-|   LUT as Logic             | 1186 |     0 |     20800 |  5.70 |
+| Slice LUTs*                | 3473 |     0 |     20800 | 16.70 |
+|   LUT as Logic             | 1223 |     0 |     20800 |  5.88 |
 |   LUT as Memory            | 2250 |     0 |      9600 | 23.44 |
 |     LUT as Distributed RAM | 2250 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
-| Slice Registers            |  108 |     0 |     41600 |  0.26 |
-|   Register as Flip Flop    |  108 |     0 |     41600 |  0.26 |
+| Slice Registers            |  130 |     0 |     41600 |  0.31 |
+|   Register as Flip Flop    |  130 |     0 |     41600 |  0.31 |
 |   Register as Latch        |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                   |   42 |     0 |     16300 |  0.26 |
 | F8 Muxes                   |    0 |     0 |      8150 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 108   |          Yes |       Reset |            - |
+| 130   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -118,7 +118,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
+| BUFGCTRL   |    3 |     0 |        32 |  9.38 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -154,18 +154,18 @@ Table of Contents
 +----------+------+---------------------+
 | RAMD64E  | 2250 |  Distributed Memory |
 | LUT6     |  781 |                 LUT |
-| LUT5     |  153 |                 LUT |
-| LUT2     |  109 |                 LUT |
-| FDRE     |  108 |        Flop & Latch |
-| LUT4     |  107 |                 LUT |
-| LUT3     |   73 |                 LUT |
+| LUT5     |  158 |                 LUT |
+| LUT2     |  138 |                 LUT |
+| FDRE     |  130 |        Flop & Latch |
+| LUT4     |  128 |                 LUT |
+| LUT3     |   82 |                 LUT |
+| CARRY4   |   49 |          CarryLogic |
 | MUXF7    |   42 |               MuxFx |
-| CARRY4   |   38 |          CarryLogic |
 | RAMB36E1 |   30 |        Block Memory |
-| LUT1     |   30 |                 LUT |
 | OBUF     |   28 |                  IO |
+| LUT1     |   15 |                 LUT |
 | IBUF     |    3 |                  IO |
-| BUFG     |    2 |               Clock |
+| BUFG     |    3 |               Clock |
 +----------+------+---------------------+
 
 
