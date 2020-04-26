@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Apr 25 17:28:35 2020
-# Process ID: 8580
+# Start of session at: Sun Apr 26 15:41:33 2020
+# Process ID: 4632
 # Current directory: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/top.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9524 
+INFO: Helper process launched with PID 16800 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 857.824 ; gain = 234.945
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 857.930 ; gain = 234.918
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
@@ -40,16 +40,28 @@ INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Doc
 INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
 INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
-WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:168]
-WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:169]
+WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:175]
+WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:176]
 INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
 	Parameter data_file bound to: sprite1.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:42]
 INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:175]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:176]
-INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'display_mux' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:182]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:183]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:196]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:197]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:210]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:211]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:224]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:225]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:238]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:239]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:252]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:253]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:266]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:267]
+INFO: [Synth 8-6157] synthesizing module 'sprite_rgb_combinator' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_rgb_combinator' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
 INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
 INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
@@ -83,15 +95,18 @@ WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [
 INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
 INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ppu' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
-INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:236]
 	Parameter DIVISOR bound to: 28'b0000000000000000000110010000 
-INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:179]
-INFO: [Synth 8-6155] done synthesizing module 'top' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:236]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
+WARNING: [Synth 8-3331] design ppu has unconnected port sprite1_enabled
 WARNING: [Synth 8-3331] design top has unconnected port sw[14]
 WARNING: [Synth 8-3331] design top has unconnected port sw[13]
 WARNING: [Synth 8-3331] design top has unconnected port sw[12]
@@ -108,7 +123,7 @@ WARNING: [Synth 8-3331] design top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 964.359 ; gain = 341.480
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 964.914 ; gain = 341.902
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -121,12 +136,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 964.359 ; gain = 341.480
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 964.914 ; gain = 341.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 964.359 ; gain = 341.480
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 964.914 ; gain = 341.902
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 964.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 964.914 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -137,33 +152,33 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1055.457 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1056.027 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1055.457 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1056.027 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.457 ; gain = 432.578
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1056.027 ; gain = 433.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.457 ; gain = 432.578
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1056.027 ; gain = 433.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.457 ; gain = 432.578
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1056.027 ; gain = 433.016
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:70]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:75]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:116]
 INFO: [Synth 8-5546] ROM "snes_data" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1055.457 ; gain = 432.578
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1056.027 ; gain = 433.016
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'ppu/sprite2' (sprite_memory) to 'ppu/sprite3'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -177,17 +192,17 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     32 Bit       Adders := 3     
 	   2 Input     32 Bit       Adders := 3     
-	   3 Input     12 Bit       Adders := 1     
-	   3 Input     11 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 4     
+	   3 Input     12 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 12    
+	   2 Input     10 Bit       Adders := 3     
 	   2 Input      9 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 1     
 	   3 Input      4 Bit       Adders := 3     
 	   2 Input      4 Bit       Adders := 3     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               12 Bit    Registers := 5     
-	               10 Bit    Registers := 3     
+	               12 Bit    Registers := 10    
+	               10 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
 	                7 Bit    Registers := 3     
 	                5 Bit    Registers := 1     
@@ -196,9 +211,9 @@ Detailed RTL Component Info :
 +---RAMs : 
 	             384K Bit         RAMs := 3     
 	              32K Bit         RAMs := 3     
-	              24K Bit         RAMs := 1     
+	              24K Bit         RAMs := 6     
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 11    
 	   2 Input     11 Bit        Muxes := 3     
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
@@ -208,7 +223,7 @@ Detailed RTL Component Info :
 	   4 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 6     
 	   4 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -219,13 +234,11 @@ Hierarchical RTL Component report
 Module top 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 1     
-	               10 Bit    Registers := 1     
 	                9 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
@@ -234,7 +247,7 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
 Module tff 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -278,10 +291,10 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 1     
 +---RAMs : 
 	              24K Bit         RAMs := 1     
-Module display_mux 
+Module sprite_rgb_combinator 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
 Module display_memory 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -328,6 +341,10 @@ Module transparency_detection
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 3     
+Module display_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -360,8 +377,13 @@ WARNING: [Synth 8-3331] design top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design top has unconnected port sw[0]
 INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite1/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite2/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite4/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite5/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite6/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite7/sprite_data_reg to conserve power
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1055.457 ; gain = 432.578
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1056.027 ; gain = 433.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -371,6 +393,11 @@ Block RAM: Preliminary Mapping	Report (see note below)
 +--------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                     | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +--------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 |sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 |tileset_memory:                 | data_reg        | 32 K x 12(NO_CHANGE)   | W | R |                        |   |   | Port A           | 0      | 12     | 
 |tileset_memory__parameterized0: | data_reg        | 32 K x 12(NO_CHANGE)   | W | R |                        |   |   | Port A           | 0      | 12     | 
@@ -402,13 +429,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1062.270 ; gain = 439.391
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1067.141 ; gain = 444.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1082.895 ; gain = 460.016
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1088.160 ; gain = 465.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -418,6 +445,11 @@ Block RAM: Final Mapping	Report
 +--------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                     | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +--------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 |sprite_memory:                  | sprite_data_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 |tileset_memory:                 | data_reg        | 32 K x 12(NO_CHANGE)   | W | R |                        |   |   | Port A           | 0      | 12     | 
 |tileset_memory__parameterized0: | data_reg        | 32 K x 12(NO_CHANGE)   | W | R |                        |   |   | Port A           | 0      | 12     | 
@@ -447,6 +479,11 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7053] The timing for the instance ppu/sprite1/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ppu/sprite2/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ppu/sprite4/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ppu/sprite5/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ppu/sprite6/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance ppu/sprite7/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
@@ -484,7 +521,7 @@ INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_re
 INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1085.699 ; gain = 462.820
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1101.313 ; gain = 478.301
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -504,25 +541,25 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6064] Net n_0_606 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_568 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[0] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_577 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_609 is driving 40 big block pins (URAM, BRAM and DSP loads). Created 5 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_619 is driving 39 big block pins (URAM, BRAM and DSP loads). Created 5 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_558 is driving 38 big block pins (URAM, BRAM and DSP loads). Created 5 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[1] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[2] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_605 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 INFO: [Synth 8-6064] Net B__0[3] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_571 is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1106.262 ; gain = 483.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1106.262 ; gain = 483.250
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -541,25 +578,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1106.262 ; gain = 483.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1106.262 ; gain = 483.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1106.262 ; gain = 483.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1106.262 ; gain = 483.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -575,18 +612,18 @@ Report Cell Usage:
 +------+------------+------+
 |      |Cell        |Count |
 +------+------------+------+
-|1     |BUFG        |     3|
-|2     |CARRY4      |    39|
-|3     |LUT1        |    22|
-|4     |LUT2        |    92|
-|5     |LUT3        |    86|
-|6     |LUT4        |    74|
-|7     |LUT5        |   130|
-|8     |LUT6        |   623|
-|9     |MUXF7       |    21|
+|1     |BUFG        |     2|
+|2     |CARRY4      |    38|
+|3     |LUT1        |    30|
+|4     |LUT2        |   109|
+|5     |LUT3        |    73|
+|6     |LUT4        |   107|
+|7     |LUT5        |   153|
+|8     |LUT6        |   781|
+|9     |MUXF7       |    42|
 |10    |RAM64M      |   450|
 |11    |RAM64X1D    |   225|
-|12    |RAMB36E1    |     1|
+|12    |RAMB36E1    |     6|
 |13    |RAMB36E1_1  |     1|
 |14    |RAMB36E1_10 |     1|
 |15    |RAMB36E1_11 |     1|
@@ -611,7 +648,7 @@ Report Cell Usage:
 |34    |RAMB36E1_7  |     1|
 |35    |RAMB36E1_8  |     1|
 |36    |RAMB36E1_9  |     1|
-|37    |FDRE        |   118|
+|37    |FDRE        |   108|
 |38    |IBUF        |     3|
 |39    |OBUF        |    28|
 +------+------------+------+
@@ -620,51 +657,56 @@ Report Instance Areas:
 +------+------------------------+-------------------------------+------+
 |      |Instance                |Module                         |Cells |
 +------+------------------------+-------------------------------+------+
-|1     |top                     |                               |  1939|
+|1     |top                     |                               |  2179|
 |2     |  clkdiv                |snes_clock_divider             |    47|
 |3     |  div                   |clock_divider                  |     4|
 |4     |    tff1                |tff                            |     2|
-|5     |    tff2                |tff_5                          |     2|
-|6     |  ppu                   |ppu                            |  1750|
+|5     |    tff2                |tff_10                         |     2|
+|6     |  ppu                   |ppu                            |  2022|
 |7     |    bg_mem              |display_memory__parameterized0 |   407|
-|8     |    fg_mem              |display_memory__parameterized1 |   407|
-|9     |    bg_tileset_mem      |tileset_memory                 |    12|
+|8     |    bg_tileset_mem      |tileset_memory                 |    12|
+|9     |    fg_mem              |display_memory__parameterized1 |   407|
 |10    |    hsyncflop1          |DFF                            |     1|
 |11    |    hsyncflop2          |DFF_0                          |     1|
-|12    |    hvcount             |hvcounter                      |   386|
+|12    |    hvcount             |hvcounter                      |   486|
 |13    |    overlay_mem         |display_memory                 |   407|
-|14    |    sprite1             |sprite_memory                  |    57|
-|15    |    tileset_mem_overlay |tileset_memory__parameterized0 |    66|
-|16    |    vsyncflop1          |DFF_1                          |     1|
-|17    |    vsyncflop2          |DFF_2                          |     1|
-|18    |    within_flop1        |DFF_3                          |     1|
-|19    |    within_flop2        |DFF_4                          |     3|
+|14    |    sprite1             |sprite_memory                  |    42|
+|15    |    sprite2             |sprite_memory_1                |    27|
+|16    |    sprite4             |sprite_memory_2                |    53|
+|17    |    sprite5             |sprite_memory_3                |    32|
+|18    |    sprite6             |sprite_memory_4                |    42|
+|19    |    sprite7             |sprite_memory_5                |    27|
+|20    |    tileset_mem_overlay |tileset_memory__parameterized0 |    74|
+|21    |    vsyncflop1          |DFF_6                          |     1|
+|22    |    vsyncflop2          |DFF_7                          |     1|
+|23    |    within_flop1        |DFF_8                          |     1|
+|24    |    within_flop2        |DFF_9                          |     1|
 +------+------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1106.262 ; gain = 483.250
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1092.730 ; gain = 378.754
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1092.730 ; gain = 469.852
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1106.262 ; gain = 392.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1106.262 ; gain = 483.250
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1104.793 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 760 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1118.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 785 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1104.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1118.324 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 675 instances were transformed.
   RAM64M => RAM64M (RAMD64E(x4)): 450 instances
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 225 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-117 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+129 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1104.793 ; gain = 775.668
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1104.793 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1118.324 ; gain = 788.660
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1118.324 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 25 17:29:20 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 26 15:42:39 2020...

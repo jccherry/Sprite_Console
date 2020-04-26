@@ -65,6 +65,7 @@ module top(
     wire [11:0] snes_data_wire;
     assign snes_data_wire = snes_data_out;
     */
+    /*
     always@(posedge vblank)
     begin
         if(snes_data_out[0] == 1'b1)
@@ -76,7 +77,7 @@ module top(
             sprite_x = sprite_x-1;
         else if(snes_data_out[3] == 1'b1)
             sprite_x = sprite_x+1;
-        /*  
+        
         if(snes_data_out[10] == 1'b1 && left_bumper_held == 1'b0)
             begin
                 displayed_sprite = displayed_sprite-1;
@@ -92,9 +93,9 @@ module top(
                 right_bumper_held = 1'b1;
             end
         else
-            right_bumper_held = 1'b0;*/
+            right_bumper_held = 1'b0;
     end
-    
+    */
     
     wire bumper;
     or (bumper, snes_data_out[10],snes_data_out[11]);
@@ -106,6 +107,23 @@ module top(
         else
             displayed_sprite = displayed_sprite + 1;
     end
+    
+    wire [3:0] dir;
+    assign dir = snes_data_out[3:0];
+    
+    always@(posedge vblank)
+    begin
+        if (dir[0] == 1'b1)
+            sprite_y = sprite_y-1;
+        else if (dir[1] == 1'b1)
+            sprite_y = sprite_y+1;
+    end
+    /*
+    always @(posedge vblank)
+    begin
+        if (snes_data_out[0])
+            sprite_y = sprite_y-1;
+    end*/
 
     ppu ppu(
     clk_25MHz,
@@ -131,6 +149,9 @@ module top(
     wire snes_clk_started;
     reg [11:0] snes_data;
     reg enable_snes_clk_output;
+    wire [11:0] controller_1_inputs;
+    
+    //assign controller_1_inputs = snes_data;
     
     
     snes_clock_divider clkdiv(

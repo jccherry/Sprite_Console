@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Apr 25 16:52:13 2020
-# Process ID: 8616
+# Start of session at: Sun Apr 26 12:16:59 2020
+# Process ID: 16032
 # Current directory: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13404 C:\Users\jc170\Documents\Vivado Projects\Homebew_Console\VGA_Controller.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3808 C:\Users\jc170\Documents\Vivado Projects\Homebew_Console\VGA_Controller.xpr
 # Log file: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vivado.log
 # Journal file: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console\vivado.jou
 #-----------------------------------------------------------
@@ -16,13 +16,842 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 810.879 ; gain = 140.125
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 802.090 ; gain = 135.254
 update_compile_order -fileset sources_1
+close [ open {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_regfile.v} w ]
+add_files {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_regfile.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1313.863 ; gain = 231.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vblank' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vblank' (5#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (6#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:168]
+WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:169]
+INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+	Parameter data_file bound to: sprite1.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:175]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:176]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: overlay_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: bg_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'bg_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: foreground_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: background_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'background_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: overlay_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: foreground_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+	Parameter DIVISOR bound to: 28'b0000000000000000000110010000 
+INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'top' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
+WARNING: [Synth 8-3331] design top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port sw[13]
+WARNING: [Synth 8-3331] design top has unconnected port sw[12]
+WARNING: [Synth 8-3331] design top has unconnected port sw[11]
+WARNING: [Synth 8-3331] design top has unconnected port sw[10]
+WARNING: [Synth 8-3331] design top has unconnected port sw[9]
+WARNING: [Synth 8-3331] design top has unconnected port sw[8]
+WARNING: [Synth 8-3331] design top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design top has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1413.777 ; gain = 331.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1413.777 ; gain = 331.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1413.777 ; gain = 331.734
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1413.777 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1503.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:31 . Memory (MB): peak = 1513.238 ; gain = 431.195
+60 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:43 . Memory (MB): peak = 1513.238 ; gain = 690.242
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/ppu_regfile_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/ppu_regfile_sim.v}}
+update_compile_order -fileset sim_1
+set_property top ppu_regfile_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ppu_regfile_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/bg_display_map.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/foreground_display_map.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/overlay_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/foreground_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/sprite1.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/background_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/overlay_display_map.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ppu_regfile_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ppu_regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/ppu_regfile_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ppu_regfile_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ppu_regfile_sim_behav xil_defaultlib.ppu_regfile_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ppu_regfile_sim_behav xil_defaultlib.ppu_regfile_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ppu_regfile
+Compiling module xil_defaultlib.ppu_regfile_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ppu_regfile_sim_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jc170/Documents/Vivado -notrace
+couldn't read file "C:/Users/jc170/Documents/Vivado": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 26 13:04:27 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1529.465 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ppu_regfile_sim_behav -key {Behavioral:sim_1:Functional:ppu_regfile_sim} -tclbatch {ppu_regfile_sim.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}
+WARNING: Simulation object /vga_controller_testbench/atop/ppu/hcounter was not found in the design.
+WARNING: Simulation object /vga_controller_testbench/atop/ppu/vcounter was not found in the design.
+WARNING: Simulation object /vga_controller_testbench/atop/ppu/hsync was not found in the design.
+WARNING: Simulation object /vga_controller_testbench/atop/ppu/vsync was not found in the design.
+WARNING: Simulation object /vga_controller_testbench/atop/ppu/vblank was not found in the design.
+WARNING: Simulation object /vga_controller_testbench/atop/ppu/RGB was not found in the design.
+source ppu_regfile_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1566.477 ; gain = 21.258
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ppu_regfile_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1566.477 ; gain = 37.012
+current_wave_config {vga_controller_testbench_behav.wcfg}
+vga_controller_testbench_behav.wcfg
+add_wave {{/ppu_regfile_sim/clk}} {{/ppu_regfile_sim/write_addr}} {{/ppu_regfile_sim/write_data}} {{/ppu_regfile_sim/wr_en}} {{/ppu_regfile_sim/read_addr}} {{/ppu_regfile_sim/read_data}} {{/ppu_regfile_sim/bg_offset}} {{/ppu_regfile_sim/fg_offset}} {{/ppu_regfile_sim/ov_offset}} {{/ppu_regfile_sim/sprite_1_enabled}} {{/ppu_regfile_sim/sprite_1_addr}} {{/ppu_regfile_sim/sprite_1_x}} {{/ppu_regfile_sim/sprite_1_y}} {{/ppu_regfile_sim/sprite_2_enabled}} {{/ppu_regfile_sim/sprite_2_addr}} {{/ppu_regfile_sim/sprite_2_x}} {{/ppu_regfile_sim/sprite_2_y}} {{/ppu_regfile_sim/sprite_3_enabled}} {{/ppu_regfile_sim/sprite_3_addr}} {{/ppu_regfile_sim/sprite_3_x}} {{/ppu_regfile_sim/sprite_3_y}} {{/ppu_regfile_sim/sprite_4_enabled}} {{/ppu_regfile_sim/sprite_4_addr}} {{/ppu_regfile_sim/sprite_4_x}} {{/ppu_regfile_sim/sprite_4_y}} {{/ppu_regfile_sim/sprite_5_enabled}} {{/ppu_regfile_sim/sprite_5_addr}} {{/ppu_regfile_sim/sprite_5_x}} {{/ppu_regfile_sim/sprite_5_y}} {{/ppu_regfile_sim/sprite_6_enabled}} {{/ppu_regfile_sim/sprite_6_addr}} {{/ppu_regfile_sim/sprite_6_x}} {{/ppu_regfile_sim/sprite_6_y}} {{/ppu_regfile_sim/sprite_7_enabled}} {{/ppu_regfile_sim/sprite_7_addr}} {{/ppu_regfile_sim/sprite_7_x}} {{/ppu_regfile_sim/sprite_7_y}} 
+save_wave_config {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1576.168 ; gain = 3.383
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ppu_regfile_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/bg_display_map.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/foreground_display_map.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/overlay_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/foreground_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/sprite1.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/background_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/overlay_display_map.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ppu_regfile_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ppu_regfile_sim_behav xil_defaultlib.ppu_regfile_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ppu_regfile_sim_behav xil_defaultlib.ppu_regfile_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ppu_regfile_sim_behav -key {Behavioral:sim_1:Functional:ppu_regfile_sim} -tclbatch {ppu_regfile_sim.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}
+source ppu_regfile_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1576.168 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ppu_regfile_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1576.168 ; gain = 0.000
+save_wave_config {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ppu_regfile_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/bg_display_map.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/foreground_display_map.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/overlay_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/foreground_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/sprite1.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/background_tileset.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim/overlay_display_map.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ppu_regfile_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ppu_regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/ppu_regfile_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ppu_regfile_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+"xelab -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ppu_regfile_sim_behav xil_defaultlib.ppu_regfile_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ppu_regfile_sim_behav xil_defaultlib.ppu_regfile_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ppu_regfile
+Compiling module xil_defaultlib.ppu_regfile_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ppu_regfile_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ppu_regfile_sim_behav -key {Behavioral:sim_1:Functional:ppu_regfile_sim} -tclbatch {ppu_regfile_sim.tcl} -view {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/vga_controller_testbench_behav.wcfg}
+source ppu_regfile_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1810.277 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ppu_regfile_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1810.277 ; gain = 0.000
+close [ open {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v} w ]
+add_files {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1883.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vblank' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vblank' (5#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (6#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:175]
+WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:176]
+INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+	Parameter data_file bound to: sprite1.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:182]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:183]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:196]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:197]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:210]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:211]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:224]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:225]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:238]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:239]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:252]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:253]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:266]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:267]
+INFO: [Synth 8-6157] synthesizing module 'sprite_rgb_combinator' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+WARNING: [Synth 8-3848] Net sprite_rgb_out in module/entity sprite_rgb_combinator does not have driver. [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_rgb_combinator' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: overlay_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: bg_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'bg_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: foreground_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: background_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'background_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: overlay_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: foreground_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+	Parameter DIVISOR bound to: 28'b0000000000000000000110010000 
+INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[0]
+WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
+WARNING: [Synth 8-3331] design ppu has unconnected port sprite1_enabled
+WARNING: [Synth 8-3331] design top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port sw[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1972.852 ; gain = 89.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1995.664 ; gain = 112.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1995.664 ; gain = 112.324
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1995.664 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 2010.809 ; gain = 127.469
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 16:54:22 2020] Launched synth_1...
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sun Apr 26 13:54:13 2020] Launched synth_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 16:54:22 2020] Launched impl_1...
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2163.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2163.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 225 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 150 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 75 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2163.328 ; gain = 0.000
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2670.313 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vblank' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vblank' (5#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (6#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:175]
+WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:176]
+INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+	Parameter data_file bound to: sprite1.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:182]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:183]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:196]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:197]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:210]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:211]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:224]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:225]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:238]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:239]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:252]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:253]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:266]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:267]
+INFO: [Synth 8-6157] synthesizing module 'sprite_rgb_combinator' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+WARNING: [Synth 8-3848] Net sprite_rgb_out in module/entity sprite_rgb_combinator does not have driver. [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_rgb_combinator' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: overlay_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: bg_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'bg_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: foreground_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: background_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'background_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: overlay_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: foreground_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+	Parameter DIVISOR bound to: 28'b0000000000000000000110010000 
+INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite_rgb_out[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite1_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite2_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite3_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite4_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite5_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite6_rgb[0]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[11]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[10]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[9]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[8]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[7]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[6]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[5]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[4]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[3]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[2]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[1]
+WARNING: [Synth 8-3331] design sprite_rgb_combinator has unconnected port sprite7_rgb[0]
+WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
+WARNING: [Synth 8-3331] design ppu has unconnected port sprite1_enabled
+WARNING: [Synth 8-3331] design top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port sw[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2670.313 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2681.797 ; gain = 11.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2681.797 ; gain = 11.484
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2681.797 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.617 ; gain = 555.305
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sun Apr 26 14:01:28 2020] Launched synth_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
+current_design synth_1
+current_design rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 14:10:12 2020] Launched impl_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
@@ -46,7 +875,280 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 936.906 ; gain = 17.180
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 3249.352 ; gain = 3.371
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACAD48A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4369.430 ; gain = 1120.078
+set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183ACAD48A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACAD48A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+current_design synth_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183ACAD48A
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4371.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vblank' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vblank' (5#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (6#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:175]
+WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:176]
+INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+	Parameter data_file bound to: sprite1.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:182]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:183]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:196]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:197]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:210]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:211]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:224]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:225]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:238]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:239]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:252]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:253]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:266]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:267]
+INFO: [Synth 8-6157] synthesizing module 'sprite_rgb_combinator' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_rgb_combinator' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (13#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: overlay_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: bg_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'bg_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+	Parameter data_file bound to: foreground_display_map.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: background_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'background_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: overlay_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'overlay_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+	Parameter data_file bound to: foreground_tileset.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'foreground_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
+WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+	Parameter DIVISOR bound to: 28'b0000000000000000000110010000 
+INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
+WARNING: [Synth 8-3331] design ppu has unconnected port sprite1_enabled
+WARNING: [Synth 8-3331] design top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port sw[13]
+WARNING: [Synth 8-3331] design top has unconnected port sw[12]
+WARNING: [Synth 8-3331] design top has unconnected port sw[11]
+WARNING: [Synth 8-3331] design top has unconnected port sw[10]
+WARNING: [Synth 8-3331] design top has unconnected port sw[9]
+WARNING: [Synth 8-3331] design top has unconnected port sw[8]
+WARNING: [Synth 8-3331] design top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design top has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4371.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4371.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4371.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4371.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 4703.301 ; gain = 332.133
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sun Apr 26 14:31:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 14:33:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
+current_design synth_1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACAD48A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 4726.348 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 796 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 4726.348 ; gain = 0.191
+startgroup 
+set_property is_bel_fixed false [get_cells [list snes_data_in_IBUF_inst]]
+set_property is_loc_fixed false [get_cells [list snes_data_in_IBUF_inst]]
+endgroup
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 4726.348 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.153 . Memory (MB): peak = 4726.348 ; gain = 0.000
+[Sun Apr 26 14:47:01 2020] Launched impl_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 14:54:15 2020] Launched synth_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
+[Sun Apr 26 14:54:15 2020] Launched impl_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_hw_manager: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4726.348 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 15:04:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
+[Sun Apr 26 15:04:39 2020] Launched impl_1...
+Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-00:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 4726.348 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACAD48A
 set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
@@ -61,10 +1163,14 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:04:30 2020] Launched synth_1...
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 15:15:08 2020] Launched synth_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:04:30 2020] Launched impl_1...
+[Sun Apr 26 15:15:08 2020] Launched impl_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -74,16 +1180,14 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:09:27 2020] Launched synth_1...
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 15:19:49 2020] Launched synth_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:09:27 2020] Launched impl_1...
-Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:09:47 2020] Launched synth_1...
-Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:09:47 2020] Launched impl_1...
+[Sun Apr 26 15:19:49 2020] Launched impl_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -93,16 +1197,14 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:14:49 2020] Launched synth_1...
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 15:25:21 2020] Launched synth_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:14:49 2020] Launched impl_1...
-Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:15:52 2020] Launched synth_1...
-Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:15:52 2020] Launched impl_1...
+[Sun Apr 26 15:25:21 2020] Launched impl_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -112,10 +1214,14 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:20:30 2020] Launched synth_1...
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 15:35:58 2020] Launched synth_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:20:30 2020] Launched impl_1...
+[Sun Apr 26 15:35:58 2020] Launched impl_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -125,10 +1231,14 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
+
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:24:57 2020] Launched synth_1...
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 26 15:41:28 2020] Launched synth_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:24:57 2020] Launched impl_1...
+[Sun Apr 26 15:41:28 2020] Launched impl_1...
 Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -137,18 +1247,5 @@ program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sat Apr 25 17:28:33 2020] Launched synth_1...
-Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/runme.log
-[Sat Apr 25 17:28:33 2020] Launched impl_1...
-Run output will be captured here: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 25 17:40:12 2020...
+close_hw_manager
+close_hw_manager: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4726.348 ; gain = 0.000

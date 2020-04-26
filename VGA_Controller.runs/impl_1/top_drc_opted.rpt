@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat Apr 25 17:29:59 2020
+| Date         : Sun Apr 26 15:43:32 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 5
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 3          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 4          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -63,6 +63,12 @@ PLHOLDVIO-2#3 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT displayed_sprite[2]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
 displayed_sprite_reg[0], displayed_sprite_reg[1], displayed_sprite_reg[2]
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ppu/hvcount/sprite_y[8]_i_3 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
+sprite_y_reg[0], sprite_y_reg[1], sprite_y_reg[2], sprite_y_reg[3], sprite_y_reg[4], sprite_y_reg[5], sprite_y_reg[6], sprite_y_reg[7], sprite_y_reg[8]
 Related violations: <none>
 
 

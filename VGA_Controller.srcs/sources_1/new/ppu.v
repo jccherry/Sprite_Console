@@ -93,6 +93,13 @@ module ppu(
     
     //output of sprite1 memory
     wire [11:0] sprite1_rgb;
+    wire [11:0] sprite2_rgb;
+    wire [11:0] sprite3_rgb;
+    wire [11:0] sprite4_rgb;
+    wire [11:0] sprite5_rgb;
+    wire [11:0] sprite6_rgb;
+    wire [11:0] sprite7_rgb;
+    
     
     //output of sprite memory muxes
     wire [11:0] sprite_rgb;
@@ -183,12 +190,109 @@ module ppu(
     //sprite1_active
     );
     
+    sprite_memory  #("sprite1.mem") sprite2(
+    clk,
+    0, //wr_en is 0
+    screen_x_pixel_coord,
+    screen_y_pixel_coord,
+    100, //x position
+    100, //y position
+    loaded_sprite,  //loaded sprite
+    0,  //write address
+    0,  //write data
+    sprite2_rgb
+    //sprite1_active
+    );
+    
+    sprite_memory  #("sprite1.mem") sprite3(
+    clk,
+    0, //wr_en is 0
+    screen_x_pixel_coord,
+    screen_y_pixel_coord,
+    100, //x position
+    100, //y position
+    loaded_sprite,  //loaded sprite
+    0,  //write address
+    0,  //write data
+    sprite3_rgb
+    //sprite1_active
+    );
+    
+    sprite_memory  #("sprite1.mem") sprite4(
+    clk,
+    0, //wr_en is 0
+    screen_x_pixel_coord,
+    screen_y_pixel_coord,
+    150, //x position
+    150, //y position
+    4,  //loaded sprite
+    0,  //write address
+    0,  //write data
+    sprite4_rgb
+    //sprite1_active
+    );
+    
+    sprite_memory  #("sprite1.mem") sprite5(
+    clk,
+    0, //wr_en is 0
+    screen_x_pixel_coord,
+    screen_y_pixel_coord,
+    165, //x position
+    150, //y position
+    5,  //loaded sprite
+    0,  //write address
+    0,  //write data
+    sprite5_rgb
+    //sprite1_active
+    );
+    
+    sprite_memory  #("sprite1.mem") sprite6(
+    clk,
+    0, //wr_en is 0
+    screen_x_pixel_coord,
+    screen_y_pixel_coord,
+    23, //x position
+    47, //y position
+    7,  //loaded sprite
+    0,  //write address
+    0,  //write data
+    sprite6_rgb
+    //sprite1_active
+    );
+    
+    sprite_memory  #("sprite1.mem") sprite7(
+    clk,
+    0, //wr_en is 0
+    screen_x_pixel_coord,
+    screen_y_pixel_coord,
+    600, //x position
+    400, //y position
+    0,  //loaded sprite
+    0,  //write address
+    0,  //write data
+    sprite7_rgb
+    //sprite1_active
+    );
+    
+    sprite_rgb_combinator sprite_combinator(
+    sprite1_rgb,
+    sprite2_rgb,
+    sprite3_rgb,
+    sprite4_rgb,
+    sprite5_rgb,
+    sprite6_rgb,
+    sprite7_rgb,
+    sprite_rgb
+    );
+    
+    
+    /*
     display_mux sprite_enabled_mux(
     12'h0f0,
     sprite1_rgb,
     sprite1_enabled,
     sprite_rgb
-    );
+    );*/
     
     
     

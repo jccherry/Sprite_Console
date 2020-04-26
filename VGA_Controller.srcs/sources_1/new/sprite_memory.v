@@ -29,7 +29,7 @@ module sprite_memory
     input [8:0] screen_y,
     input [9:0] sprite_x,
     input [8:0] sprite_y,
-    input [3:0] loaded_sprite,
+    input [2:0] loaded_sprite,
     input [10:0] write_addr,
     input [11:0] write_data,
     output reg [11:0] rgb
