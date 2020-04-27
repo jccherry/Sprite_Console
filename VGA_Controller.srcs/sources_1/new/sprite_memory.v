@@ -30,6 +30,7 @@ module sprite_memory
     input [9:0] sprite_x,
     input [8:0] sprite_y,
     input [2:0] loaded_sprite,
+    input       sprite_en,
     input [10:0] write_addr,
     input [11:0] write_data,
     output reg [11:0] rgb
@@ -48,7 +49,7 @@ module sprite_memory
             sprite_data[write_addr] = write_data;
         else begin
             //if the screen is drawing a pixel within range of the sprite's 16x6 dimensions
-            if ((screen_x >= sprite_x) && (screen_x < (sprite_x + 16)) && (screen_y >= sprite_y) && (screen_y < (sprite_y + 16)))
+            if (sprite_en && (screen_x >= sprite_x) && (screen_x < (sprite_x + 16)) && (screen_y >= sprite_y) && (screen_y < (sprite_y + 16)))
                 begin
                 //active = 1;
                 rgb = sprite_data[loaded_sprite*256 + (screen_x - sprite_x) + (screen_y - sprite_y)*16];

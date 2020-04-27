@@ -3,204 +3,45 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="ppu_regfile_sim_behav.wdb" id="1">
+      <db_ref path="snes_sim_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="ppu_regfile_sim" />
+            <top_module name="snes_sim" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="482501fs"></ZoomEndTime>
+      <ZoomEndTime time="98100001fs"></ZoomEndTime>
       <Cursor1Time time="400000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="214"></NameColumnWidth>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
       <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="37" />
-   <wvobject fp_name="/ppu_regfile_sim/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/snes_sim/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/write_addr" type="array">
-      <obj_property name="ElementShortName">write_addr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">write_addr[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/snes_sim/snes_data_in" type="logic">
+      <obj_property name="ElementShortName">snes_data_in</obj_property>
+      <obj_property name="ObjectShortName">snes_data_in</obj_property>
    </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/write_data" type="array">
-      <obj_property name="ElementShortName">write_data[15:0]</obj_property>
-      <obj_property name="ObjectShortName">write_data[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/snes_sim/snes_clk" type="logic">
+      <obj_property name="ElementShortName">snes_clk</obj_property>
+      <obj_property name="ObjectShortName">snes_clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/wr_en" type="logic">
-      <obj_property name="ElementShortName">wr_en</obj_property>
-      <obj_property name="ObjectShortName">wr_en</obj_property>
+   <wvobject fp_name="/snes_sim/snes/counter" type="array">
+      <obj_property name="ElementShortName">counter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/read_addr" type="array">
-      <obj_property name="ElementShortName">read_addr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">read_addr[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/snes_sim/snes_latch" type="logic">
+      <obj_property name="ElementShortName">snes_latch</obj_property>
+      <obj_property name="ObjectShortName">snes_latch</obj_property>
    </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/read_data" type="array">
-      <obj_property name="ElementShortName">read_data[15:0]</obj_property>
-      <obj_property name="ObjectShortName">read_data[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/bg_offset" type="array">
-      <obj_property name="ElementShortName">bg_offset[15:0]</obj_property>
-      <obj_property name="ObjectShortName">bg_offset[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/fg_offset" type="array">
-      <obj_property name="ElementShortName">fg_offset[15:0]</obj_property>
-      <obj_property name="ObjectShortName">fg_offset[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/ov_offset" type="array">
-      <obj_property name="ElementShortName">ov_offset[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ov_offset[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_1_enabled" type="array">
-      <obj_property name="ElementShortName">sprite_1_enabled[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_1_enabled[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_1_addr" type="array">
-      <obj_property name="ElementShortName">sprite_1_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_1_addr[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_1_x" type="array">
-      <obj_property name="ElementShortName">sprite_1_x[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_1_x[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_1_y" type="array">
-      <obj_property name="ElementShortName">sprite_1_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_1_y[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_2_enabled" type="array">
-      <obj_property name="ElementShortName">sprite_2_enabled[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_2_enabled[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_2_addr" type="array">
-      <obj_property name="ElementShortName">sprite_2_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_2_addr[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_2_x" type="array">
-      <obj_property name="ElementShortName">sprite_2_x[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_2_x[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_2_y" type="array">
-      <obj_property name="ElementShortName">sprite_2_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_2_y[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_3_enabled" type="array">
-      <obj_property name="ElementShortName">sprite_3_enabled[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_3_enabled[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_3_addr" type="array">
-      <obj_property name="ElementShortName">sprite_3_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_3_addr[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_3_x" type="array">
-      <obj_property name="ElementShortName">sprite_3_x[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_3_x[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_3_y" type="array">
-      <obj_property name="ElementShortName">sprite_3_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_3_y[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_4_enabled" type="array">
-      <obj_property name="ElementShortName">sprite_4_enabled[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_4_enabled[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_4_addr" type="array">
-      <obj_property name="ElementShortName">sprite_4_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_4_addr[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_4_x" type="array">
-      <obj_property name="ElementShortName">sprite_4_x[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_4_x[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_4_y" type="array">
-      <obj_property name="ElementShortName">sprite_4_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_4_y[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_5_enabled" type="array">
-      <obj_property name="ElementShortName">sprite_5_enabled[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_5_enabled[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_5_addr" type="array">
-      <obj_property name="ElementShortName">sprite_5_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_5_addr[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_5_x" type="array">
-      <obj_property name="ElementShortName">sprite_5_x[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_5_x[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_5_y" type="array">
-      <obj_property name="ElementShortName">sprite_5_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_5_y[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_6_enabled" type="array">
-      <obj_property name="ElementShortName">sprite_6_enabled[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_6_enabled[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_6_addr" type="array">
-      <obj_property name="ElementShortName">sprite_6_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_6_addr[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_6_x" type="array">
-      <obj_property name="ElementShortName">sprite_6_x[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_6_x[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_6_y" type="array">
-      <obj_property name="ElementShortName">sprite_6_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_6_y[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_7_enabled" type="array">
-      <obj_property name="ElementShortName">sprite_7_enabled[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_7_enabled[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_7_addr" type="array">
-      <obj_property name="ElementShortName">sprite_7_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_7_addr[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_7_x" type="array">
-      <obj_property name="ElementShortName">sprite_7_x[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_7_x[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ppu_regfile_sim/sprite_7_y" type="array">
-      <obj_property name="ElementShortName">sprite_7_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sprite_7_y[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/snes_sim/snes_data" type="array">
+      <obj_property name="ElementShortName">snes_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">snes_data[11:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -30,7 +30,7 @@ module snes_controller(
     );
     
      //SNES CONTROLLER HANDLER=========================================================
-     reg snes_latch;
+    reg snes_latch;
     wire slow_clk;
     reg [4:0] counter;
     wire snes_clk_started;
@@ -58,10 +58,14 @@ module snes_controller(
 
     //when read is enabled, this clock starts, otherwise its high    
     assign snes_clk_started = (read_en) ? slow_clk : 1'b0;
+    //assign snes_clk_started = slow_clk;
+    
     
     //when output is enabled, controller will start getting clock
     //(12us after latch is high, clock signal is enabled)
     assign snes_clk = (enable_snes_clk_output) ? snes_clk_started : 1'b1;
+    //assign snes_clk = (enable_snes_clk_output) ? slow_clk : 1'b1;
+
 
     always@(posedge snes_clk_started)
     begin
@@ -118,4 +122,26 @@ module snes_controller(
     assign snes_data_out[11] = snes_data[11]; //R
     
     //SNES CONTROLLER HANDLER=========================================================
+endmodule
+
+
+module snes_clock_divider(clock_in,clock_out
+    );
+input clock_in; // input clock on FPGA
+output clock_out; // output clock after dividing the input clock by divisor
+reg[27:0] counter=28'd0;
+parameter DIVISOR = 28'd400;
+//parameter DIVISOR = 28'd1;
+// The frequency of the output clk_out
+//  = The frequency of the input clk_in divided by DIVISOR
+// For example: Fclk_in = 50Mhz, if you want to get 1Hz signal to blink LEDs
+// You will modify the DIVISOR parameter value to 28'd50.000.000
+// Then the frequency of the output clk_out = 50Mhz/50.000.000 = 1Hz
+always @(posedge clock_in)
+begin
+ counter <= counter + 28'd1;
+ if(counter>=(DIVISOR-1))
+  counter <= 28'd0;
+end
+assign clock_out = (counter<DIVISOR/2)?1'b0:1'b1;
 endmodule

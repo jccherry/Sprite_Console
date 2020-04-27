@@ -22,19 +22,96 @@
 
 module ppu(
     input clk,
-    input [10:0] background_x_offset,
-    input [10:0] foreground_x_offset,
-    input [10:0] overlay_x_offset,
-    input [9:0] sprite_x,
-    input [8:0] sprite_y,
-    input sprite1_enabled,
-    input [2:0] loaded_sprite,
+    input [4:0] write_addr,
+    input [4:0] read_addr,
+    input [15:0] write_data,
+    input wr_en,
+    output [15:0] read_data,
     output hsync,
     output vsync,
     output vblank,
     output [3:0] R,
     output [3:0] G,
     output [3:0] B
+    );
+    
+    wire [10:0] bg_offset;
+    wire [10:0] fg_offset;
+    wire [10:0] ov_offset;
+    
+    wire [9:0] sprite_1_x;
+    wire [8:0] sprite_1_y;
+    wire [2:0] sprite_1_addr;
+    wire       sprite_1_enabled;
+    
+    wire [9:0] sprite_2_x;
+    wire [8:0] sprite_2_y;
+    wire [2:0] sprite_2_addr;
+    wire       sprite_2_enabled;
+    
+    wire [9:0] sprite_3_x;
+    wire [8:0] sprite_3_y;
+    wire [2:0] sprite_3_addr;
+    wire       sprite_3_enabled;
+    
+    wire [9:0] sprite_4_x;
+    wire [8:0] sprite_4_y;
+    wire [2:0] sprite_4_addr;
+    wire       sprite_4_enabled;
+    
+    wire [9:0] sprite_5_x;
+    wire [8:0] sprite_5_y;
+    wire [2:0] sprite_5_addr;
+    wire       sprite_5_enabled;
+    
+    wire [9:0] sprite_6_x;
+    wire [8:0] sprite_6_y;
+    wire [2:0] sprite_6_addr;
+    wire       sprite_6_enabled;
+    
+    wire [9:0] sprite_7_x;
+    wire [8:0] sprite_7_y;
+    wire [2:0] sprite_7_addr;
+    wire       sprite_7_enabled;
+    
+    ppu_regfile regfile(
+    clk,
+    write_addr,
+    write_data,
+    wr_en,
+    read_addr,
+    read_data,
+    bg_offset,
+    fg_offset,
+    ov_offset,
+    sprite_1_enabled,
+    sprite_1_addr,
+    sprite_1_x,
+    sprite_1_y,
+    sprite_2_enabled,
+    sprite_2_addr,
+    sprite_2_x,
+    sprite_2_y,
+    sprite_3_enabled,
+    sprite_3_addr,
+    sprite_3_x,
+    sprite_3_y,
+    sprite_4_enabled,
+    sprite_4_addr,
+    sprite_4_x,
+    sprite_4_y,
+    sprite_5_enabled,
+    sprite_5_addr,
+    sprite_5_x,
+    sprite_5_y,
+    sprite_6_enabled,
+    sprite_6_addr,
+    sprite_6_x,
+    sprite_6_y,
+    sprite_7_enabled,
+    sprite_7_addr,
+    sprite_7_x,
+    sprite_7_y
     );
     
     wire within_bounds_wire;
@@ -137,7 +214,7 @@ module ppu(
     hcounter,
     vcounter,
     within_bounds_wire,
-    background_x_offset,
+    bg_offset,
     tile_x,
     tile_y,
     pixel_x,
@@ -148,7 +225,7 @@ module ppu(
     hcounter,
     vcounter,
     within_bounds_wire,
-    foreground_x_offset,
+    fg_offset,
     tile_x_fg,
     tile_y_fg,
     pixel_x_fg,
@@ -159,7 +236,7 @@ module ppu(
     hcounter,
     vcounter,
     within_bounds_wire,
-    overlay_x_offset, //offset is 0
+    ov_offset, //offset is 0
     tile_x_overlay,
     tile_y_overlay,
     pixel_x_overlay,
@@ -181,9 +258,10 @@ module ppu(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    sprite_x, //x position
-    sprite_y, //y position
-    loaded_sprite,  //loaded sprite
+    sprite_1_x, //x position
+    sprite_1_y, //y position
+    sprite_1_addr,  //loaded sprite
+    sprite_1_enabled,
     0,  //write address
     0,  //write data
     sprite1_rgb
@@ -195,9 +273,10 @@ module ppu(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    100, //x position
-    100, //y position
-    loaded_sprite,  //loaded sprite
+    sprite_2_x, //x position
+    sprite_2_y, //y position
+    sprite_2_addr,  //loaded sprite
+    sprite_2_enabled,
     0,  //write address
     0,  //write data
     sprite2_rgb
@@ -209,9 +288,10 @@ module ppu(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    100, //x position
-    100, //y position
-    loaded_sprite,  //loaded sprite
+    sprite_3_x, //x position
+    sprite_3_y, //y position
+    sprite_3_addr,  //loaded sprite
+    sprite_3_enabled,
     0,  //write address
     0,  //write data
     sprite3_rgb
@@ -223,9 +303,10 @@ module ppu(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    150, //x position
-    150, //y position
-    4,  //loaded sprite
+    sprite_4_x, //x position
+    sprite_4_y, //y position
+    sprite_4_addr,  //loaded sprite
+    sprite_4_enabled,
     0,  //write address
     0,  //write data
     sprite4_rgb
@@ -237,9 +318,10 @@ module ppu(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    165, //x position
-    150, //y position
-    5,  //loaded sprite
+    sprite_5_x, //x position
+    sprite_5_y, //y position
+    sprite_5_addr,  //loaded sprite
+    sprite_5_enabled,
     0,  //write address
     0,  //write data
     sprite5_rgb
@@ -251,9 +333,10 @@ module ppu(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    23, //x position
-    47, //y position
-    7,  //loaded sprite
+    sprite_6_x, //x position
+    sprite_6_y, //y position
+    sprite_6_addr,  //loaded sprite
+    sprite_6_enabled,
     0,  //write address
     0,  //write data
     sprite6_rgb
@@ -265,14 +348,16 @@ module ppu(
     0, //wr_en is 0
     screen_x_pixel_coord,
     screen_y_pixel_coord,
-    600, //x position
-    400, //y position
-    0,  //loaded sprite
+    sprite_7_x, //x position
+    sprite_7_y, //y position
+    sprite_7_addr,  //loaded sprite
+    sprite_7_enabled,
     0,  //write address
     0,  //write data
     sprite7_rgb
     //sprite1_active
     );
+    
     
     sprite_rgb_combinator sprite_combinator(
     sprite1_rgb,
