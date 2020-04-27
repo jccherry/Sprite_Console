@@ -2,3 +2,6 @@ Running: xsim.dir/snes_sim_behav/xsimk.exe -simmode gui -wdb snes_sim_behav.wdb 
 Design successfully loaded
 Design Loading Memory Usage: 5304 KB (Peak: 5304 KB)
 Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 14016 KB (Peak: 14016 KB)
+Simulation CPU Usage: 655 ms
