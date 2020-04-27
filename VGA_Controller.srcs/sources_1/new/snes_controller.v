@@ -71,19 +71,19 @@ module snes_controller(
     begin
         case (counter)
             0   :   begin
-                        snes_latch = 1'b1;
-                        counter = counter + 1;
+                        snes_latch <= 1'b1;
+                        counter <= counter + 1;
                     end
             1   :   begin
-                        snes_latch = 1'b0;
-                        enable_snes_clk_output = 1;
-                        counter = counter + 1;
+                        snes_latch <= 1'b0;
+                        enable_snes_clk_output <= 1;
+                        counter <= counter + 1;
                     end
             17  :   begin
-                        enable_snes_clk_output = 0;
-                        counter = 0;
+                        enable_snes_clk_output <= 0;
+                        counter <= 0;
                     end
-            default : counter = counter + 1;    
+            default : counter <= counter + 1;    
         endcase 
     end
     
@@ -91,18 +91,18 @@ module snes_controller(
     begin
         case (counter)
             
-            2 : snes_data[0] = ~snes_data_in; //b button
-            3 : snes_data[1] = ~snes_data_in; //y buton
-            4 : snes_data[2] = ~snes_data_in; //sel
-            5 : snes_data[3] = ~snes_data_in; //  start
-            6 : snes_data[4] = ~snes_data_in; // up
-            7 : snes_data[5] = ~snes_data_in; // down
-            8 : snes_data[6] = ~snes_data_in; // left
-            9 : snes_data[7] = ~snes_data_in; //rigjht
-            10: snes_data[8] = ~snes_data_in; //a
-            11: snes_data[9] = ~snes_data_in; //x
-            12: snes_data[10] = ~snes_data_in; //L
-            13: snes_data[11] = ~snes_data_in; //R
+            2 : snes_data[0] <= ~snes_data_in; //b button
+            3 : snes_data[1] <= ~snes_data_in; //y buton
+            4 : snes_data[2] <= ~snes_data_in; //sel
+            5 : snes_data[3] <= ~snes_data_in; //  start
+            6 : snes_data[4] <= ~snes_data_in; // up
+            7 : snes_data[5] <= ~snes_data_in; // down
+            8 : snes_data[6] <= ~snes_data_in; // left
+            9 : snes_data[7] <= ~snes_data_in; //rigjht
+            10: snes_data[8] <= ~snes_data_in; //a
+            11: snes_data[9] <= ~snes_data_in; //x
+            12: snes_data[10] <= ~snes_data_in; //L
+            13: snes_data[11] <= ~snes_data_in; //R
         endcase
     end
     

@@ -233,6 +233,36 @@ set_property PACKAGE_PIN R19 [get_ports vsync]
 set_property IOSTANDARD LVCMOS33 [get_ports vsync]
 
 
+##7 segment display
+set_property PACKAGE_PIN W7 [get_ports {cathode_data_out[7]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[7]}]
+set_property PACKAGE_PIN W6 [get_ports {cathode_data_out[6]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[6]}]
+set_property PACKAGE_PIN U8 [get_ports {cathode_data_out[5]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[5]}]
+set_property PACKAGE_PIN V8 [get_ports {cathode_data_out[4]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[4]}]
+set_property PACKAGE_PIN U5 [get_ports {cathode_data_out[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[3]}]
+set_property PACKAGE_PIN V5 [get_ports {cathode_data_out[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[2]}]
+set_property PACKAGE_PIN U7 [get_ports {cathode_data_out[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[1]}]
+
+set_property PACKAGE_PIN V7 [get_ports {cathode_data_out[0]}]							
+	set_property IOSTANDARD LVCMOS33 [get_ports {cathode_data_out[0]}]
+
+set_property PACKAGE_PIN U2 [get_ports {enabled_segment[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {enabled_segment[0]}]
+set_property PACKAGE_PIN U4 [get_ports {enabled_segment[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {enabled_segment[1]}]
+set_property PACKAGE_PIN V4 [get_ports {enabled_segment[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {enabled_segment[2]}]
+set_property PACKAGE_PIN W4 [get_ports {enabled_segment[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {enabled_segment[3]}]
+
+
+
 ##USB-RS232 Interface
 #set_property PACKAGE_PIN B18 [get_ports RsRx]
 #set_property IOSTANDARD LVCMOS33 [get_ports RsRx]

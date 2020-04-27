@@ -24,6 +24,8 @@ module top(
     input sys_clk,
     input [15:0] sw,
     input snes_data_in,
+    output [7:0] cathode_data_out,
+    output [3:0] enabled_segment,
     output snes_clk,
     output snes_latch,
     output [11:0] snes_data_out,
@@ -33,35 +35,14 @@ module top(
     output [3:0] G,
     output [3:0] B
     );
-    /*
-    reg [9:0] sprite_x;
-    reg [8:0] sprite_y;
-    
-    reg [10:0] bg_offset;
-    reg [10:0] foreground_offset;
-    
-    reg [2:0] displayed_sprite;
-    
-    reg left_bumper_held;
-    reg right_bumper_held;
-   */
+
     wire vblank;
     
     clock_divider div(
     sys_clk,
     clk_25MHz
     );
-    /*
-    initial begin
-        sprite_x = 320;
-        sprite_y = 240;
-        bg_offset = 0;
-        foreground_offset = 0;
-        displayed_sprite = 0;
-        left_bumper_held = 0;
-        right_bumper_held = 0;
-    end
-    */
+    
     wire [11:0] snes_data;
     reg [11:0] snes_data_reg;
     
@@ -73,40 +54,49 @@ module top(
     snes_latch,
     snes_data
     );
-    
-    //reg [3:0] dir;
+
     
     assign snes_data_out = snes_data_reg;
     
     always@(posedge vblank)
     begin
         snes_data_reg = snes_data;
-        //dir = snes_data[3:0];
-        /*if (snes_data_reg[0] == 1'b1)
-            sprite_y = sprite_y-1;
-        else if (snes_data_reg[1] == 1'b1)
-            sprite_y = sprite_y+1;
-            
-        if (snes_data_reg[2] == 1'b1)
-            sprite_x = sprite_x-1;
-        else if (snes_data_reg[3] == 1'b1)
-            sprite_x = sprite_x+1;*/
+
    end
     
-    /*
-    wire bumper;
-    or (bumper, snes_data_reg[10],snes_data_reg[11]);
+    reg [15:0] write_data;
+    reg [15:0] seg_data;
     
-    always @(posedge bumper)
+    initial begin
+        write_data = 0;
+        seg_data = 0;
+    end
+    
+    
+    
+    always@(posedge vblank)
     begin
-        if (snes_data_reg[10])
-            displayed_sprite = displayed_sprite - 1;
-        else
-            displayed_sprite = displayed_sprite + 1;
-    end*/
+        if (snes_data_out[0])
+            write_data = write_data+1;
+        else if (snes_data_out[1])
+            write_data = write_data-1;
+    end
     
-
-
+    
+    
+    always @(posedge vblank)
+    begin
+        seg_data = write_data;
+    end
+    
+    seven_segment_scanner seg(
+    sys_clk,
+    seg_data,
+    4'b0000,
+    cathode_data_out,
+    enabled_segment
+    );
+    
     ppu ppu(
     clk_25MHz,
     sw[4:0],
