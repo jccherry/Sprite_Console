@@ -22,8 +22,8 @@
 
 module ppu(
     input clk,
-    input [4:0] write_addr,
-    input [4:0] read_addr,
+    input [13:0] write_addr,
+    input [13:0] read_addr,
     input [15:0] write_data,
     input wr_en,
     output [15:0] read_data,
@@ -74,12 +74,29 @@ module ppu(
     wire [2:0] sprite_7_addr;
     wire       sprite_7_enabled;
     
+    
+    wire [12:0] addr_out;
+    wire wr_en_regfile;
+    wire wr_en_bg_mem;
+    wire wr_en_fg_mem;
+    wire wr_en_ov_mem;
+    
+    ppu_memory_map mmap(
+    write_addr,
+    wr_en,
+    addr_out,
+    wr_en_regfile,
+    wr_en_bg_mem,
+    wr_en_fg_mem,
+    wr_en_ov_mem
+    );
+    
     ppu_regfile regfile(
     clk,
-    write_addr,
+    addr_out,
     write_data,
-    wr_en,
-    read_addr,
+    wr_en_regfile,
+    addr_out,
     read_data,
     bg_offset,
     fg_offset,
@@ -427,12 +444,21 @@ module ppu(
     overlay_pixel_addr
     );
     
+    /*
+    input clk,
+    input wr_en,
+    input [6:0] write_tile,
+    input [12:0] write_addr,
+    input [12:0] read_addr,
+    output reg [6:0] tile_addr
+    */
+    
     
     display_memory #("overlay_display_map.mem") overlay_mem(
     clk,
-    0,
-    0,
-    0,
+    wr_en_ov_mem,
+    write_data,
+    addr_out,
     overlay_disp_addr,
     overlay_tileset_addr
     );
@@ -440,9 +466,9 @@ module ppu(
     //display_memory background_mem(
     display_memory #("bg_display_map.mem") bg_mem(
     clk,
-    0,
-    0,
-    0,
+    wr_en_bg_mem,
+    write_data,
+    addr_out,
     disp_addr,
     tileset_addr
     );
@@ -450,9 +476,9 @@ module ppu(
     //foreground_memory foreground_mem(
     display_memory #("foreground_display_map.mem") fg_mem (
     clk,
-    0,
-    0,
-    0,
+    wr_en_fg_mem,
+    write_data,
+    addr_out,
     foreground_disp_addr,
     foreground_tileset_addr
     );

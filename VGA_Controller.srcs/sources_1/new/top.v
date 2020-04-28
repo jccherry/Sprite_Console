@@ -107,12 +107,27 @@ module top(
     enabled_segment
     );
     
+    /*
+    input clk,
+    input [13:0] write_addr,
+    input [13:0] read_addr,
+    input [15:0] write_data,
+    input wr_en,
+    output [15:0] read_data,
+    output hsync,
+    output vsync,
+    output vblank,
+    output [3:0] R,
+    output [3:0] G,
+    output [3:0] B
+    */
+    
     ppu ppu(
     clk_25MHz,
-    sw[4:0],
+    sw[14:0],
     ,
-    sw[12:5],
-    a_button,
+    write_data,
+    led_out,
     ,
     hsync,
     vsync,
