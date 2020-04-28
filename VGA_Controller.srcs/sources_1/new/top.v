@@ -26,6 +26,7 @@ module top(
     input snes_data_in,
     output [7:0] cathode_data_out,
     output [3:0] enabled_segment,
+    output reg led_out,
     output snes_clk,
     output snes_latch,
     output [11:0] snes_data_out,
@@ -70,16 +71,25 @@ module top(
     initial begin
         write_data = 0;
         seg_data = 0;
+        led_out = 0;
     end
     
-    
+    wire a_button;
+    assign a_button = snes_data_out[4];
     
     always@(posedge vblank)
     begin
+        //if (snes_data_out[5])
+          //  write_data = 0;
         if (snes_data_out[0])
             write_data = write_data+1;
         else if (snes_data_out[1])
             write_data = write_data-1;
+        
+        if (a_button)
+            led_out = 1;
+        else
+            led_out = 0;
     end
     
     
@@ -100,10 +110,10 @@ module top(
     ppu ppu(
     clk_25MHz,
     sw[4:0],
-    0,
+    ,
     sw[12:5],
-    sw[13],
-    0,
+    a_button,
+    ,
     hsync,
     vsync,
     vblank,

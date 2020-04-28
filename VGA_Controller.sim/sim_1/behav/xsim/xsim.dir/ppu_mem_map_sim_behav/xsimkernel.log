@@ -2,3 +2,6 @@ Running: xsim.dir/ppu_mem_map_sim_behav/xsimk.exe -simmode gui -wdb ppu_mem_map_
 Design successfully loaded
 Design Loading Memory Usage: 5296 KB (Peak: 5296 KB)
 Design Loading CPU Usage: 78 ms
+Simulation completed
+Simulation Memory Usage: 5936 KB (Peak: 5936 KB)
+Simulation CPU Usage: 108 ms

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Apr 27 19:40:07 2020
+| Date         : Mon Apr 27 20:46:23 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    44 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   146 |
+| Unused register locations in slices containing registers |   145 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              85 |           50 |
+| No           | No                    | No                     |              86 |           51 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              66 |           19 |
-| Yes          | No                    | No                     |             181 |           73 |
+| No           | Yes                   | No                     |              66 |           21 |
+| Yes          | No                    | No                     |             181 |           74 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              10 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -76,47 +76,47 @@ Table of Contents
 |  div/tff1/Q                             |                                 |                                 |                1 |              1 |
 |  ctrl/clkdiv/CLK                        | ctrl/snes_latch_i_1_n_0         |                                 |                1 |              1 |
 |  clk_25MHz_BUFG                         | ppu/regfile/data[3][0]_i_1_n_0  |                                 |                1 |              1 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[7][0]_i_1_n_0  |                                 |                1 |              1 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[23][0]_i_1_n_0 |                                 |                1 |              1 |
 |  clk_25MHz_BUFG                         | ppu/regfile/data[27][0]_i_1_n_0 |                                 |                1 |              1 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[11][0]_i_1_n_0 |                                 |                1 |              1 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[19][0]_i_1_n_0 |                                 |                1 |              1 |
 |  clk_25MHz_BUFG                         | ppu/regfile/data[15][0]_i_1_n_0 |                                 |                1 |              1 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[11][0]_i_1_n_0 |                                 |                1 |              1 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[23][0]_i_1_n_0 |                                 |                1 |              1 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[19][0]_i_1_n_0 |                                 |                1 |              1 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[7][0]_i_1_n_0  |                                 |                1 |              1 |
 |  sys_clk_IBUF_BUFG                      |                                 |                                 |                1 |              1 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[8][2]_i_1_n_0  |                                 |                1 |              3 |
 |  clk_25MHz_BUFG                         | ppu/regfile/data[24][2]_i_1_n_0 |                                 |                1 |              3 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[28][2]_i_1_n_0 |                                 |                1 |              3 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[16][2]_i_1_n_0 |                                 |                1 |              3 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[12][2]_i_1_n_0 |                                 |                1 |              3 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[20][2]_i_1_n_0 |                                 |                1 |              3 |
 |  clk_25MHz_BUFG                         | ppu/regfile/data[4][2]_i_1_n_0  |                                 |                1 |              3 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[28][2]_i_1_n_0 |                                 |                1 |              3 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[12][2]_i_1_n_0 |                                 |                1 |              3 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[16][2]_i_1_n_0 |                                 |                1 |              3 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[20][2]_i_1_n_0 |                                 |                1 |              3 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[8][2]_i_1_n_0  |                                 |                1 |              3 |
 |  ctrl/clkdiv/CLK                        |                                 |                                 |                2 |              6 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[18][7]_i_1_n_0 |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[1][7]_i_1_n_0  |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[13][7]_i_1_n_0 |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[21][7]_i_1_n_0 |                                 |                4 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[0][7]_i_1_n_0  |                                 |                2 |              8 |
 |  clk_25MHz_BUFG                         | ppu/regfile/data[10][7]_i_1_n_0 |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[2][7]_i_1_n_0  |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[14][7]_i_1_n_0 |                                 |                4 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[6][7]_i_1_n_0  |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[5][7]_i_1_n_0  |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[29][7]_i_1_n_0 |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[25][7]_i_1_n_0 |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[13][7]_i_1_n_0 |                                 |                2 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[14][7]_i_1_n_0 |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[17][7]_i_1_n_0 |                                 |                5 |              8 |
 |  clk_25MHz_BUFG                         | ppu/regfile/data[22][7]_i_1_n_0 |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[26][7]_i_1_n_0 |                                 |                4 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[30][7]_i_1_n_0 |                                 |                4 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[9][7]_i_1_n_0  |                                 |                2 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[0][7]_i_1_n_0  |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         | ppu/regfile/data[17][7]_i_1_n_0 |                                 |                3 |              8 |
-|  clk_25MHz_BUFG                         |                                 | ppu/hvcount/hcounter[9]_i_1_n_0 |                5 |             10 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[30][7]_i_1_n_0 |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[5][7]_i_1_n_0  |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[26][7]_i_1_n_0 |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[2][7]_i_1_n_0  |                                 |                5 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[29][7]_i_1_n_0 |                                 |                4 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[18][7]_i_1_n_0 |                                 |                4 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[21][7]_i_1_n_0 |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[6][7]_i_1_n_0  |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[9][7]_i_1_n_0  |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[25][7]_i_1_n_0 |                                 |                3 |              8 |
+|  clk_25MHz_BUFG                         | ppu/regfile/data[1][7]_i_1_n_0  |                                 |                3 |              8 |
 |  clk_25MHz_BUFG                         | ppu/hvcount/hcounter[9]_i_1_n_0 | ppu/hvcount/vcounter[9]_i_1_n_0 |                4 |             10 |
-|  seg/div/CLK                            |                                 |                                 |                8 |             10 |
-| ~ctrl/clkdiv/enable_snes_clk_output_reg |                                 |                                 |                5 |             12 |
+|  seg/div/CLK                            |                                 |                                 |                7 |             10 |
+|  clk_25MHz_BUFG                         |                                 | ppu/hvcount/hcounter[9]_i_1_n_0 |                7 |             10 |
+| ~ctrl/clkdiv/enable_snes_clk_output_reg |                                 |                                 |                6 |             12 |
 |  vblank_BUFG                            | write_data[0]_i_1_n_0           |                                 |                4 |             16 |
-|  vblank_BUFG                            |                                 |                                 |               11 |             28 |
 |  sys_clk_IBUF_BUFG                      |                                 | seg/div/counter[0]_i_1__0_n_0   |                7 |             28 |
 |  sys_clk_IBUF_BUFG                      |                                 | ctrl/clkdiv/clear               |                7 |             28 |
-|  clk_25MHz_BUFG                         |                                 |                                 |              585 |           2277 |
+|  vblank_BUFG                            |                                 |                                 |               14 |             29 |
+|  clk_25MHz_BUFG                         |                                 |                                 |              583 |           2277 |
 +-----------------------------------------+---------------------------------+---------------------------------+------------------+----------------+
 
 

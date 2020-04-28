@@ -63,6 +63,8 @@ set_property src_info {type:XDC file:1 line:102 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN J2 [get_ports snes_latch]
 set_property src_info {type:XDC file:1 line:105 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G2 [get_ports snes_clk]
+set_property src_info {type:XDC file:1 line:188 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N2 [get_ports {led_out}]
 set_property src_info {type:XDC file:1 line:206 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G19 [get_ports {R[0]}]
 set_property src_info {type:XDC file:1 line:208 export:INPUT save:INPUT read:READ} [current_design]

@@ -22,37 +22,37 @@
 
 module vga_controller_testbench( );
 
-
     reg sys_clk;
-    reg [15:0] sw;
-    reg btnU;
-    reg btnD;
-    reg btnL;
-    reg btnR;
-    wire [3:0] R;
-    wire [3:0] G;
-    wire [3:0] B;
-    wire hsync, vsync;
-    wire [7:0] cathode_data_out;
-    wire [3:0] enabled_segment;
-    
+    reg sw;
+    reg snes_data_in;
+    wire cathode_data_out;
+    wire enabled_segment;
+    wire snes_clk;
+    wire snes_latch;
+    wire snes_data_out;
+    wire hsync;
+    wire vsync;
+    wire R;
+    wire G;
+    wire B;
     
     
     top atop(
     sys_clk,
     sw,
-    btnU,
-    btnD,
-    btnL,
-    btnR,
+    snes_data_in,
     cathode_data_out,
     enabled_segment,
+    snes_clk,
+    snes_latch,
+    snes_data_out,
     hsync,
     vsync,
     R,
     G,
     B
     );
+
     
     initial begin
         sys_clk = 0;
@@ -62,10 +62,7 @@ module vga_controller_testbench( );
     
     initial begin
         sw = 0;
-        btnU = 1;
-        btnR = 1;
-        btnL = 0;
-        btnD = 0;
+        snes_data_in = 0;
     end
 
 
