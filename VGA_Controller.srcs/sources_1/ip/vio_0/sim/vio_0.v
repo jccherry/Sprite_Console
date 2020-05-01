@@ -48,17 +48,9 @@
 `timescale 1ns / 1ps
 module vio_0 (
 clk,
-probe_in0,probe_in1,probe_in2,probe_in3,probe_in4,probe_in5,probe_in6,probe_in7,probe_in8,
+probe_in0,probe_in1,probe_in2,probe_in3,probe_in4,probe_in5,probe_in6,probe_in7,probe_in8,probe_in9,
 probe_out0,
-probe_out1,
-probe_out2,
-probe_out3,
-probe_out4,
-probe_out5,
-probe_out6,
-probe_out7,
-probe_out8,
-probe_out9
+probe_out1
 );
 
 input clk;
@@ -71,17 +63,10 @@ input [0 : 0] probe_in5;
 input [0 : 0] probe_in6;
 input [15 : 0] probe_in7;
 input [16 : 0] probe_in8;
+input [5 : 0] probe_in9;
 
-output reg [0 : 0] probe_out0 = 'h0 ;
-output reg [15 : 0] probe_out1 = 'h0000 ;
-output reg [0 : 0] probe_out2 = 'h0 ;
-output reg [0 : 0] probe_out3 = 'h0 ;
-output reg [3 : 0] probe_out4 = 'h0 ;
-output reg [0 : 0] probe_out5 = 'h0 ;
-output reg [0 : 0] probe_out6 = 'h0 ;
-output reg [4 : 0] probe_out7 = 'h00 ;
-output reg [4 : 0] probe_out8 = 'h00 ;
-output reg [4 : 0] probe_out9 = 'h00 ;
+output reg [31 : 0] probe_out0 = 'h00000000 ;
+output reg [0 : 0] probe_out1 = 'h0 ;
 
 
 endmodule

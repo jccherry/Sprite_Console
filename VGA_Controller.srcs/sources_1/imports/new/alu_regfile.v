@@ -235,13 +235,24 @@ module datapath_top(
     wire [4:0] reg_read_addr2;
     wire [16:0] reg_read_data1;
     wire [16:0] reg_read_data2;
+    wire write_loc;
+    
+    wire [31:0] instruction;
+    wire step_clk;
+    
+    mux_16x2to1 reg_write_addr_mux(
+        reg_read_addr1,
+        reg_read_addr2,
+        write_loc,
+        reg_write_addr
+    );
     
     reg_file regfile(
     reg_write,
     reg_write_data,
     reg_write_addr,
     reg_rst,
-    clk,
+    step_clk,
     reg_read_addr1,
     reg_read_addr2,
     reg_read_data1,
@@ -297,6 +308,9 @@ module datapath_top(
 	reg_write_data
 	);
     
+    
+    
+    /*
     vio_0 VIO(
 .clk(clk),
 .probe_in0(reg_write_data),
@@ -308,20 +322,52 @@ module datapath_top(
 .probe_in6(alu_ovf),
 .probe_in7(alu_out),
 .probe_in8(data_mem_out),
-.probe_out0(reg_write),
-.probe_out1(instr_i),
-.probe_out2(alu_src_1),
-.probe_out3(alu_src_2),
-.probe_out4(alu_op),
-.probe_out5(mem_write),
-.probe_out6(mem_to_reg),
-.probe_out7(reg_read_addr1),
-.probe_out8(reg_read_addr2),
-.probe_out9(reg_write_addr)
+.probe_out0(instruction),
+.probe_out1(step_clk),
+);*/
+
+wire [5:0] opcode;
+
+vio_0 VIO(
+clk,
+reg_write_data,
+reg_read_data1,
+reg_read_data2,
+alu_input_1,
+alu_input_2,
+alu_take_branch,
+alu_ovf,
+alu_out,
+data_mem_out,
+opcode,
+instruction,
+step_clk
 );
 
+
+instruction_decoder inst_dec(
+    instruction,
+    //register read addresses (and write with control signal)
+    reg_read_addr1,
+    reg_read_addr2,
+    //immediate instruction
+    instr_i,
+    //control signals
+    alu_op,
+    alu_src_1,
+    alu_src_2,
+    reg_write,
+    mem_write,
+    write_loc,
+    mem_to_reg,
+    //debug output
+    opcode
+    );
+    
+    
+
 blk_mem_gen_0 data_ram(
-    clk,
+    step_clk,
     mem_write,
     alu_out,
     reg_read_data2,

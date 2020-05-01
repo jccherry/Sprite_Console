@@ -531,277 +531,168 @@
                                 ]
                             },
                             {
-                                "name": "probe_out0",
+                                "name": "probe_in9",
                                 "id": 9,
                                 "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 0,
-                                "nets": [
-                                    {
-                                        "name": "reg_write",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out1",
-                                "id": 10,
-                                "type": "DATA",
-                                "direction": "OUT",
+                                "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 15,
-                                "portIndex": 1,
+                                "rightIndex": 5,
+                                "portIndex": 9,
                                 "nets": [
                                     {
-                                        "name": "instr_i",
+                                        "name": "opcode",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "instr_i[15]"
+                                                "name": "opcode[5]"
                                             },
                                             {
-                                                "name": "instr_i[14]"
+                                                "name": "opcode[4]"
                                             },
                                             {
-                                                "name": "instr_i[13]"
+                                                "name": "opcode[3]"
                                             },
                                             {
-                                                "name": "instr_i[12]"
+                                                "name": "opcode[2]"
                                             },
                                             {
-                                                "name": "instr_i[11]"
+                                                "name": "opcode[1]"
                                             },
                                             {
-                                                "name": "instr_i[10]"
-                                            },
-                                            {
-                                                "name": "instr_i[9]"
-                                            },
-                                            {
-                                                "name": "instr_i[8]"
-                                            },
-                                            {
-                                                "name": "instr_i[7]"
-                                            },
-                                            {
-                                                "name": "instr_i[6]"
-                                            },
-                                            {
-                                                "name": "instr_i[5]"
-                                            },
-                                            {
-                                                "name": "instr_i[4]"
-                                            },
-                                            {
-                                                "name": "instr_i[3]"
-                                            },
-                                            {
-                                                "name": "instr_i[2]"
-                                            },
-                                            {
-                                                "name": "instr_i[1]"
-                                            },
-                                            {
-                                                "name": "instr_i[0]"
+                                                "name": "opcode[0]"
                                             }
                                         ]
                                     }
                                 ]
                             },
                             {
-                                "name": "probe_out2",
+                                "name": "probe_out0",
+                                "id": 10,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "instruction",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "instruction[31]"
+                                            },
+                                            {
+                                                "name": "instruction[30]"
+                                            },
+                                            {
+                                                "name": "instruction[29]"
+                                            },
+                                            {
+                                                "name": "instruction[28]"
+                                            },
+                                            {
+                                                "name": "instruction[27]"
+                                            },
+                                            {
+                                                "name": "instruction[26]"
+                                            },
+                                            {
+                                                "name": "instruction[25]"
+                                            },
+                                            {
+                                                "name": "instruction[24]"
+                                            },
+                                            {
+                                                "name": "instruction[23]"
+                                            },
+                                            {
+                                                "name": "instruction[22]"
+                                            },
+                                            {
+                                                "name": "instruction[21]"
+                                            },
+                                            {
+                                                "name": "instruction[20]"
+                                            },
+                                            {
+                                                "name": "instruction[19]"
+                                            },
+                                            {
+                                                "name": "instruction[18]"
+                                            },
+                                            {
+                                                "name": "instruction[17]"
+                                            },
+                                            {
+                                                "name": "instruction[16]"
+                                            },
+                                            {
+                                                "name": "instruction[15]"
+                                            },
+                                            {
+                                                "name": "instruction[14]"
+                                            },
+                                            {
+                                                "name": "instruction[13]"
+                                            },
+                                            {
+                                                "name": "instruction[12]"
+                                            },
+                                            {
+                                                "name": "instruction[11]"
+                                            },
+                                            {
+                                                "name": "instruction[10]"
+                                            },
+                                            {
+                                                "name": "instruction[9]"
+                                            },
+                                            {
+                                                "name": "instruction[8]"
+                                            },
+                                            {
+                                                "name": "instruction[7]"
+                                            },
+                                            {
+                                                "name": "instruction[6]"
+                                            },
+                                            {
+                                                "name": "instruction[5]"
+                                            },
+                                            {
+                                                "name": "instruction[4]"
+                                            },
+                                            {
+                                                "name": "instruction[3]"
+                                            },
+                                            {
+                                                "name": "instruction[2]"
+                                            },
+                                            {
+                                                "name": "instruction[1]"
+                                            },
+                                            {
+                                                "name": "instruction[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
                                 "id": 11,
                                 "type": "DATA",
                                 "direction": "OUT",
                                 "isVector": false,
                                 "leftIndex": 0,
                                 "rightIndex": 0,
-                                "portIndex": 2,
+                                "portIndex": 1,
                                 "nets": [
                                     {
-                                        "name": "alu_src_1",
+                                        "name": "step_clk",
                                         "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out3",
-                                "id": 12,
-                                "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 3,
-                                "nets": [
-                                    {
-                                        "name": "alu_src_2",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out4",
-                                "id": 13,
-                                "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 3,
-                                "portIndex": 4,
-                                "nets": [
-                                    {
-                                        "name": "alu_op",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "alu_op[3]"
-                                            },
-                                            {
-                                                "name": "alu_op[2]"
-                                            },
-                                            {
-                                                "name": "alu_op[1]"
-                                            },
-                                            {
-                                                "name": "alu_op[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out5",
-                                "id": 14,
-                                "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 5,
-                                "nets": [
-                                    {
-                                        "name": "mem_write",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out6",
-                                "id": 15,
-                                "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 6,
-                                "nets": [
-                                    {
-                                        "name": "mem_to_reg",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out7",
-                                "id": 16,
-                                "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 4,
-                                "portIndex": 7,
-                                "nets": [
-                                    {
-                                        "name": "reg_read_addr1",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "reg_read_addr1[4]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr1[3]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr1[2]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr1[1]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr1[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out8",
-                                "id": 17,
-                                "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 4,
-                                "portIndex": 8,
-                                "nets": [
-                                    {
-                                        "name": "reg_read_addr2",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "reg_read_addr2[4]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr2[3]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr2[2]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr2[1]"
-                                            },
-                                            {
-                                                "name": "reg_read_addr2[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe_out9",
-                                "id": 18,
-                                "type": "DATA",
-                                "direction": "OUT",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 4,
-                                "portIndex": 9,
-                                "nets": [
-                                    {
-                                        "name": "reg_write_addr",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "reg_write_addr[4]"
-                                            },
-                                            {
-                                                "name": "reg_write_addr[3]"
-                                            },
-                                            {
-                                                "name": "reg_write_addr[2]"
-                                            },
-                                            {
-                                                "name": "reg_write_addr[1]"
-                                            },
-                                            {
-                                                "name": "reg_write_addr[0]"
-                                            }
-                                        ]
                                     }
                                 ]
                             }
