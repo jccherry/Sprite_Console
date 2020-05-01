@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri May  1 14:31:08 2020
+| Date         : Fri May  1 15:05:25 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_methodology -file datapath_top_methodology_drc_routed.rpt -pb datapath_top_methodology_drc_routed.pb -rpx datapath_top_methodology_drc_routed.rpx
 | Design       : datapath_top
@@ -4967,72 +4967,72 @@ Related violations: <none>
 
 TIMING-17#987 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_0_2/RAMA/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_mem/address_table_reg_0/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#988 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_0_2/RAMB/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_mem/address_table_reg_0/CLKBWRCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#989 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_0_2/RAMC/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_mem/address_table_reg_1/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#990 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_0_2/RAMD/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_mem/address_table_reg_1/CLKBWRCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#991 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_3_5/RAMA/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_0/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#992 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_3_5/RAMB/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_1/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#993 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_3_5/RAMC/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_10/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#994 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_3_5/RAMD/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_11/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#995 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_6_6/DP/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_2/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#996 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_0_63_6_6/SP/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_3/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#997 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_1024_1087_0_2/RAMA/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_4/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#998 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_1024_1087_0_2/RAMB/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_5/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#999 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_1024_1087_0_2/RAMC/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_6/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#1000 Critical Warning
 Non-clocked sequential cell  
-The clock pin console_ppu/bg_mem/address_table_reg_1024_1087_0_2/RAMD/CLK is not reached by a timing clock
+The clock pin console_ppu/bg_tileset_mem/data_reg_0_7/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 CKLD-1#1 Warning
@@ -5062,52 +5062,52 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X61Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X56Y3 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X59Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X57Y3 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X58Y9 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X55Y3 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X58Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X54Y4 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X57Y6 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X54Y2 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X56Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X56Y1 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X55Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X55Y1 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X59Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X52Y1 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X62Y6 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X53Y1 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X60Y6 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X53Y3 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 

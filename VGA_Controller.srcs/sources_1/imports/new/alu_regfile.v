@@ -378,6 +378,7 @@ blk_mem_gen_0 data_ram(
   
   ppu console_ppu(
     clk,
+    step_clk,
     alu_out,
     alu_out,
     reg_read_data2,

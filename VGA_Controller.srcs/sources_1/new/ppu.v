@@ -22,6 +22,7 @@
 
 module ppu(
     input clk,
+    input write_clk,
     input [13:0] write_addr,
     input [13:0] read_addr,
     input [15:0] write_data,
@@ -92,7 +93,7 @@ module ppu(
     );
     
     ppu_regfile regfile(
-    clk,
+    write_clk,
     addr_out,
     write_data,
     wr_en_regfile,
@@ -456,6 +457,7 @@ module ppu(
     
     display_memory #("overlay_display_map.mem") overlay_mem(
     clk,
+    write_clk,
     wr_en_ov_mem,
     write_data,
     addr_out,
@@ -466,6 +468,7 @@ module ppu(
     //display_memory background_mem(
     display_memory #("bg_display_map.mem") bg_mem(
     clk,
+    write_clk,
     wr_en_bg_mem,
     write_data,
     addr_out,
@@ -476,6 +479,7 @@ module ppu(
     //foreground_memory foreground_mem(
     display_memory #("foreground_display_map.mem") fg_mem (
     clk,
+    write_clk,
     wr_en_fg_mem,
     write_data,
     addr_out,

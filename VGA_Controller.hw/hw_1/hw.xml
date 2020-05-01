@@ -404,7 +404,7 @@
         <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
-        <Option Id="OUTPUT_VALUE" value="00111100000000110000000000100011"/>
+        <Option Id="OUTPUT_VALUE" value="00111100000000110000000000000011"/>
         <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="SOURCE" value="netlist"/>
       </probeOptions>

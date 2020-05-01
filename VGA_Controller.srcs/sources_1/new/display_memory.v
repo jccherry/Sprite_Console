@@ -24,6 +24,7 @@ module display_memory
     #(parameter data_file = "")
     (
     input clk,
+    input write_clk,
     input wr_en,
     input [6:0] write_tile,
     input [12:0] write_addr,
@@ -41,9 +42,13 @@ module display_memory
     
     always @(posedge clk)
     begin
+        tile_addr = address_table[read_addr];
+    end
+    
+    always @(posedge write_clk)
+    begin
         if (wr_en)
             address_table[write_addr] = write_tile;
-        tile_addr = address_table[read_addr];
     end
     
 endmodule
