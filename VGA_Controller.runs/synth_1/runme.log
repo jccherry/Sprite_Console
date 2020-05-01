@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+    with args -log datapath_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath_top.tcl
 
 
 ****** Vivado v2019.2 (64-bit)
@@ -8,41 +8,35 @@
   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source top.tcl -notrace
-Command: synth_design -top top -part xc7a35tcpg236-1
+source datapath_top.tcl -notrace
+Command: synth_design -top datapath_top -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1800 
+INFO: Helper process launched with PID 4064 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 857.168 ; gain = 234.770
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 873.008 ; gain = 234.508
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath_top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:189]
 INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
 INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
-INFO: [Synth 8-6157] synthesizing module 'snes_controller' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/snes_controller.v:23]
-INFO: [Synth 8-6157] synthesizing module 'snes_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/snes_controller.v:128]
-	Parameter DIVISOR bound to: 28'b0000000000000000000110010000 
-INFO: [Synth 8-6155] done synthesizing module 'snes_clock_divider' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/snes_controller.v:128]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/snes_controller.v:92]
-INFO: [Synth 8-6155] done synthesizing module 'snes_controller' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/snes_controller.v:23]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment_scanner' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
-INFO: [Synth 8-6157] synthesizing module 'segment_clock_divider' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
-	Parameter DIVISOR bound to: 28'b0000000000100100100111110000 
-INFO: [Synth 8-6155] done synthesizing module 'segment_clock_divider' (5#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:60]
-INFO: [Synth 8-6157] synthesizing module 'two_bit_counter' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'two_bit_counter' (6#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:38]
-INFO: [Synth 8-6157] synthesizing module 'two_bit_decoder' [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'two_bit_decoder' (7#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:21]
-WARNING: [Synth 8-6090] variable 'cathode_data_out' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:127]
-WARNING: [Synth 8-6090] variable 'cathode_data_out' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:128]
-WARNING: [Synth 8-6090] variable 'cathode_data_out' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:129]
-WARNING: [Synth 8-6090] variable 'cathode_data_out' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:130]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scanner' (8#1) [C:/Users/jc170/Documents/Vivado Projects/7seg_controller/7seg_controller.srcs/sources_1/new/seven_segment.v:81]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux_16x2to1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:168]
+INFO: [Synth 8-6155] done synthesizing module 'mux_16x2to1' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:168]
+INFO: [Synth 8-6157] synthesizing module 'sprite_alu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_alu' (5#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:59]
+INFO: [Synth 8-6157] synthesizing module 'mux_17x2to1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'mux_17x2to1' (6#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:179]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-9080-DESKTOP-6IO763U/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-9080-DESKTOP-6IO763U/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-9080-DESKTOP-6IO763U/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-9080-DESKTOP-6IO763U/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'blk_mem_gen_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:326]
 INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
 INFO: [Synth 8-6157] synthesizing module 'ppu_memory_map' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_memory_map.v:26]
 INFO: [Synth 8-6155] done synthesizing module 'ppu_memory_map' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_memory_map.v:26]
@@ -158,8 +152,19 @@ INFO: [Synth 8-6155] done synthesizing module 'display_mux' (25#1) [C:/Users/jc1
 INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (26#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'ppu' (27#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
-WARNING: [Synth 8-689] width (15) of port connection 'write_addr' does not match port width (14) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:127]
-INFO: [Synth 8-6155] done synthesizing module 'top' (28#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'write_addr' does not match port width (14) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:335]
+WARNING: [Synth 8-689] width (16) of port connection 'read_addr' does not match port width (14) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:336]
+WARNING: [Synth 8-689] width (17) of port connection 'write_data' does not match port width (16) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:337]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'VIO'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:300]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'regfile'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:239]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu_mux_1'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:253]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu_mux_2'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:264]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:276]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'console_ppu'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:333]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'data_ram'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:323]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'data_mem_mux'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:293]
+WARNING: [Synth 8-3848] Net reg_rst in module/entity datapath_top does not have driver. [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'datapath_top' (28#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:189]
 WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[13]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[12]
@@ -175,9 +180,8 @@ WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[3]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[2]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[1]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[0]
-WARNING: [Synth 8-3331] design top has unconnected port sw[14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 966.180 ; gain = 343.781
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 988.164 ; gain = 349.664
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -190,51 +194,52 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 966.180 ; gain = 343.781
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 988.164 ; gain = 349.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 966.180 ; gain = 343.781
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 988.164 ; gain = 349.664
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 966.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 988.164 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'data_ram'
+Finished Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'data_ram'
+Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'VIO'
+Finished Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'VIO'
 Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
 Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/datapath_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/datapath_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1058.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1080.730 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1058.902 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1080.730 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1058.902 ; gain = 436.504
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1080.730 ; gain = 442.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1058.902 ; gain = 436.504
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1080.730 ; gain = 442.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for data_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for VIO. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1058.902 ; gain = 436.504
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1080.730 ; gain = 442.230
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "snes_data" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "segment_memory" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "segment_memory" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "segment_memory" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "segment_memory" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:84]
+WARNING: [Synth 8-327] inferring latch for variable 'ovf_reg' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:76]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1058.902 ; gain = 436.504
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1080.730 ; gain = 442.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -249,44 +254,40 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     32 Bit       Adders := 3     
 	   2 Input     32 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 3     
 	   3 Input     12 Bit       Adders := 7     
 	   3 Input     11 Bit       Adders := 14    
 	   2 Input     10 Bit       Adders := 3     
 	   2 Input      9 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
 	   3 Input      4 Bit       Adders := 3     
 	   2 Input      4 Bit       Adders := 3     
-	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               16 Bit    Registers := 33    
-	               12 Bit    Registers := 12    
+	               18 Bit    Registers := 32    
+	               16 Bit    Registers := 32    
+	               12 Bit    Registers := 10    
 	               10 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
 	                7 Bit    Registers := 3     
-	                5 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 11    
+	                1 Bit    Registers := 8     
 +---RAMs : 
 	             384K Bit         RAMs := 3     
 	              32K Bit         RAMs := 3     
 	              24K Bit         RAMs := 7     
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 11    
+	   4 Input     18 Bit        Muxes := 32    
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 10    
 	   2 Input     11 Bit        Muxes := 3     
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 3     
-	  17 Input      7 Bit        Muxes := 4     
-	   4 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 6     
-	   4 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
-	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 6     
-	   2 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 34    
+	   2 Input      1 Bit        Muxes := 64    
+	  16 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -294,50 +295,32 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module top 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-	               12 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
 Module tff 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module snes_controller 
+Module reg_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 32    
++---Muxes : 
+	   4 Input     18 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 32    
+Module mux_16x2to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module sprite_alu 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      5 Bit       Adders := 1     
-+---Registers : 
-	               12 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 1     
-	   4 Input      5 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 1     
-Module two_bit_counter 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                2 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      2 Bit        Muxes := 1     
-Module two_bit_decoder 
+	  16 Input      1 Bit        Muxes := 1     
+Module mux_17x2to1 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      4 Bit        Muxes := 1     
-Module seven_segment_scanner 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---Muxes : 
-	  17 Input      7 Bit        Muxes := 4     
-	   4 Input      7 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
 Module ppu_memory_map 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -457,6 +440,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
 WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
 WARNING: [Synth 8-3331] design counter_to_tables has unconnected port vcounter[9]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[13]
@@ -473,16 +458,16 @@ WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[3]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[2]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[1]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[0]
-WARNING: [Synth 8-3331] design top has unconnected port sw[14]
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite1/sprite_data_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite2/sprite_data_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite3/sprite_data_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite4/sprite_data_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite5/sprite_data_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite6/sprite_data_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ppu/sprite7/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM sprite1/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM sprite2/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM sprite3/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM sprite4/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM sprite5/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM sprite6/sprite_data_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM sprite7/sprite_data_reg to conserve power
+WARNING: [Synth 8-3332] Sequential element (ovf_reg) is unused and will be removed from module sprite_alu.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1058.902 ; gain = 436.504
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1080.730 ; gain = 442.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -507,15 +492,24 @@ Block RAM: Preliminary Mapping	Report (see note below)
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 
 Distributed RAM: Preliminary Mapping	Report (see note below)
-+------------+-----------------------------------+-----------+----------------------+-----------------------------+
-|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives                  | 
-+------------+-----------------------------------+-----------+----------------------+-----------------------------+
-|top         | ppu/overlay_mem/address_table_reg | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
-|top         | ppu/bg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
-|top         | ppu/fg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
-+------------+-----------------------------------+-----------+----------------------+-----------------------------+
++------------+-------------------------------+-----------+----------------------+-----------------------------+
+|Module Name | RTL Object                    | Inference | Size (Depth x Width) | Primitives                  | 
++------------+-------------------------------+-----------+----------------------+-----------------------------+
+|console_ppu | overlay_mem/address_table_reg | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
+|console_ppu | bg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
+|console_ppu | fg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
++------------+-------------------------------+-----------+----------------------+-----------------------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sprite_alu  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -529,13 +523,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.941 ; gain = 454.543
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1134.914 ; gain = 496.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1099.453 ; gain = 477.055
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1140.309 ; gain = 501.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -559,13 +553,13 @@ Block RAM: Final Mapping	Report
 
 
 Distributed RAM: Final Mapping	Report
-+------------+-----------------------------------+-----------+----------------------+-----------------------------+
-|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives                  | 
-+------------+-----------------------------------+-----------+----------------------+-----------------------------+
-|top         | ppu/overlay_mem/address_table_reg | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
-|top         | ppu/bg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
-|top         | ppu/fg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
-+------------+-----------------------------------+-----------+----------------------+-----------------------------+
++------------+-------------------------------+-----------+----------------------+-----------------------------+
+|Module Name | RTL Object                    | Inference | Size (Depth x Width) | Primitives                  | 
++------------+-------------------------------+-----------+----------------------+-----------------------------+
+|console_ppu | overlay_mem/address_table_reg | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
+|console_ppu | bg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
+|console_ppu | fg_mem/address_table_reg      | Implied   | 8 K x 7              | RAM64X1D x 75	RAM64M x 150	 | 
++------------+-------------------------------+-----------+----------------------+-----------------------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -579,51 +573,51 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7053] The timing for the instance ppu/sprite1/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/sprite2/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/sprite3/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/sprite4/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/sprite5/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/sprite6/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/sprite7/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/bg_tileset_mem/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite1/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite2/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite3/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite4/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite5/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite6/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite7/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/bg_tileset_mem/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1133.871 ; gain = 511.473
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1192.031 ; gain = 553.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -643,18 +637,18 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6064] Net \ppu/pixel_y_overlay [3] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net pixel_y_overlay[3] is driving 36 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1197.328 ; gain = 558.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1197.328 ; gain = 558.828
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -673,149 +667,154 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1197.328 ; gain = 558.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1197.328 ; gain = 558.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1197.328 ; gain = 558.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1197.328 ; gain = 558.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vio_0         |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
 
 Report Cell Usage: 
-+------+------------+------+
-|      |Cell        |Count |
-+------+------------+------+
-|1     |BUFG        |     3|
-|2     |CARRY4      |   177|
-|3     |LUT1        |   112|
-|4     |LUT2        |   370|
-|5     |LUT3        |   420|
-|6     |LUT4        |   251|
-|7     |LUT5        |   195|
-|8     |LUT6        |   788|
-|9     |MUXF7       |   210|
-|10    |MUXF8       |    84|
-|11    |RAM64M      |   450|
-|12    |RAM64X1D    |   225|
-|13    |RAMB36E1    |     7|
-|14    |RAMB36E1_1  |     1|
-|15    |RAMB36E1_10 |     1|
-|16    |RAMB36E1_11 |     1|
-|17    |RAMB36E1_12 |     1|
-|18    |RAMB36E1_13 |     1|
-|19    |RAMB36E1_14 |     1|
-|20    |RAMB36E1_15 |     1|
-|21    |RAMB36E1_16 |     1|
-|22    |RAMB36E1_17 |     1|
-|23    |RAMB36E1_18 |     1|
-|24    |RAMB36E1_19 |     1|
-|25    |RAMB36E1_2  |     1|
-|26    |RAMB36E1_20 |     1|
-|27    |RAMB36E1_21 |     1|
-|28    |RAMB36E1_22 |     1|
-|29    |RAMB36E1_23 |     1|
-|30    |RAMB36E1_24 |     1|
-|31    |RAMB36E1_3  |     1|
-|32    |RAMB36E1_4  |     1|
-|33    |RAMB36E1_5  |     1|
-|34    |RAMB36E1_6  |     1|
-|35    |RAMB36E1_7  |     1|
-|36    |RAMB36E1_8  |     1|
-|37    |RAMB36E1_9  |     1|
-|38    |FDRE        |   383|
-|39    |IBUF        |    17|
-|40    |OBUF        |    41|
-+------+------------+------+
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |vio_0         |     1|
+|3     |BUFG          |     1|
+|4     |CARRY4        |   336|
+|5     |DSP48E1       |     1|
+|6     |LUT1          |   156|
+|7     |LUT2          |   454|
+|8     |LUT3          |   920|
+|9     |LUT4          |   298|
+|10    |LUT5          |   217|
+|11    |LUT6          |  1224|
+|12    |MUXF7         |   354|
+|13    |MUXF8         |    84|
+|14    |RAM64M        |   450|
+|15    |RAM64X1D      |   225|
+|16    |RAMB36E1      |     7|
+|17    |RAMB36E1_1    |     1|
+|18    |RAMB36E1_10   |     1|
+|19    |RAMB36E1_11   |     1|
+|20    |RAMB36E1_12   |     1|
+|21    |RAMB36E1_13   |     1|
+|22    |RAMB36E1_14   |     1|
+|23    |RAMB36E1_15   |     1|
+|24    |RAMB36E1_16   |     1|
+|25    |RAMB36E1_17   |     1|
+|26    |RAMB36E1_18   |     1|
+|27    |RAMB36E1_19   |     1|
+|28    |RAMB36E1_2    |     1|
+|29    |RAMB36E1_20   |     1|
+|30    |RAMB36E1_21   |     1|
+|31    |RAMB36E1_22   |     1|
+|32    |RAMB36E1_23   |     1|
+|33    |RAMB36E1_24   |     1|
+|34    |RAMB36E1_3    |     1|
+|35    |RAMB36E1_4    |     1|
+|36    |RAMB36E1_5    |     1|
+|37    |RAMB36E1_6    |     1|
+|38    |RAMB36E1_7    |     1|
+|39    |RAMB36E1_8    |     1|
+|40    |RAMB36E1_9    |     1|
+|41    |FDRE          |   787|
+|42    |IBUF          |     1|
+|43    |OBUF          |    14|
++------+--------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+-------------------------------+------+
 |      |Instance                      |Module                         |Cells |
 +------+------------------------------+-------------------------------+------+
-|1     |top                           |                               |  3757|
-|2     |  ctrl                        |snes_controller                |    92|
-|3     |    clkdiv                    |snes_clock_divider             |    47|
-|4     |  div                         |clock_divider                  |     4|
-|5     |    tff1                      |tff                            |     2|
-|6     |    tff2                      |tff_15                         |     2|
-|7     |  ppu                         |ppu                            |  3412|
+|1     |top                           |                               |  5610|
+|2     |  regfile                     |reg_file                       |  1018|
+|3     |  alu_mux_1                   |mux_16x2to1__1                 |    16|
+|4     |  alu_mux_2                   |mux_16x2to1                    |    16|
+|5     |  alu                         |sprite_alu                     |  1052|
+|6     |  data_mem_mux                |mux_17x2to1                    |    17|
+|7     |  console_ppu                 |ppu                            |  3414|
 |8     |    bg_mem                    |display_memory__parameterized0 |   489|
 |9     |    bg_tileset_mem            |tileset_memory                 |    12|
 |10    |    counter_convert_bg        |counter_to_tables              |    28|
-|11    |    counter_convert_fg        |counter_to_tables_0            |    28|
-|12    |    counter_convert_overlay   |counter_to_tables_1            |    28|
+|11    |    counter_convert_fg        |counter_to_tables_1            |    28|
+|12    |    counter_convert_overlay   |counter_to_tables_2            |    28|
 |13    |    disp_addr_convert         |tile_coords_to_addr            |     2|
-|14    |    disp_addr_convert_fg      |tile_coords_to_addr_2          |     2|
-|15    |    disp_addr_convert_overlay |tile_coords_to_addr_3          |     2|
+|14    |    disp_addr_convert_fg      |tile_coords_to_addr_3          |     2|
+|15    |    disp_addr_convert_overlay |tile_coords_to_addr_4          |     2|
 |16    |    fg_mem                    |display_memory__parameterized1 |   508|
 |17    |    hsyncflop1                |DFF                            |     1|
-|18    |    hsyncflop2                |DFF_4                          |     1|
-|19    |    hvcount                   |hvcounter                      |   543|
+|18    |    hsyncflop2                |DFF_5                          |     1|
+|19    |    hvcount                   |hvcounter                      |   557|
 |20    |    mmap                      |ppu_memory_map                 |   403|
 |21    |    overlay_mem               |display_memory                 |   488|
-|22    |    regfile                   |ppu_regfile                    |   524|
+|22    |    regfile                   |ppu_regfile                    |   512|
 |23    |    sprite1                   |sprite_memory                  |   126|
-|24    |    sprite2                   |sprite_memory_5                |    25|
-|25    |    sprite3                   |sprite_memory_6                |    43|
-|26    |    sprite4                   |sprite_memory_7                |    25|
-|27    |    sprite5                   |sprite_memory_8                |    60|
-|28    |    sprite6                   |sprite_memory_9                |    25|
-|29    |    sprite7                   |sprite_memory_10               |    25|
+|24    |    sprite2                   |sprite_memory_6                |    25|
+|25    |    sprite3                   |sprite_memory_7                |    43|
+|26    |    sprite4                   |sprite_memory_8                |    25|
+|27    |    sprite5                   |sprite_memory_9                |    60|
+|28    |    sprite6                   |sprite_memory_10               |    25|
+|29    |    sprite7                   |sprite_memory_11               |    25|
 |30    |    tileset_mem_overlay       |tileset_memory__parameterized0 |    20|
-|31    |    vsyncflop1                |DFF_11                         |     1|
-|32    |    vsyncflop2                |DFF_12                         |     1|
-|33    |    within_flop1              |DFF_13                         |     1|
-|34    |    within_flop2              |DFF_14                         |     1|
-|35    |  seg                         |seven_segment_scanner          |    97|
-|36    |    cnt                       |two_bit_counter                |    34|
-|37    |    div                       |segment_clock_divider          |    46|
+|31    |    vsyncflop1                |DFF_12                         |     1|
+|32    |    vsyncflop2                |DFF_13                         |     1|
+|33    |    within_flop1              |DFF_14                         |     1|
+|34    |    within_flop2              |DFF_15                         |     1|
+|35    |  clk_div                     |clock_divider                  |     4|
+|36    |    tff1                      |tff                            |     2|
+|37    |    tff2                      |tff_0                          |     2|
 +------+------------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1197.328 ; gain = 558.828
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1139.309 ; gain = 424.188
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1139.309 ; gain = 516.910
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1197.328 ; gain = 466.262
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1197.328 ; gain = 558.828
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1151.363 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1177 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1209.387 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1481 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1151.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1209.387 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 675 instances were transformed.
   RAM64M => RAM64M (RAMD64E(x4)): 450 instances
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 225 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-141 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+142 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1151.363 ; gain = 821.734
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1151.363 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1209.387 ; gain = 849.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1209.387 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/top.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 27 21:23:58 2020...
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/datapath_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file datapath_top_utilization_synth.rpt -pb datapath_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  1 12:00:55 2020...
