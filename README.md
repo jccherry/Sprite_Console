@@ -17,7 +17,7 @@ PPU (Picture Processing Unit)
  - screen displays via VGA in 40x30 tile configuration
  - 7 individual sprites can be rendered at a time, can hold 8 unique sprites per slot
  - 32 registers control offsets of overlaying backgrounds and sprite positions/enabled status/enabled sprite texture address
- - all PPU memory and registers are memory mapped from the CPU from address (decimal) 16384 -> 
+ - all PPU memory and registers are memory mapped from the CPU from address (decimal) 16384 -> 30819
 
 Todo (listed mostly in order of importance but hey who knows what order its gonna get done):
 -
