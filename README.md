@@ -43,3 +43,5 @@ Resources I've used
 - [Awesome intro FPGA/Verilog Blog by Will Green](https://timetoexplore.net/)
 - [NES Documentation by Patrick Diskin](http://nesdev.com/NESDoc.pdf)
 - [Tiled Map editor for creating game maps](https://www.mapeditor.org/)
+- Northeastern University EECE2323's MIPS CPU (didn't get to complete the lab bc of corona but i recreated it, modified to suit my needs)
+- [Northeastern University CS3650 for learning assembly and reference](http://www.ccs.neu.edu/home/ntuck/courses/2020/01/cs3650/)
