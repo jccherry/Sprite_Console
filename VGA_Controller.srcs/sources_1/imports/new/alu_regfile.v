@@ -35,6 +35,19 @@ module reg_file(
     
     integer i;
 
+    initial begin
+    
+        for (i = 0; i < 29; i=i+1) 
+                begin
+                    registers[i] = 0;
+                end
+        
+        registers[28] = 16'h4000; //start of PPU Register offset
+        registers[29] = 16'h4021; //start of BG Display Table
+        registers[30] = 16'h52e2; //start of FG Display Table
+        registers[31] = 16'h65a3; //start of ov display Table
+    end
+    
     
     always @(negedge clk) //register write on enable and negedge of clock
     begin

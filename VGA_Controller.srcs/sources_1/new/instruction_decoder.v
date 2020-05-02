@@ -252,6 +252,87 @@ module instruction_decoder(
                             write_loc = 0;
                             mem_to_reg = 0;
                         end
+        6'b010110   :   begin //inv
+                            alu_op = 7;
+                            alu_src_1 = 1;
+                            alu_src_2 = 0;
+                            reg_write = 1;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b010111   :   begin //invi
+                            alu_op = 7;
+                            alu_src_1 = 1;
+                            alu_src_2 = 1;
+                            reg_write = 1;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b011000   :   begin //j (to accomplish, load identical register and je instruction)
+                            alu_op = 10;
+                            alu_src_1 = 0;
+                            alu_src_2 = 0;
+                            reg_write = 0;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b011001   :   begin //je
+                            alu_op = 10;
+                            alu_src_1 = 0;
+                            alu_src_2 = 0;
+                            reg_write = 0;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b011010   :   begin //jne
+                            alu_op = 11;
+                            alu_src_1 = 0;
+                            alu_src_2 = 0;
+                            reg_write = 0;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b011011   :   begin //jl
+                            alu_op = 12;
+                            alu_src_1 = 0;
+                            alu_src_2 = 0;
+                            reg_write = 0;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b011100   :   begin //jle
+                            alu_op = 13;
+                            alu_src_1 = 0;
+                            alu_src_2 = 0;
+                            reg_write = 0;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b011101   :   begin //jg
+                            alu_op = 12;
+                            alu_src_1 = 0;
+                            alu_src_2 = 0;
+                            reg_write = 0;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
+        6'b011110   :   begin //jge
+                            alu_op = 12;
+                            alu_src_1 = 0;
+                            alu_src_2 = 0;
+                            reg_write = 0;
+                            mem_write = 0;
+                            write_loc = 0;
+                            mem_to_reg = 0;
+                        end
         default     :   begin
                             alu_op = 0;
                             alu_src_1 = 0;

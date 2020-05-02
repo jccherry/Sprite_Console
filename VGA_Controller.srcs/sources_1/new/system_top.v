@@ -246,7 +246,7 @@ instruction_decoder inst_dec(
     
     program_counter program_counter(
     step_clk,
-    alu_out,
+    instr_i,
     alu_take_branch,
     program_line
     );
