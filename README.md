@@ -1,5 +1,5 @@
-# Homebew Console
-Homebrew Game Console Written in Verilog for Basys 3 FPGA
+# Sprite
+The Sprite is a homebrew game console written in Verilog for a Basys 3 FPGA
 
  CPU
  -
