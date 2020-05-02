@@ -1,49 +1,39 @@
 # Homebew Console
 Homebrew Game Console Written in Verilog for Basys 3 FPGA
-Alot of inspiration taken from the NES to learn how a console like this functions
 
  CPU
  -
- - Yet to be created
- - Plans:
-   - 16 Registers
-   - custom 16 bit RISC CPU derived from NEU DLD lab's (EECE2323) CPU
-   - 50kB dedicated addressable RAM
-   - Memory mapped VRAM display tables and other PPU registers
-   - Memory mapped I/O for controllers
-   - Memory mapped APU (Audio processing unit) registers
+  - 16 bit RISC cpu based on MIPS architecture
+  - 32 registers
+  - Memory mapped VRAM and Controller Registers
+  - 32 bit instruction word size
+  - 16kB instruction memory in 4096 maximum lines for one program
 
 PPU (Picture Processing Unit)
 -
- - Tile based ppu with ~150kB graphics ROM organized into 3 50k tilesets for overlaying layers
+ - Tile based ppu with ~150kB graphics ROM organized into 3 ~50kB tilesets for overlaying layers
  - Each tile is 16x16 pixels with 12 bits of color (4 each R,G,B)
- - 128 addressible tiles per tileset per layer
+ - 128 unique tiles per tileset per layer
  - screen displays via VGA in 40x30 tile configuration
- - each display layer is 160x30 tiles total (4800 addressible tiles), with ability to offset each layer 0-120 for display (4 "total screens")
- - ability for transparency between layers is predefined in hardware overlay > foreground > background
- - Plans
-	  - Add sprite support
-	  - create registers to hold all main input values
-		  - allow these registers to be memory mapped from the CPU
-	  -	Make Display memory addressable by CPU
+ - 7 individual sprites can be rendered at a time, can hold 8 unique sprites per slot
+ - 32 registers control offsets of overlaying backgrounds and sprite positions/enabled status/enabled sprite texture address
+ - all PPU memory and registers are memory mapped from the CPU from address (decimal) 16384 -> 
 
-APU (Audio Processing Unit)
+Todo (listed mostly in order of importance but hey who knows what order its gonna get done):
 -
-- yet to be created
- - Last priority
- - Plans:
-	 - ROM with certain number of tracks of background music
-		 - playable, pausable, and switchable by the CPU
-	 - memory addressable registers or something to play certain amount of sound effects which overpower the music
-	 - FPGA is digital device, so either all music will have to be generated with buzzer-style sound via PWM like playTone() on arduino or I'll have to research how to both generate digital music with an FPGA and convert back to analog (which i think involves a low pass filter, meaning i really should have paid more attention in Circuits)
+ - Finish instruction decoder implementation with every instruction (and finish the design of the ISA for that matter)
+ - implement branching logic
+ - implement vblank interrupt for game timing purposes
+ - integrate the snes controller module for multiple controllers
+ 	- get the controller inputs to be memory mapped as well
+ - figure out audio processing unit and audio output
+ - create assembler for custom ISA assembly language
+ - get SD card working to load game into memory so i don't have to regenerate the bitstream with initialized memory values
+ - create custom enclosure with two controller ports, VGA and HDMI Output (get better vga-hdmi converter), and lcd screen controlled by embedded arduino
+ - <b>CREATE DOCUMENTATION FOR EVERYTHING FROM THE HARDWARE DESIGN TO THE ISA</b>
+ - get arduino to emulate snes controller inputs to allow for bluetooth controller support OR barebones internet connectivity in the future (something like two consoles send controller inputs and basic data from player one to player two, and theoretically both games would see the exact same thing in something basic like pong
 
-Additional plans
--
-- Compatible with NES controllers (need to source ports from EBAY)
-	- possibly easier to use arduino to process the input and feed back into fpga
-	- 2 players at least possible via hardware
--  3d print/lasercut a case when i get back to campus
-- have fun
+
 
 Resources I've used
 -
@@ -52,3 +42,4 @@ Resources I've used
 - [VGA Reference by Digilent](https://learn.digilentinc.com/Documents/269)
 - [Awesome intro FPGA/Verilog Blog by Will Green](https://timetoexplore.net/)
 - [NES Documentation by Patrick Diskin](http://nesdev.com/NESDoc.pdf)
+- [Tiled Map editor for creating game maps](https://www.mapeditor.org/)
