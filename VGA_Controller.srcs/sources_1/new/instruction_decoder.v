@@ -186,7 +186,7 @@ module instruction_decoder(
                             alu_src_2 = 1;
                             reg_write = 1;
                             mem_write = 0;
-                            write_loc = 0;
+                            write_loc = 1;
                             mem_to_reg = 1;
                         end
 		6'b001111   :   begin //store
