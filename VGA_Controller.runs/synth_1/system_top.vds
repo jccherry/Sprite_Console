@@ -2,23 +2,24 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat May  2 22:03:32 2020
-# Process ID: 13096
+# Start of session at: Sun May  3 18:24:07 2020
+# Process ID: 4760
 # Current directory: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1
 # Command line: vivado.exe -log system_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top.tcl
 # Log file: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/system_top.vds
 # Journal file: C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 329.324 ; gain = 32.906
 Command: synth_design -top system_top -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11472 
+INFO: Helper process launched with PID 6112 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 873.750 ; gain = 235.289
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 867.730 ; gain = 235.148
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_top' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:22]
 INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
@@ -27,27 +28,25 @@ INFO: [Synth 8-6155] done synthesizing module 'tff' (1#1) [C:/Users/jc170/Docume
 INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/clock_div.v:18]
 INFO: [Synth 8-6157] synthesizing module 'mux_16x2to1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:181]
 INFO: [Synth 8-6155] done synthesizing module 'mux_16x2to1' (3#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:181]
-WARNING: [Synth 8-689] width (5) of port connection 'y' does not match port width (16) of module 'mux_16x2to1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:80]
+WARNING: [Synth 8-689] width (5) of port connection 'y' does not match port width (16) of module 'mux_16x2to1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:84]
 INFO: [Synth 8-6157] synthesizing module 'reg_file' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'reg_file' (4#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:22]
 INFO: [Synth 8-6157] synthesizing module 'sprite_alu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:72]
 INFO: [Synth 8-6155] done synthesizing module 'sprite_alu' (5#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mux_17x2to1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:192]
 INFO: [Synth 8-6155] done synthesizing module 'mux_17x2to1' (6#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:192]
-INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-13096-DESKTOP-6IO763U/realtime/vio_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vio_0' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-13096-DESKTOP-6IO763U/realtime/vio_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'instruction_decoder' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/instruction_decoder.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_decoder' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/instruction_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decoder' (7#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/instruction_decoder.v:23]
 INFO: [Synth 8-6157] synthesizing module 'demux_1_to_2' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/mux_2_to_1.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'demux_1_to_2' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/mux_2_to_1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-13096-DESKTOP-6IO763U/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-13096-DESKTOP-6IO763U/realtime/blk_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'blk_mem_gen_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'demux_1_to_2' (8#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/mux_2_to_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-4760-DESKTOP-6IO763U/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (9#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/.Xil/Vivado-4760-DESKTOP-6IO763U/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'blk_mem_gen_0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:221]
 INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
 INFO: [Synth 8-6157] synthesizing module 'ppu_memory_map' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_memory_map.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'ppu_memory_map' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_memory_map.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ppu_memory_map' (10#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_memory_map.v:26]
 INFO: [Synth 8-6157] synthesizing module 'ppu_regfile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_regfile.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ppu_regfile' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu_regfile' (11#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu_regfile.v:23]
 WARNING: [Synth 8-689] width (13) of port connection 'write_addr' does not match port width (5) of module 'ppu_regfile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:97]
 WARNING: [Synth 8-689] width (13) of port connection 'read_addr' does not match port width (5) of module 'ppu_regfile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:100]
 WARNING: [Synth 8-689] width (11) of port connection 'bg_offset' does not match port width (16) of module 'ppu_regfile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:102]
@@ -82,106 +81,98 @@ WARNING: [Synth 8-689] width (3) of port connection 'sprite_7_addr' does not mat
 WARNING: [Synth 8-689] width (10) of port connection 'sprite_7_x' does not match port width (16) of module 'ppu_regfile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:131]
 WARNING: [Synth 8-689] width (9) of port connection 'sprite_7_y' does not match port width (16) of module 'ppu_regfile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:132]
 INFO: [Synth 8-6157] synthesizing module 'hvcounter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (13#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvcounter' (12#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvcounter.v:23]
 INFO: [Synth 8-6157] synthesizing module 'hvsync' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'hvsync' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hvsync' (13#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/hvsync.v:23]
 INFO: [Synth 8-6157] synthesizing module 'vblank' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'vblank' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vblank' (14#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/vblank.v:23]
 INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'DFF' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (15#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/DFF.v:23]
 INFO: [Synth 8-6157] synthesizing module 'within_bounds' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'within_bounds' (16#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:22]
 INFO: [Synth 8-6157] synthesizing module 'counter_to_tables' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'counter_to_tables' (17#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/coords_to_tables.v:31]
 INFO: [Synth 8-6157] synthesizing module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
-WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:270]
-WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:271]
+INFO: [Synth 8-6155] done synthesizing module 'counters_to_coords' (18#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/counters_to_coords.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'pixel_x' does not match port width (10) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:271]
+WARNING: [Synth 8-689] width (10) of port connection 'pixel_y' does not match port width (9) of module 'counters_to_coords' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:272]
 INFO: [Synth 8-6157] synthesizing module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
 	Parameter data_file bound to: sprite1.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'sprite1.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:277]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:278]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:292]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:293]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:307]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:308]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:322]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:323]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:337]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:338]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:352]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:353]
-WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:367]
-WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_memory' (19#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:278]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:279]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:293]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:294]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:308]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:309]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:323]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:324]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:338]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:339]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:353]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:354]
+WARNING: [Synth 8-689] width (11) of port connection 'screen_x' does not match port width (10) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:368]
+WARNING: [Synth 8-689] width (10) of port connection 'screen_y' does not match port width (9) of module 'sprite_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:369]
 INFO: [Synth 8-6157] synthesizing module 'sprite_rgb_combinator' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'sprite_rgb_combinator' (21#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sprite_rgb_combinator' (20#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/sprite_rgb_combinator.v:23]
 INFO: [Synth 8-6157] synthesizing module 'tile_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (22#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tile_coords_to_addr' (21#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tile_coords_to_addr.v:23]
 INFO: [Synth 8-6157] synthesizing module 'pixel_coords_to_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (23#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords_to_addr' (22#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/pixel_coords_to_addr.v:1]
 INFO: [Synth 8-6157] synthesizing module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
 	Parameter data_file bound to: overlay_display_map.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'overlay_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'display_memory' (24#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'write_tile' does not match port width (7) of module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:462]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory' (23#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'write_tile' does not match port width (7) of module 'display_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:463]
 INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
 	Parameter data_file bound to: bg_display_map.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'bg_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (24#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'write_tile' does not match port width (7) of module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized0' (23#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'write_tile' does not match port width (7) of module 'display_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:474]
 INFO: [Synth 8-6157] synthesizing module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
 	Parameter data_file bound to: foreground_display_map.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'foreground_display_map.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (24#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'write_tile' does not match port width (7) of module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:484]
+INFO: [Synth 8-6155] done synthesizing module 'display_memory__parameterized1' (23#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_memory.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'write_tile' does not match port width (7) of module 'display_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:485]
 INFO: [Synth 8-6157] synthesizing module 'tileset_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 	Parameter data_file bound to: background_tileset.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'background_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
 WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (25#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory' (24#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized0' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 	Parameter data_file bound to: overlay_tileset.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'overlay_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
 WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (25#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized0' (24#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 INFO: [Synth 8-6157] synthesizing module 'tileset_memory__parameterized1' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 	Parameter data_file bound to: foreground_tileset.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'foreground_tileset.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:39]
 WARNING: [Synth 8-6014] Unused sequential element data_index_reg was removed.  [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (25#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tileset_memory__parameterized1' (24#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/tileset_memory.v:23]
 INFO: [Synth 8-6157] synthesizing module 'transparency_detection' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (26#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transparency_detection' (25#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/transparency_detection.v:23]
 INFO: [Synth 8-6157] synthesizing module 'display_mux' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'display_mux' (27#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_mux' (26#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/display_mux.v:23]
 INFO: [Synth 8-6157] synthesizing module 'rgb_slicer' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (28#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ppu' (29#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'write_addr' does not match port width (14) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:226]
-WARNING: [Synth 8-689] width (16) of port connection 'read_addr' does not match port width (14) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:227]
-WARNING: [Synth 8-689] width (17) of port connection 'write_data' does not match port width (16) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_slicer' (27#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/rgb_slicer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (28#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'write_addr' does not match port width (14) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:231]
+WARNING: [Synth 8-689] width (16) of port connection 'read_addr' does not match port width (14) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:232]
+WARNING: [Synth 8-689] width (17) of port connection 'write_data' does not match port width (16) of module 'ppu' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:233]
+INFO: [Synth 8-6157] synthesizing module 'wait_vb_interrupt' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/wait_vb_interrupt.v:64]
+INFO: [Synth 8-6157] synthesizing module 'jk_ff' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/wait_vb_interrupt.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'jk_ff' (29#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/wait_vb_interrupt.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'wait_vb_interrupt' (30#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/wait_vb_interrupt.v:64]
 INFO: [Synth 8-6157] synthesizing module 'program_memory' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:23]
 	Parameter data_file bound to: program.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'program.mem' is read successfully [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'program_memory' (30#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'program_memory' (31#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:23]
 INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'program_counter' (31#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:40]
-WARNING: [Synth 8-689] width (16) of port connection 'addr_in' does not match port width (12) of module 'program_counter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:249]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'VIO'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:165]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'program_counter'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:247]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'console_ppu'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:223]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'data_ram'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:213]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'regfile'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:83]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'data_mem_mux'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:137]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu_mux_1'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:97]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu_mux_2'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:108]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:120]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'demux'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:205]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_dec'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:183]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'program_mem'. This will prevent further optimization [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:241]
-WARNING: [Synth 8-3848] Net reg_rst in module/entity system_top does not have driver. [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:87]
-INFO: [Synth 8-6155] done synthesizing module 'system_top' (32#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (32#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:40]
+WARNING: [Synth 8-689] width (16) of port connection 'addr_in' does not match port width (12) of module 'program_counter' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:260]
+WARNING: [Synth 8-3848] Net reg_rst in module/entity system_top does not have driver. [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'system_top' (33#1) [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:22]
 WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[13]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[12]
@@ -198,7 +189,7 @@ WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[2]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[1]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 989.574 ; gain = 351.113
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 983.016 ; gain = 350.434
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -211,56 +202,50 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 989.574 ; gain = 351.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 983.016 ; gain = 350.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 989.574 ; gain = 351.113
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 983.016 ; gain = 350.434
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 989.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 983.016 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'data_ram'
 Finished Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'data_ram'
-Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'VIO'
-Finished Parsing XDC File [c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'VIO'
 Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
 Finished Parsing XDC File [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1081.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1082.461 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1081.789 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1082.461 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1081.789 ; gain = 443.328
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1082.461 ; gain = 449.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1081.789 ; gain = 443.328
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1082.461 ; gain = 449.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for data_ram. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for VIO. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1081.789 ; gain = 443.328
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1082.461 ; gain = 449.879
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "alu_src_1" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mem_write" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "write_loc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'ovf_reg' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v:89]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1081.789 ; gain = 443.328
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1082.461 ; gain = 449.879
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -290,13 +275,13 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 10    
 	               10 Bit    Registers := 2     
 	                7 Bit    Registers := 3     
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 10    
 +---RAMs : 
 	             384K Bit         RAMs := 3     
 	              32K Bit         RAMs := 3     
 	              24K Bit         RAMs := 7     
 +---Muxes : 
-	  11 Input     32 Bit        Muxes := 1     
+	  12 Input     32 Bit        Muxes := 1     
 	   4 Input     18 Bit        Muxes := 32    
 	   2 Input     17 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 3     
@@ -306,10 +291,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 67    
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 70    
 	  16 Input      1 Bit        Muxes := 1     
-	  32 Input      1 Bit        Muxes := 3     
+	  32 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -346,8 +332,9 @@ Detailed RTL Component Info :
 Module instruction_decoder 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 3     
-	  32 Input      1 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  32 Input      1 Bit        Muxes := 4     
 Module ppu_memory_map 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -445,10 +432,16 @@ Module display_mux
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+Module jk_ff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 3     
 Module program_memory 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  11 Input     32 Bit        Muxes := 1     
+	  12 Input     32 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -467,14 +460,6 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 DSP Report: Generating DSP out0, operation Mode is: A*B.
 DSP Report: operator out0 is absorbed into DSP out0.
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[11]
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[10]
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[9]
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[8]
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[7]
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[6]
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[5]
-WARNING: [Synth 8-3331] design program_memory has unconnected port addr[4]
 WARNING: [Synth 8-3331] design counters_to_coords has unconnected port vcounter[9]
 WARNING: [Synth 8-3331] design counter_to_tables has unconnected port vcounter[9]
 WARNING: [Synth 8-3331] design ppu has unconnected port read_addr[13]
@@ -501,25 +486,143 @@ INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM s
 INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM overlay_mem/address_table_reg to conserve power
 INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM bg_mem/address_table_reg to conserve power
 INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM fg_mem/address_table_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[31][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[30][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[27][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[26][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[24][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[23][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[22][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[19][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[18][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[17][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[15][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[14][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[13][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[11][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[10][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[9][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[7][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[6][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[5][16]' (FDRE_1) to 'regfile/registers_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[3][16]' (FDRE_1) to 'regfile/registers_reg[2][16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][16] )
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[31][14]' (FDRE_1) to 'regfile/registers_reg[30][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[27][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[26][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[24][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[23][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[22][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[19][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[18][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[17][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[15][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[14][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[13][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[11][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[10][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[9][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[7][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[6][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[5][14]' (FDRE_1) to 'regfile/registers_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[3][14]' (FDRE_1) to 'regfile/registers_reg[2][14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][14] )
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[31][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[30][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[27][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[26][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[24][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[23][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[22][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[19][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[18][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[17][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[15][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[14][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[13][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[11][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[10][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[9][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[7][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[6][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[5][15]' (FDRE_1) to 'regfile/registers_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[3][15]' (FDRE_1) to 'regfile/registers_reg[2][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][15] )
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[30][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[27][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[26][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[24][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[23][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[22][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[19][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[18][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[17][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[15][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[14][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[13][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[11][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[10][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[9][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[7][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[6][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[5][0]' (FDRE_1) to 'regfile/registers_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[3][0]' (FDRE_1) to 'regfile/registers_reg[2][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][0] )
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[31][1]' (FDRE_1) to 'regfile/registers_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[27][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[26][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[24][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[23][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[22][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[19][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[18][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[17][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[15][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[14][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[13][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[11][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[10][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[9][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[7][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[6][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[5][1]' (FDRE_1) to 'regfile/registers_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[3][1]' (FDRE_1) to 'regfile/registers_reg[2][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][1] )
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[31][2]' (FDRE_1) to 'regfile/registers_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[30][2]' (FDRE_1) to 'regfile/registers_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'regfile/registers_reg[27][2]' (FDRE_1) to 'regfile/registers_reg[3][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[2][13] )
 WARNING: [Synth 8-3332] Sequential element (ovf_reg) is unused and will be removed from module sprite_alu.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1081.789 ; gain = 443.328
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1082.461 ; gain = 449.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+--------------------+------------+---------------+----------------+
-|Module Name         | RTL Object | Depth x Width | Implemented As | 
-+--------------------+------------+---------------+----------------+
-|instruction_decoder | alu_op     | 64x4          | LUT            | 
-|instruction_decoder | alu_src_2  | 64x1          | LUT            | 
-|instruction_decoder | reg_write  | 64x1          | LUT            | 
-|instruction_decoder | alu_op     | 64x4          | LUT            | 
-|instruction_decoder | alu_src_2  | 64x1          | LUT            | 
-|instruction_decoder | reg_write  | 64x1          | LUT            | 
-+--------------------+------------+---------------+----------------+
++--------------------+--------------------+---------------+----------------+
+|Module Name         | RTL Object         | Depth x Width | Implemented As | 
++--------------------+--------------------+---------------+----------------+
+|instruction_decoder | alu_op             | 32x4          | LUT            | 
+|instruction_decoder | alu_src_2          | 32x1          | LUT            | 
+|instruction_decoder | reg_write          | 32x1          | LUT            | 
+|system_top          | inst_dec/alu_op    | 32x4          | LUT            | 
+|system_top          | inst_dec/alu_src_2 | 32x1          | LUT            | 
+|system_top          | inst_dec/reg_write | 32x1          | LUT            | 
++--------------------+--------------------+---------------+----------------+
 
 
 Block RAM: Preliminary Mapping	Report (see note below)
@@ -564,13 +667,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1138.691 ; gain = 500.230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1132.547 ; gain = 499.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1141.941 ; gain = 503.480
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1134.805 ; gain = 502.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -607,6 +710,19 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regfile/registers_reg[29][12] )
 INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite1/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite2/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance console_ppu/sprite3/sprite_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
@@ -657,7 +773,7 @@ INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay
 INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance console_ppu/tileset_mem_overlay/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1170.957 ; gain = 532.496
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1183.973 ; gain = 551.391
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -680,15 +796,14 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/program_memory.v:53]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1188.977 ; gain = 556.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1188.977 ; gain = 556.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -707,25 +822,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1188.977 ; gain = 556.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1188.977 ; gain = 556.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1188.977 ; gain = 556.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1188.977 ; gain = 556.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -735,8 +850,7 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |vio_0         |         1|
-|2     |blk_mem_gen_0 |         1|
+|1     |blk_mem_gen_0 |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -744,123 +858,117 @@ Report Cell Usage:
 |      |Cell          |Count |
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
-|2     |vio_0         |     1|
-|3     |BUFG          |     1|
-|4     |CARRY4        |   333|
-|5     |DSP48E1       |     1|
-|6     |LUT1          |   179|
-|7     |LUT2          |   359|
-|8     |LUT3          |   720|
-|9     |LUT4          |   276|
-|10    |LUT5          |   226|
-|11    |LUT6          |   686|
-|12    |MUXF7         |   144|
-|13    |RAMB36E1      |     7|
-|14    |RAMB36E1_1    |     1|
-|15    |RAMB36E1_10   |     1|
-|16    |RAMB36E1_11   |     1|
-|17    |RAMB36E1_12   |     1|
-|18    |RAMB36E1_13   |     1|
-|19    |RAMB36E1_14   |     1|
-|20    |RAMB36E1_15   |     1|
-|21    |RAMB36E1_16   |     1|
-|22    |RAMB36E1_17   |     1|
-|23    |RAMB36E1_18   |     1|
-|24    |RAMB36E1_19   |     1|
-|25    |RAMB36E1_2    |     1|
-|26    |RAMB36E1_20   |     1|
-|27    |RAMB36E1_21   |     1|
-|28    |RAMB36E1_22   |     1|
-|29    |RAMB36E1_23   |     1|
-|30    |RAMB36E1_24   |     1|
-|31    |RAMB36E1_25   |     1|
-|32    |RAMB36E1_26   |     1|
-|33    |RAMB36E1_27   |     1|
-|34    |RAMB36E1_28   |     1|
-|35    |RAMB36E1_29   |     1|
-|36    |RAMB36E1_3    |     1|
-|37    |RAMB36E1_30   |     1|
-|38    |RAMB36E1_4    |     1|
-|39    |RAMB36E1_5    |     1|
-|40    |RAMB36E1_6    |     1|
-|41    |RAMB36E1_7    |     1|
-|42    |RAMB36E1_8    |     1|
-|43    |RAMB36E1_9    |     1|
-|44    |FDRE          |   778|
-|45    |IBUF          |     1|
-|46    |OBUF          |    14|
+|2     |BUFG          |     3|
+|3     |CARRY4        |   331|
+|4     |DSP48E1       |     1|
+|5     |LUT1          |   127|
+|6     |LUT2          |   299|
+|7     |LUT3          |   699|
+|8     |LUT4          |   349|
+|9     |LUT5          |   295|
+|10    |LUT6          |   343|
+|11    |MUXF7         |     4|
+|12    |RAMB36E1      |     7|
+|13    |RAMB36E1_1    |     1|
+|14    |RAMB36E1_10   |     1|
+|15    |RAMB36E1_11   |     1|
+|16    |RAMB36E1_12   |     1|
+|17    |RAMB36E1_13   |     1|
+|18    |RAMB36E1_14   |     1|
+|19    |RAMB36E1_15   |     1|
+|20    |RAMB36E1_16   |     1|
+|21    |RAMB36E1_17   |     1|
+|22    |RAMB36E1_18   |     1|
+|23    |RAMB36E1_19   |     1|
+|24    |RAMB36E1_2    |     1|
+|25    |RAMB36E1_20   |     1|
+|26    |RAMB36E1_21   |     1|
+|27    |RAMB36E1_22   |     1|
+|28    |RAMB36E1_23   |     1|
+|29    |RAMB36E1_24   |     1|
+|30    |RAMB36E1_25   |     1|
+|31    |RAMB36E1_26   |     1|
+|32    |RAMB36E1_27   |     1|
+|33    |RAMB36E1_28   |     1|
+|34    |RAMB36E1_29   |     1|
+|35    |RAMB36E1_3    |     1|
+|36    |RAMB36E1_30   |     1|
+|37    |RAMB36E1_4    |     1|
+|38    |RAMB36E1_5    |     1|
+|39    |RAMB36E1_6    |     1|
+|40    |RAMB36E1_7    |     1|
+|41    |RAMB36E1_8    |     1|
+|42    |RAMB36E1_9    |     1|
+|43    |FDRE          |   281|
+|44    |IBUF          |     1|
+|45    |OBUF          |    14|
 +------+--------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+-------------------------------+------+
 |      |Instance                      |Module                         |Cells |
 +------+------------------------------+-------------------------------+------+
-|1     |top                           |                               |  3773|
-|2     |  regfile                     |reg_file                       |  1018|
-|3     |  alu_mux_1                   |mux_16x2to1__2                 |    16|
-|4     |  alu_mux_2                   |mux_16x2to1                    |    16|
-|5     |  alu                         |sprite_alu                     |  1052|
-|6     |  data_mem_mux                |mux_17x2to1                    |    17|
-|7     |  inst_dec                    |instruction_decoder            |     9|
-|8     |  demux                       |demux_1_to_2                   |     2|
-|9     |  console_ppu                 |ppu                            |  1535|
-|10    |    counter_convert_bg        |counter_to_tables              |     7|
-|11    |    counter_convert_fg        |counter_to_tables_1            |     7|
-|12    |    counter_convert_overlay   |counter_to_tables_2            |     7|
-|13    |    disp_addr_convert         |tile_coords_to_addr            |     2|
-|14    |    disp_addr_convert_fg      |tile_coords_to_addr_3          |     2|
-|15    |    disp_addr_convert_overlay |tile_coords_to_addr_4          |     2|
-|16    |    bg_mem                    |display_memory__parameterized0 |     3|
-|17    |    bg_tileset_mem            |tileset_memory                 |    12|
-|18    |    fg_mem                    |display_memory__parameterized1 |    40|
-|19    |    hsyncflop1                |DFF                            |     1|
-|20    |    hsyncflop2                |DFF_5                          |     1|
-|21    |    hvcount                   |hvcounter                      |   476|
-|22    |    mmap                      |ppu_memory_map                 |    19|
-|23    |    overlay_mem               |display_memory                 |     3|
-|24    |    regfile                   |ppu_regfile                    |   600|
-|25    |    sprite1                   |sprite_memory                  |   126|
-|26    |    sprite2                   |sprite_memory_6                |    25|
-|27    |    sprite3                   |sprite_memory_7                |    43|
-|28    |    sprite4                   |sprite_memory_8                |    25|
-|29    |    sprite5                   |sprite_memory_9                |    60|
-|30    |    sprite6                   |sprite_memory_10               |    25|
-|31    |    sprite7                   |sprite_memory_11               |    25|
-|32    |    tileset_mem_overlay       |tileset_memory__parameterized0 |    20|
-|33    |    vsyncflop1                |DFF_12                         |     1|
-|34    |    vsyncflop2                |DFF_13                         |     1|
-|35    |    within_flop1              |DFF_14                         |     1|
-|36    |    within_flop2              |DFF_15                         |     1|
-|37    |  program_mem                 |program_memory                 |     9|
-|38    |  program_counter             |program_counter                |    28|
-|39    |  clk_div                     |clock_divider                  |     4|
-|40    |    tff1                      |tff                            |     2|
-|41    |    tff2                      |tff_0                          |     2|
-|42    |  reg_write_addr_mux          |mux_16x2to1__3                 |     5|
+|1     |top                           |                               |  2801|
+|2     |  alu                         |sprite_alu                     |     1|
+|3     |  clk_div                     |clock_divider                  |     5|
+|4     |    tff1                      |tff                            |     2|
+|5     |    tff2                      |tff_15                         |     3|
+|6     |  console_ppu                 |ppu                            |  1445|
+|7     |    counter_convert_bg        |counter_to_tables              |     7|
+|8     |    counter_convert_fg        |counter_to_tables_0            |     7|
+|9     |    counter_convert_overlay   |counter_to_tables_1            |     7|
+|10    |    disp_addr_convert         |tile_coords_to_addr            |     2|
+|11    |    disp_addr_convert_fg      |tile_coords_to_addr_2          |     2|
+|12    |    disp_addr_convert_overlay |tile_coords_to_addr_3          |     2|
+|13    |    bg_mem                    |display_memory__parameterized0 |     2|
+|14    |    bg_tileset_mem            |tileset_memory                 |    12|
+|15    |    fg_mem                    |display_memory__parameterized1 |     3|
+|16    |    hsyncflop1                |DFF                            |     1|
+|17    |    hsyncflop2                |DFF_4                          |     1|
+|18    |    hvcount                   |hvcounter                      |   473|
+|19    |    mmap                      |ppu_memory_map                 |     3|
+|20    |    overlay_mem               |display_memory                 |     2|
+|21    |    regfile                   |ppu_regfile                    |   568|
+|22    |    sprite1                   |sprite_memory                  |   126|
+|23    |    sprite2                   |sprite_memory_5                |    25|
+|24    |    sprite3                   |sprite_memory_6                |    43|
+|25    |    sprite4                   |sprite_memory_7                |    25|
+|26    |    sprite5                   |sprite_memory_8                |    60|
+|27    |    sprite6                   |sprite_memory_9                |    25|
+|28    |    sprite7                   |sprite_memory_10               |    25|
+|29    |    tileset_mem_overlay       |tileset_memory__parameterized0 |    20|
+|30    |    vsyncflop1                |DFF_11                         |     1|
+|31    |    vsyncflop2                |DFF_12                         |     1|
+|32    |    within_flop1              |DFF_13                         |     1|
+|33    |    within_flop2              |DFF_14                         |     1|
+|34    |  program_counter             |program_counter                |  1199|
+|35    |  regfile                     |reg_file                       |    86|
+|36    |  wvb_int                     |wait_vb_interrupt              |     2|
+|37    |    jk                        |jk_ff                          |     2|
 +------+------------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1188.977 ; gain = 556.395
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:09 . Memory (MB): peak = 1177.156 ; gain = 446.480
-Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1177.156 ; gain = 538.695
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 1188.977 ; gain = 456.949
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1188.977 ; gain = 556.395
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1189.211 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 515 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1201.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 373 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1189.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1201.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-167 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+285 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1189.211 ; gain = 826.832
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1189.211 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1201.043 ; gain = 839.785
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1201.043 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/system_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_top_utilization_synth.rpt -pb system_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May  2 22:05:07 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun May  3 18:25:46 2020...

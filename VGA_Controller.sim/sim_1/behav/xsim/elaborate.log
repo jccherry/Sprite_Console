@@ -1,112 +1,116 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vga_controller_testbench_behav xil_defaultlib.vga_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3582165413f04b888d97708ff46a105a --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot system_testbench_behav xil_defaultlib.system_testbench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sw' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:42]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'cathode_data_out' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:44]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'enabled_segment' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:45]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'snes_data_out' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:48]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'R' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:51]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'G' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:52]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'B' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sim_1/new/vga_controller_testbench.v:53]
-WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/top.v:104]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'bg_offset' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:84]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'fg_offset' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:85]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'ov_offset' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:86]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_1_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:87]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_1_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:88]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_1_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:89]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_1_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:90]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_2_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:91]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_2_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:92]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_2_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:93]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_2_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:94]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_3_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:95]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_3_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:96]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_3_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:97]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_3_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:98]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_4_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:99]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_4_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:100]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_4_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:101]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_4_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:102]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_5_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:103]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_5_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:104]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_5_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:105]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_5_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:106]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_6_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:107]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_6_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:108]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_6_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:109]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_6_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:110]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_7_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:111]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_7_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:112]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_7_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:113]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_7_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:114]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'pixel_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:252]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'pixel_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:253]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:258]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:259]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:260]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:265]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:266]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:273]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:274]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:275]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:280]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:281]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:288]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:289]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:290]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:295]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:296]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:303]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:304]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:305]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:310]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:311]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:318]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:319]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:320]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:325]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:326]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:333]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:334]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:335]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:340]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:341]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:348]
-WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:349]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:350]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:355]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:356]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:433]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:434]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:435]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:443]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:444]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:445]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:453]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:454]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:455]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:462]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:465]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:471]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:474]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:481]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:484]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 16 for port 'a' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 16 for port 'b' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:82]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 16 for port 'y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:84]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'addra' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:221]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:231]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'read_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:232]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 16 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:233]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 5 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:97]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 5 for port 'read_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:100]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'bg_offset' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:102]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'fg_offset' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:103]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'ov_offset' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:104]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_1_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:105]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_1_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:106]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_1_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:107]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_1_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:108]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_2_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:109]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_2_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:110]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_2_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:111]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_2_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:112]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_3_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:113]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_3_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:114]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_3_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:115]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_3_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:116]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_4_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:117]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_4_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:118]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_4_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:119]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_4_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:120]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_5_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:121]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_5_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:122]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_5_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:123]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_5_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:124]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_6_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:125]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_6_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:126]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_6_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:127]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_6_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:128]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sprite_7_enabled' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:129]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 16 for port 'sprite_7_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:130]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'sprite_7_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:131]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 16 for port 'sprite_7_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:132]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'pixel_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:271]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'pixel_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:272]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:277]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:278]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:279]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:284]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:285]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:292]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:293]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:294]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:299]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:300]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:307]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:308]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:309]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:314]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:322]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:323]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:324]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:329]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:330]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:337]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:338]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:339]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:344]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:345]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:352]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:353]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:354]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:359]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:360]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:367]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'screen_x' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:368]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'screen_y' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:369]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'write_addr' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:374]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'write_data' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:375]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:463]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:474]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 7 for port 'write_tile' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:485]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:493]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:496]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:502]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:505]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:512]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'color_in' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/ppu.v:515]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 12 for port 'addr_in' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:260]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'b' [C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v:103]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.tff
 Compiling module xil_defaultlib.clock_divider
-Compiling module xil_defaultlib.snes_clock_divider
-Compiling module xil_defaultlib.snes_controller
-Compiling module xil_defaultlib.segment_clock_divider
-Compiling module xil_defaultlib.two_bit_counter
-Compiling module xil_defaultlib.two_bit_decoder
-Compiling module xil_defaultlib.seven_segment_scanner
+Compiling module xil_defaultlib.mux_16x2to1
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.sprite_alu
+Compiling module xil_defaultlib.mux_17x2to1
+Compiling module xil_defaultlib.instruction_decoder
+Compiling module xil_defaultlib.demux_1_to_2
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.ppu_memory_map
 Compiling module xil_defaultlib.ppu_regfile
 Compiling module xil_defaultlib.hvcounter
 Compiling module xil_defaultlib.hvsync
@@ -129,7 +133,11 @@ Compiling module xil_defaultlib.transparency_detection
 Compiling module xil_defaultlib.display_mux
 Compiling module xil_defaultlib.rgb_slicer
 Compiling module xil_defaultlib.ppu
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.vga_controller_testbench
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.wait_vb_interrupt
+Compiling module xil_defaultlib.program_memory(data_file="progra...
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.system_top
+Compiling module xil_defaultlib.system_testbench
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot vga_controller_testbench_behav
+Built simulation snapshot system_testbench_behav

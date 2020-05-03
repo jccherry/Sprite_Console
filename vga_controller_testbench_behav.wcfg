@@ -3,55 +3,88 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="vga_controller_testbench_behav.wdb" id="1">
+      <db_ref path="system_testbench_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="vga_controller_testbench" />
+            <top_module name="system_testbench" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="8602591250fs"></ZoomStartTime>
-      <ZoomEndTime time="8803591251fs"></ZoomEndTime>
-      <Cursor1Time time="8671991250fs"></Cursor1Time>
+      <ZoomStartTime time="794219fs"></ZoomStartTime>
+      <ZoomEndTime time="1238720fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="174"></NameColumnWidth>
-      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="191"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="8" />
-   <wvobject fp_name="/vga_controller_testbench/hsync" type="logic">
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/system_testbench/top/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/hsync" type="logic">
       <obj_property name="ElementShortName">hsync</obj_property>
       <obj_property name="ObjectShortName">hsync</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/vsync" type="logic">
+   <wvobject fp_name="/system_testbench/top/vsync" type="logic">
       <obj_property name="ElementShortName">vsync</obj_property>
       <obj_property name="ObjectShortName">vsync</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/atop/ppu/vblank" type="logic">
+   <wvobject fp_name="/system_testbench/top/R" type="array">
+      <obj_property name="ElementShortName">R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/G" type="array">
+      <obj_property name="ElementShortName">G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">G[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/B" type="array">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/wvb" type="logic">
+      <obj_property name="ElementShortName">wvb</obj_property>
+      <obj_property name="ObjectShortName">wvb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/vblank" type="logic">
       <obj_property name="ElementShortName">vblank</obj_property>
       <obj_property name="ObjectShortName">vblank</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/atop/ppu/hcounter" type="array">
+   <wvobject fp_name="/system_testbench/top/console_ppu/hcounter" type="array">
       <obj_property name="ElementShortName">hcounter[9:0]</obj_property>
       <obj_property name="ObjectShortName">hcounter[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/atop/ppu/vcounter" type="array">
+   <wvobject fp_name="/system_testbench/top/console_ppu/vcounter" type="array">
       <obj_property name="ElementShortName">vcounter[9:0]</obj_property>
       <obj_property name="ObjectShortName">vcounter[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/atop/ppu/R" type="array">
-      <obj_property name="ElementShortName">R[3:0]</obj_property>
-      <obj_property name="ObjectShortName">R[3:0]</obj_property>
+   <wvobject fp_name="/system_testbench/top/program_counter/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/atop/ppu/G" type="array">
-      <obj_property name="ElementShortName">G[3:0]</obj_property>
-      <obj_property name="ObjectShortName">G[3:0]</obj_property>
+   <wvobject fp_name="/system_testbench/top/program_counter/addr_in" type="array">
+      <obj_property name="ElementShortName">addr_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_in[11:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/vga_controller_testbench/atop/ppu/B" type="array">
-      <obj_property name="ElementShortName">B[3:0]</obj_property>
-      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+   <wvobject fp_name="/system_testbench/top/program_counter/take_branch" type="logic">
+      <obj_property name="ElementShortName">take_branch</obj_property>
+      <obj_property name="ObjectShortName">take_branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/program_counter/program_addr" type="array">
+      <obj_property name="ElementShortName">program_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">program_addr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/inst_dec/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
 </wave_config>

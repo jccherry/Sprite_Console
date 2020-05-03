@@ -60,6 +60,10 @@ module system_top(
     clk
     );
     
+    wire wvb;
+    
+    
+    
     wire reg_write;
     wire [16:0] reg_write_data;
     wire [4:0] reg_write_addr;
@@ -161,7 +165,7 @@ module system_top(
 
 wire [5:0] opcode;
 wire [11:0] program_line;
-
+/*
 vio_0 VIO(
 clk,
 reg_write_data,
@@ -177,7 +181,7 @@ opcode,
 program_line,
 instruction,
 step_clk
-);
+);*/
 
 
 instruction_decoder inst_dec(
@@ -196,7 +200,8 @@ instruction_decoder inst_dec(
     write_loc,
     mem_to_reg,
     //debug output
-    opcode
+    opcode,
+    wvb
     );
     
     wire data_ram_write;
@@ -236,6 +241,12 @@ instruction_decoder inst_dec(
     B
     );
     
+    wait_vb_interrupt wvb_int(
+    clk,
+    vblank,
+    wvb,
+    step_clk
+    );
     
     
     program_memory #("program.mem") program_mem

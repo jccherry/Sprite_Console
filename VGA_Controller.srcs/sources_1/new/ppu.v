@@ -214,6 +214,7 @@ module ppu(
     
     vblank vb(
     vcounter,
+    hcounter,
     vblank
     );
     

@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -77,7 +78,6 @@ set rc [catch {
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   add_files -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/system_top.dcp}}
   read_ip -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
-  read_ip -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/vio_0/vio_0.xci}}
   read_xdc {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc}}
   link_design -top system_top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
