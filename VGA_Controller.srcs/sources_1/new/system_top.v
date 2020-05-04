@@ -36,15 +36,17 @@ module system_top(
     
     
     wire clk;
+    wire clk_50;
     
     clock_divider clk_div(
     sys_clk,
+    clk_50,
     clk
     );
     
     wire wvb;
     wire vblank;
-    
+    /*
     wire [11:0] snes_data;
     reg [11:0] snes_data_reg;
     
@@ -63,7 +65,19 @@ module system_top(
     begin
         snes_data_reg = snes_data;
     end
+    */
     
+    SNES_FSM ctrl1(
+				clk_50,
+				1'b1,
+				snes_data_in,
+				snes_data_out,
+				,
+				,
+				snes_latch,
+				snes_clk
+				);
+				
     wire reg_write;
     wire [16:0] reg_write_data;
     wire [4:0] reg_write_addr;

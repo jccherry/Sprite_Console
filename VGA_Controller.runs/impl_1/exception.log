@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file C:\Users\jc170\Documents\Vivado Projects\Homebew_Console\VGA_Controller.runs\impl_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: Permission denied

@@ -37,6 +37,7 @@ Todo (listed mostly in order of importance but hey who knows what order its gonn
 
 Resources I've used
 -
+- [SNES Controller Core by Fabio Andres (the one i designed was super buggy lol)](http://www.fpgalover.com/ip-cores/snes-controller-core)
 - [Great video explaining NES Architecture by Michael Chiaramonte (No relation)](https://www.youtube.com/watch?v=XwGj1ciSAtw)
 - [Basys 3 Manual by Digilent](https://reference.digilentinc.com/_media/basys3:basys3_rm.pdf)
 - [VGA Reference by Digilent](https://learn.digilentinc.com/Documents/269)

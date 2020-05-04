@@ -18,12 +18,13 @@ endmodule
 module clock_divider(
     input clk_input,
     //input [3:0] scale_factor,
+    output clk_50,
     output clk_output
     );
     
-    wire inbetween;
+
     
-    tff tff1(clk_input, inbetween);
-    tff tff2(inbetween, clk_output);
+    tff tff1(clk_input, clk_50);
+    tff tff2(clk_50, clk_output);
     
 endmodule
