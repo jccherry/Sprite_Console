@@ -21,36 +21,18 @@
 
 module system_top(
     input sys_clk,
+    input sw,
+    input snes_data_in,
+    //output reg led_out,
+    output snes_clk,
+    output snes_latch,
+    output [11:0] snes_data_out,
     output hsync,
     output vsync,
     output [3:0] R,
     output [3:0] G,
     output [3:0] B
-    //input reg_rst,
-    //input reg_write,
-    //input [15:0] instr_i,
-    //input alu_src_1,
-    //input alu_src_2,
-    //input [3:0] alu_op,
-    //input mem_write,
-    //input mem_to_reg,
-    //input [4:0] reg_read_addr1,
-    //input [4:0] reg_read_addr2,
-    //input [4:0] reg_write_addr
     );
-    
-    /*
-    .probe_out0(reg_write),
-.probe_out1(instr_i),
-.probe_out2(alu_src_1),
-.probe_out3(alu_src_2),
-.probe_out4(alu_op),
-.probe_out5(mem_write),
-.probe_out6(mem_to_reg),
-.probe_out7(reg_read_addr1),
-.probe_out8(reg_read_addr2),
-.probe_out9(reg_write_addr)
-    */
     
     
     wire clk;
@@ -61,8 +43,26 @@ module system_top(
     );
     
     wire wvb;
+    wire vblank;
     
+    wire [11:0] snes_data;
+    reg [11:0] snes_data_reg;
     
+    snes_controller ctrl(
+    clk,
+    sw,
+    snes_data_in,
+    snes_clk,
+    snes_latch,
+    snes_data
+    );
+    
+    assign snes_data_out = snes_data_reg;
+    
+    always@(posedge vblank)
+    begin
+        snes_data_reg = snes_data;
+    end
     
     wire reg_write;
     wire [16:0] reg_write_data;
@@ -223,7 +223,7 @@ instruction_decoder inst_dec(
     data_mem_out
     );
   
-  wire vblank;
+  
   
   ppu console_ppu(
     clk,
