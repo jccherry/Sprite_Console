@@ -347,7 +347,7 @@ module instruction_decoder(
                             wvb = 0;
                         end
         6'b011101   :   begin //jg
-                            alu_op = 12;
+                            alu_op = 14;
                             alu_src_1 = 0;
                             alu_src_2 = 0;
                             reg_write = 0;
@@ -357,7 +357,7 @@ module instruction_decoder(
                             wvb = 0;
                         end
         6'b011110   :   begin //jge
-                            alu_op = 12;
+                            alu_op = 15;
                             alu_src_1 = 0;
                             alu_src_2 = 0;
                             reg_write = 0;
