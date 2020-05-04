@@ -78,6 +78,9 @@ module system_top(
 				snes_clk
 				);
 				
+				
+			
+	
     wire reg_write;
     wire [16:0] reg_write_data;
     wire [4:0] reg_write_addr;
@@ -152,12 +155,24 @@ module system_top(
     assign alu_reg_wire[15:0] = alu_out;
     assign alu_reg_wire[16] = alu_ovf;
     
+    wire [16:0] reg_write_cont_intermediate; 
+    
     mux_17x2to1 data_mem_mux(
     alu_reg_wire,
     data_mem_out,
 	mem_to_reg,
-	reg_write_data
+	reg_write_cont_intermediate
 	);
+	
+	
+	
+	controller_reg_mux controller_mux(
+    alu_out,
+    snes_data_out,
+    16'h0000,
+    reg_write_cont_intermediate,
+    reg_write_data
+    );	
     
     
     

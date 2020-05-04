@@ -41,7 +41,8 @@ module reg_file(
                 begin
                     registers[i] = 0;
                 end
-        
+                
+        registers[27] = 16'h7864; //controller 0 mem offset
         registers[28] = 16'h4000; //start of PPU Register offset
         registers[29] = 16'h4021; //start of BG Display Table
         registers[30] = 16'h52e2; //start of FG Display Table
