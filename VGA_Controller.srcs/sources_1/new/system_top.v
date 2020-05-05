@@ -170,6 +170,8 @@ module system_top(
     alu_out,
     snes_data_out,
     16'h0000,
+    16'h0000,
+    16'h0000,
     reg_write_cont_intermediate,
     reg_write_data
     );	

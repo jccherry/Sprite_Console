@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="211281fs"></ZoomEndTime>
-      <Cursor1Time time="65000fs"></Cursor1Time>
+      <ZoomStartTime time="32991fs"></ZoomStartTime>
+      <ZoomEndTime time="128292fs"></ZoomEndTime>
+      <Cursor1Time time="49991fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="215"></NameColumnWidth>
-      <ValueColumnWidth column_width="143"></ValueColumnWidth>
+      <ValueColumnWidth column_width="127"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/system_testbench/top/program_counter/addr_in" type="array">
       <obj_property name="ElementShortName">addr_in[11:0]</obj_property>
       <obj_property name="ObjectShortName">addr_in[11:0]</obj_property>
@@ -97,5 +97,13 @@
       <obj_property name="ElementShortName">[4][17:0]</obj_property>
       <obj_property name="ObjectShortName">[4][17:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/snes_data_out" type="array">
+      <obj_property name="ElementShortName">snes_data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">snes_data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_testbench/top/alu_out" type="array">
+      <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
    </wvobject>
 </wave_config>

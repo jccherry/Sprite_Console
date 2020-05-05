@@ -23,15 +23,26 @@
 module system_testbench();
 
     reg sys_clk;
+    reg sw;
+    reg snes_data_in;
     wire hsync;
     wire vsync;
     wire [3:0] R;
     wire [3:0] G;
     wire [3:0] B;
+    wire snes_clk;
+    wire snes_data;
+    wire snes_latch;
+    wire [11:0] snes_data_out;
     
-
     system_top top(
     sys_clk,
+    sw,
+    snes_data_in,
+    //output reg led_out,
+    snes_clk,
+    snes_latch,
+    snes_data_out,
     hsync,
     vsync,
     R,
@@ -43,6 +54,11 @@ module system_testbench();
     sys_clk = 1;
     forever #1.25
     sys_clk = ~sys_clk;
+    end
+    
+    initial begin
+        sw=1;
+        snes_data_in = 0;
     end
 
 endmodule

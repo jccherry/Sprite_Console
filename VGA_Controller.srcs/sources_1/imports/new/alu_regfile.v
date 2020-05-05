@@ -37,7 +37,7 @@ module reg_file(
 
     initial begin
     
-        for (i = 0; i < 29; i=i+1) 
+        for (i = 0; i < 27; i=i+1) 
                 begin
                     registers[i] = 0;
                 end
