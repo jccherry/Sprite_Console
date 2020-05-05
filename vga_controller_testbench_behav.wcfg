@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="32991fs"></ZoomStartTime>
-      <ZoomEndTime time="128292fs"></ZoomEndTime>
-      <Cursor1Time time="49991fs"></Cursor1Time>
+      <ZoomStartTime time="180000fs"></ZoomStartTime>
+      <ZoomEndTime time="291146fs"></ZoomEndTime>
+      <Cursor1Time time="188096fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="215"></NameColumnWidth>
-      <ValueColumnWidth column_width="127"></ValueColumnWidth>
+      <ValueColumnWidth column_width="119"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="18" />
    <wvobject fp_name="/system_testbench/top/program_counter/addr_in" type="array">
@@ -105,5 +105,6 @@
    <wvobject fp_name="/system_testbench/top/alu_out" type="array">
       <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
       <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

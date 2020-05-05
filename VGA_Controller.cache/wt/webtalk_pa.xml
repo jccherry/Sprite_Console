@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon May  4 21:04:07 2020">
+<application name="pa" timeStamp="Mon May  4 21:16:51 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="c28268d51f384ddfb55d79a0781d4cc2" type="ProjectID"/>
 <property name="ProjectIteration" value="262" type="ProjectIteration"/>
@@ -31,13 +31,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditUndo" value="4" type="JavaHandler"/>
 <property name="FilePrintCmdHandler" value="2" type="JavaHandler"/>
 <property name="FlipToViewTaskSynthesis" value="1" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="237" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="239" type="JavaHandler"/>
 <property name="MoveToDesignSet" value="1" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="216" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="218" type="JavaHandler"/>
 <property name="OpenProject" value="5" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="33" type="JavaHandler"/>
 <property name="ProgramCfgMem" value="4" type="JavaHandler"/>
-<property name="ProgramDevice" value="166" type="JavaHandler"/>
+<property name="ProgramDevice" value="168" type="JavaHandler"/>
 <property name="RecustomizeCore" value="5" type="JavaHandler"/>
 <property name="RefreshVioInputs" value="27" type="JavaHandler"/>
 <property name="ReportTimingSummary" value="1" type="JavaHandler"/>
@@ -87,7 +87,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="DefineModulesDialog_ENTITY_NAME" value="1" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="734" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="1006" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="1008" type="GuiHandlerData"/>
 <property name="GeneratedClockTablePanel_TABLE" value="5" type="GuiHandlerData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="3" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="1" type="GuiHandlerData"/>
@@ -156,14 +156,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PAViews_CODE" value="38" type="GuiHandlerData"/>
 <property name="PAViews_DASHBOARD" value="1" type="GuiHandlerData"/>
 <property name="PAViews_DEVICE" value="1" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="205" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="206" type="GuiHandlerData"/>
 <property name="PAViews_SCHEMATIC" value="18" type="GuiHandlerData"/>
 <property name="PrimaryClocksPanel_RECOMMENDED_CONSTRAINTS_TABLE" value="6" type="GuiHandlerData"/>
 <property name="ProbesView_PROBES_TREE" value="5" type="GuiHandlerData"/>
 <property name="ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE" value="2" type="GuiHandlerData"/>
 <property name="ProgramDebugTab_OPEN_TARGET" value="19" type="GuiHandlerData"/>
 <property name="ProgramDebugTab_PROGRAM_DEVICE" value="72" type="GuiHandlerData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="237" type="GuiHandlerData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="239" type="GuiHandlerData"/>
 <property name="ProgramFpgaDialog_SPECIFY_DEBUG_PROBES_FILE" value="3" type="GuiHandlerData"/>
 <property name="ProgressDialog_CANCEL" value="3" type="GuiHandlerData"/>
 <property name="ProjectTab_RELOAD" value="70" type="GuiHandlerData"/>
@@ -212,6 +212,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformOptionsView_SHOW_SIGNAL_INDICES" value="2" type="GuiHandlerData"/>
 <property name="WaveformView_GOTO_CURSOR" value="2" type="GuiHandlerData"/>
 <property name="XPG_IPSymbol_SHOW_DISABLED_PORTS" value="2" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="80" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="67" type="TclMode"/>
 </item>
 </section>
 </application>
