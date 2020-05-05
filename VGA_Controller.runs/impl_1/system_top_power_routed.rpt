@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Mon May  4 21:07:27 2020
+| Date             : Mon May  4 21:46:58 2020
 | Host             : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command          : report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb -rpx system_top_power_routed.rpx
 | Design           : system_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.165        |
+| Total On-Chip Power (W)  | 0.164        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.091        |
+| Dynamic (W)              | 0.090        |
 | Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.2         |
@@ -66,7 +66,7 @@ Table of Contents
 | DSPs                    |    <0.001 |        1 |        90 |            1.11 |
 | I/O                     |     0.012 |       30 |       106 |           28.30 |
 | Static Power            |     0.074 |          |           |                 |
-| Total                   |     0.165 |          |           |                 |
+| Total                   |     0.164 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -145,7 +145,7 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| system_top              |     0.091 |
+| system_top              |     0.090 |
 |   alu_mux_1             |     0.003 |
 |   alu_mux_2             |     0.004 |
 |   console_ppu           |     0.026 |
