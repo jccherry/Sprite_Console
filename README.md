@@ -21,13 +21,8 @@ PPU (Picture Processing Unit)
 
 Todo (listed mostly in order of importance but hey who knows what order its gonna get done):
 -
- - Finish instruction decoder implementation with every instruction (and finish the design of the ISA for that matter)
- - implement branching logic
- - implement vblank interrupt for game timing purposes
- - integrate the snes controller module for multiple controllers
- 	- get the controller inputs to be memory mapped as well
  - figure out audio processing unit and audio output
- - create assembler for custom ISA assembly language
+ - finish assembler for custom ISA assembly language
  - get SD card working to load game into memory so i don't have to regenerate the bitstream with initialized memory values
  - create custom enclosure with two controller ports, VGA and HDMI Output (get better vga-hdmi converter), and lcd screen controlled by embedded arduino
  - <b>CREATE DOCUMENTATION FOR EVERYTHING FROM THE HARDWARE DESIGN TO THE ISA</b>
