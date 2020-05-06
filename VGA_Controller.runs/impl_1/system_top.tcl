@@ -60,12 +60,16 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
+  set_param synth.incrementalSynthesisCache C:/Users/jc170/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1828-DESKTOP-6IO763U/incrSyn
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -74,9 +78,8 @@ set rc [catch {
   set_property parent.project_path {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.xpr} [current_project]
   set_property ip_output_repo {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   add_files -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/system_top.dcp}}
-  read_ip -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+  read_ip -quiet {{c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
   read_xdc {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc}}
   link_design -top system_top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
@@ -173,7 +176,6 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   catch { write_mem_info -force system_top.mmi }
   write_bitstream -force system_top.bit 
   catch {write_debug_probes -quiet -force system_top}

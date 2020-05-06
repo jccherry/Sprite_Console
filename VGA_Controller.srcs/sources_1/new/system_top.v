@@ -245,14 +245,22 @@ instruction_decoder inst_dec(
     ppu_ram_write
     );
 
-
+/*
     blk_mem_gen_0 data_ram(
     step_clk,
     data_ram_write,
     alu_out,
     reg_read_data2,
     data_mem_out
-    );
+    );*/
+    
+    dist_mem_gen_0 data_ram(
+    alu_out,
+    reg_read_data2,
+    step_clk,
+   data_ram_write,
+    data_mem_out
+  );
   
   
   
