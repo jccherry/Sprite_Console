@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../VGA_Controller.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../VGA_Controller.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
 "../../../../VGA_Controller.srcs/sources_1/new/DFF.v" \
 "../../../../VGA_Controller.srcs/sources_1/new/SNES_FSM.v" \
 "../../../../VGA_Controller.srcs/sources_1/imports/new/alu_regfile.v" \

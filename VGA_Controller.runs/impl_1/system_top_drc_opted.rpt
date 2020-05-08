@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue May  5 20:04:57 2020
+| Date         : Thu May  7 21:51:29 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_drc -file system_top_drc_opted.rpt -pb system_top_drc_opted.pb -rpx system_top_drc_opted.rpx
 | Design       : system_top
@@ -72,8 +72,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT ctrl1/snes_clk_OBUF_inst_i_1 is driving clock pin of 14 cells. This could lead to large hold time violations. Involved cells are:
-ctrl1/buttons_temp_reg[0], ctrl1/buttons_temp_reg[10], ctrl1/buttons_temp_reg[11]__0, ctrl1/buttons_temp_reg[12]_srl2, ctrl1/buttons_temp_reg[14]__0, ctrl1/buttons_temp_reg[1], ctrl1/buttons_temp_reg[2], ctrl1/buttons_temp_reg[3], ctrl1/buttons_temp_reg[4], ctrl1/buttons_temp_reg[5], ctrl1/buttons_temp_reg[6], ctrl1/buttons_temp_reg[7], ctrl1/buttons_temp_reg[8], ctrl1/buttons_temp_reg[9]
+A LUT ctrl1/snes_clk_OBUF_inst_i_1 is driving clock pin of 28 cells. This could lead to large hold time violations. Involved cells are:
+ctrl1/buttons_temp2_reg[0], ctrl1/buttons_temp2_reg[10], ctrl1/buttons_temp2_reg[11]__0, ctrl1/buttons_temp2_reg[12]_srl2, ctrl1/buttons_temp2_reg[14]__0, ctrl1/buttons_temp2_reg[1], ctrl1/buttons_temp2_reg[2], ctrl1/buttons_temp2_reg[3], ctrl1/buttons_temp2_reg[4], ctrl1/buttons_temp2_reg[5], ctrl1/buttons_temp2_reg[6], ctrl1/buttons_temp2_reg[7], ctrl1/buttons_temp2_reg[8], ctrl1/buttons_temp2_reg[9], ctrl1/buttons_temp_reg[0] (the first 15 of 28 listed)
 Related violations: <none>
 
 

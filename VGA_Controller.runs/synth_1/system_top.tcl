@@ -18,7 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/jc170/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1828-DESKTOP-6IO763U/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/jc170/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8720-DESKTOP-6IO763U/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -74,7 +74,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/wait_vb_interrupt.v}
   {C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/new/system_top.v}
 }
-read_ip -quiet {{c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
+read_ip -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being

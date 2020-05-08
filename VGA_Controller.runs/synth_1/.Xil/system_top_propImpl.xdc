@@ -27,6 +27,8 @@ set_property src_info {type:XDC file:1 line:67 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN W3 [get_ports {snes_data_out[10]}]
 set_property src_info {type:XDC file:1 line:69 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U3 [get_ports {snes_data_out[11]}]
+set_property src_info {type:XDC file:1 line:96 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J1 [get_ports {snes_data_in2}]
 set_property src_info {type:XDC file:1 line:99 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L2 [get_ports snes_data_in]
 set_property src_info {type:XDC file:1 line:102 export:INPUT save:INPUT read:READ} [current_design]

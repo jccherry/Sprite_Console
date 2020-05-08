@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue May  5 20:05:11 2020
+| Date         : Thu May  7 21:51:53 2020
 | Host         : DESKTOP-6IO763U running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file system_top_control_sets_placed.rpt
 | Design       : system_top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    92 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   414 |
+| Unused register locations in slices containing registers |   412 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -41,13 +41,13 @@ Table of Contents
 +--------------------+-------+
 | Total control sets |    92 |
 | >= 0 to < 4        |     2 |
-| >= 4 to < 6        |    34 |
-| >= 6 to < 8        |     0 |
+| >= 4 to < 6        |    33 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     9 |
 | >= 10 to < 12      |    11 |
-| >= 12 to < 14      |    33 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     2 |
+| >= 12 to < 14      |    32 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              84 |           38 |
+| No           | No                    | No                     |             110 |           45 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              10 |            3 |
-| Yes          | No                    | No                     |             555 |          290 |
+| Yes          | No                    | No                     |             555 |          300 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             137 |           55 |
+| Yes          | Yes                   | No                     |             137 |           84 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -75,96 +75,96 @@ Table of Contents
 +----------------------+-----------------------------------------+------------------------------------------+------------------+----------------+
 |  clk_BUFG            | console_ppu/hvcount/hcounter[9]_i_1_n_0 |                                          |                1 |              1 |
 |  sys_clk_IBUF_BUFG   |                                         |                                          |                1 |              1 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_24  | program_counter/registers[31][15]_i_6_24 |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_2   | program_counter/registers[31][15]_i_6_2  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_26  | program_counter/registers[31][15]_i_6_26 |                3 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_20  | program_counter/registers[31][15]_i_6_20 |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_27  | program_counter/registers[31][15]_i_6_27 |                4 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_25  | program_counter/registers[31][15]_i_6_25 |                4 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_29  | program_counter/registers[31][15]_i_6_29 |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_9   | program_counter/registers[31][15]_i_6_9  |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_3   | program_counter/registers[31][15]_i_6_3  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_8   | program_counter/registers[31][15]_i_6_8  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/registers               | program_counter/registers[31][15]_i_6_0  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_30  | program_counter/registers[31][15]_i_6_30 |                2 |              4 |
-|  clk_div/tff1/CLK    | ctrl1/num_clks                          |                                          |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_31  | program_counter/registers[31][15]_i_6_31 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_4   | program_counter/registers[31][15]_i_6_4  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_5   | program_counter/registers[31][15]_i_6_5  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_23  | program_counter/registers[31][15]_i_6_23 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_6   | program_counter/registers[31][15]_i_6_6  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_13  | program_counter/registers[31][15]_i_6_13 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_1   | program_counter/registers[31][15]_i_6_1  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_16  | program_counter/registers[31][15]_i_6_16 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_28  | program_counter/registers[31][15]_i_6_28 |                3 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_11  | program_counter/registers[31][15]_i_6_11 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_15  | program_counter/registers[31][15]_i_6_15 |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_7   | program_counter/registers[31][15]_i_6_7  |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_17  | program_counter/registers[31][15]_i_6_17 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_10  | program_counter/registers[31][15]_i_6_10 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_18  | program_counter/registers[31][15]_i_6_18 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_12  | program_counter/registers[31][15]_i_6_12 |                1 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_21  | program_counter/registers[31][15]_i_6_21 |                3 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_14  | program_counter/registers[31][15]_i_6_14 |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_22  | program_counter/registers[31][15]_i_6_22 |                2 |              4 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_19  | program_counter/registers[31][15]_i_6_19 |                1 |              4 |
-| ~step_clk_BUFG       |                                         |                                          |                2 |              5 |
-|  clk_BUFG            |                                         |                                          |                5 |              8 |
-|  clk_BUFG            | console_ppu/hvcount/hcounter[9]_i_1_n_0 | console_ppu/hvcount/vcounter[9]_i_1_n_0  |                3 |              9 |
-|  step_clk_BUFG       | program_counter/data[27][0]_i_2_0[0]    |                                          |                5 |              9 |
-|  step_clk_BUFG       | program_counter/E[0]                    |                                          |                4 |              9 |
-|  step_clk_BUFG       | program_counter/data[27][0]_i_2_2[0]    |                                          |                4 |              9 |
-|  step_clk_BUFG       | program_counter/data[27][0]_i_2_1[0]    |                                          |                5 |              9 |
-|  step_clk_BUFG       | program_counter/data[30][8]_i_4_1[0]    |                                          |                5 |              9 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_16  | program_counter/registers[31][15]_i_4_14 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_13  | program_counter/registers[31][15]_i_4_11 |                2 |              4 |
+|  clk_div/tff1/CLK    | ctrl1/num_clks                          |                                          |                1 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_25  | program_counter/registers[31][15]_i_4_23 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_17  | program_counter/registers[31][15]_i_4_15 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_31  | program_counter/registers[31][15]_i_4_29 |                4 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_12  | program_counter/registers[31][15]_i_4_10 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_5   | program_counter/registers[31][15]_i_4_3  |                4 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_9   | program_counter/registers[31][15]_i_4_7  |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_28  | program_counter/registers[31][15]_i_4_26 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_27  | program_counter/registers[31][15]_i_4_25 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_22  | program_counter/registers[31][15]_i_4_20 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_33  | program_counter/registers[31][15]_i_4_31 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/registers               | program_counter/registers[31][15]_i_4_0  |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_7   | program_counter/registers[31][15]_i_4_5  |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_8   | program_counter/registers[31][15]_i_4_6  |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_30  | program_counter/registers[31][15]_i_4_28 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_15  | program_counter/registers[31][15]_i_4_13 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_26  | program_counter/registers[31][15]_i_4_24 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_4   | program_counter/registers[31][15]_i_4_2  |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_10  | program_counter/registers[31][15]_i_4_8  |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_29  | program_counter/registers[31][15]_i_4_27 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_18  | program_counter/registers[31][15]_i_4_16 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_14  | program_counter/registers[31][15]_i_4_12 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_19  | program_counter/registers[31][15]_i_4_17 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_3   | program_counter/registers[31][15]_i_4_1  |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_21  | program_counter/registers[31][15]_i_4_19 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_24  | program_counter/registers[31][15]_i_4_22 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_32  | program_counter/registers[31][15]_i_4_30 |                3 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_23  | program_counter/registers[31][15]_i_4_21 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_20  | program_counter/registers[31][15]_i_4_18 |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_11  | program_counter/registers[31][15]_i_4_9  |                2 |              4 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_6   | program_counter/registers[31][15]_i_4_4  |                3 |              4 |
+| ~step_clk_BUFG       |                                         |                                          |                2 |              6 |
+|  clk_BUFG            |                                         |                                          |                6 |              8 |
+|  step_clk_BUFG       | program_counter/data[30][8]_i_4_2[0]    |                                          |                4 |              9 |
 |  step_clk_BUFG       | program_counter/data[30][8]_i_4_0[0]    |                                          |                4 |              9 |
-|  step_clk_BUFG       | program_counter/data[30][8]_i_4_2[0]    |                                          |                3 |              9 |
+|  step_clk_BUFG       | program_counter/data[27][0]_i_2_2[0]    |                                          |                3 |              9 |
+|  clk_BUFG            | console_ppu/hvcount/hcounter[9]_i_1_n_0 | console_ppu/hvcount/vcounter[9]_i_1_n_0  |                4 |              9 |
+|  step_clk_BUFG       | program_counter/E[0]                    |                                          |                4 |              9 |
+|  step_clk_BUFG       | program_counter/data[30][8]_i_4_1[0]    |                                          |                3 |              9 |
+|  step_clk_BUFG       | program_counter/data[27][0]_i_2_0[0]    |                                          |                4 |              9 |
+|  step_clk_BUFG       | program_counter/data[27][0]_i_2_1[0]    |                                          |                3 |              9 |
 |  clk_BUFG            |                                         | console_ppu/hvcount/hcounter[9]_i_1_n_0  |                3 |             10 |
 |  step_clk_BUFG       | program_counter/data[29][9]_i_3_0[0]    |                                          |                4 |             10 |
-|  step_clk_BUFG       | program_counter/data[29][9]_i_3_1[0]    |                                          |                4 |             10 |
-|  step_clk_BUFG       | program_counter/data[29][9]_i_3_2[0]    |                                          |                5 |             10 |
-|  step_clk_BUFG       | program_counter/data[25][9]_i_2_1[0]    |                                          |                4 |             10 |
-|  step_clk_BUFG       | program_counter/data[29][9]_i_4_0[0]    |                                          |                4 |             10 |
-|  step_clk_BUFG       | program_counter/data[25][9]_i_2_0[0]    |                                          |                5 |             10 |
-|  step_clk_BUFG       | program_counter/data[29][9]_i_4_1[0]    |                                          |                3 |             10 |
-|  step_clk_BUFG       | program_counter/data[25][9]_i_2_3[0]    |                                          |                3 |             11 |
+|  step_clk_BUFG       | program_counter/data[29][9]_i_3_1[0]    |                                          |                5 |             10 |
+|  step_clk_BUFG       | program_counter/data[25][9]_i_2_1[0]    |                                          |                5 |             10 |
+|  step_clk_BUFG       | program_counter/data[29][9]_i_4_1[0]    |                                          |                4 |             10 |
+|  step_clk_BUFG       | program_counter/data[25][9]_i_2_0[0]    |                                          |                4 |             10 |
+|  step_clk_BUFG       | program_counter/data[29][9]_i_4_0[0]    |                                          |                5 |             10 |
+|  step_clk_BUFG       | program_counter/data[29][9]_i_3_2[0]    |                                          |                3 |             10 |
+|  step_clk_BUFG       | program_counter/data[25][9]_i_2_3[0]    |                                          |                4 |             11 |
 |  step_clk_BUFG       | program_counter/data[27][0]_i_2_3[0]    |                                          |                3 |             11 |
 |  step_clk_BUFG       | program_counter/data[25][9]_i_2_2[0]    |                                          |                4 |             11 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_15  |                                          |                3 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_17  |                                          |               10 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_18  |                                          |               11 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_21  |                                          |                7 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_22  |                                          |               11 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_24  |                                          |                8 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_26  |                                          |                8 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_27  |                                          |               10 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_29  |                                          |                9 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_3   |                                          |                6 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_30  |                                          |               10 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_8   |                                          |                6 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_7   |                                          |                3 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_28  |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/registers               |                                          |                7 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_13  |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_24  |                                          |               10 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_23  |                                          |                6 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_11  |                                          |                7 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_16  |                                          |                7 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_25  |                                          |                8 |             12 |
 | ~step_clk_BUFG       | program_counter/program_addr_reg[4]_31  |                                          |                8 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_10  |                                          |                5 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_13  |                                          |                3 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_12  |                                          |                2 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_23  |                                          |               11 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_14  |                                          |                3 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_1   |                                          |                6 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_19  |                                          |                9 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_5   |                                          |                4 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_2   |                                          |                3 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_16  |                                          |               12 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_6   |                                          |                4 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_25  |                                          |               10 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_28  |                                          |               11 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_9   |                                          |                2 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_4   |                                          |                2 |             12 |
-| ~step_clk_BUFG       | program_counter/registers               |                                          |                8 |             12 |
-| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_11  |                                          |                5 |             12 |
-|  ctrl1/pre_finish    |                                         |                                          |                6 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_5   |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_27  |                                          |                6 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_33  |                                          |                4 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_19  |                                          |               11 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_7   |                                          |                4 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_3   |                                          |               11 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_4   |                                          |                6 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_21  |                                          |                6 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_15  |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_32  |                                          |                5 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_10  |                                          |               10 |             12 |
 | ~step_clk_BUFG       | program_counter/program_addr_reg[4]_20  |                                          |                8 |             12 |
-| ~ctrl1/snes_clk_OBUF |                                         |                                          |                4 |             14 |
-|  clk_div/tff1/CLK    |                                         |                                          |                7 |             17 |
-|  step_clk_BUFG       |                                         |                                          |               13 |             28 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_30  |                                          |                9 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_6   |                                          |                7 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_29  |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_26  |                                          |                6 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_17  |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_18  |                                          |                7 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_12  |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_8   |                                          |                6 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_9   |                                          |                5 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_14  |                                          |                8 |             12 |
+| ~step_clk_BUFG       | program_counter/program_addr_reg[4]_22  |                                          |                4 |             12 |
+|  clk_div/tff1/CLK    |                                         |                                          |                9 |             17 |
+|  pre_finish          |                                         |                                          |                7 |             24 |
+|  step_clk_BUFG       |                                         |                                          |               11 |             28 |
+| ~ctrl1/snes_clk_OBUF |                                         |                                          |                9 |             28 |
 +----------------------+-----------------------------------------+------------------------------------------+------------------+----------------+
 
 

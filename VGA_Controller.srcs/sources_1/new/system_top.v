@@ -23,10 +23,12 @@ module system_top(
     input sys_clk,
     input sw,
     input snes_data_in,
+    input snes_data_in2,
     //output reg led_out,
     output snes_clk,
     output snes_latch,
     output [11:0] snes_data_out,
+   // output [11:0] snes_data_out2,
     output hsync,
     output vsync,
     output [3:0] R,
@@ -34,6 +36,9 @@ module system_top(
     output [3:0] B
     );
     
+    wire [11:0] controller1;
+    wire [11:0] controller2;
+    assign snes_data_out = controller1 | controller2;
     
     wire clk;
     wire clk_50;
@@ -71,13 +76,14 @@ module system_top(
 				clk_50,
 				1'b1,
 				snes_data_in,
-				snes_data_out,
+				snes_data_in2,
+				controller1,
+				controller2,
 				,
 				,
 				snes_latch,
 				snes_clk
 				);
-				
 				
 			
 	
@@ -164,12 +170,17 @@ module system_top(
 	reg_write_cont_intermediate
 	);
 	
-	
+	//reg [11:0] controller1;
+	/*
+	always @(posedge vblank)
+	begin
+	   controller1 = snes_data_out;
+	end*/
 	
 	controller_reg_mux controller_mux(
     alu_out,
-    snes_data_out,
-    16'h0000,
+    controller1,
+    controller2,
     16'h0000,
     16'h0000,
     reg_write_cont_intermediate,

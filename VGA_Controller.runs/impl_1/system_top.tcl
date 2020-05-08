@@ -68,7 +68,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param synth.incrementalSynthesisCache C:/Users/jc170/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1828-DESKTOP-6IO763U/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/jc170/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8720-DESKTOP-6IO763U/incrSyn
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
@@ -79,7 +79,7 @@ set rc [catch {
   set_property ip_output_repo {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.runs/synth_1/system_top.dcp}}
-  read_ip -quiet {{c:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
+  read_ip -quiet {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
   read_xdc {{C:/Users/jc170/Documents/Vivado Projects/Homebew_Console/VGA_Controller.srcs/constrs_1/new/vgaconstraints.xdc}}
   link_design -top system_top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
